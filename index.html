@@ -11,13 +11,13 @@
         <link rel="stylesheet" href="Stylesheets/style.css">
         <script src="jQuery/jquery-3.7.1.js"></script>
     </head>
-
     <body>
-        <div class="container-fluid navbar-container navSlideIn">
+        <div class="container-fluid navbar-container">
             <div class="row" id="navbarRow">
                 <nav id="navbar-holder"></nav>
             </div>
         </div>
+        <p>Hello World</p>
         <script>
             $.get("Pages/navbar.html", function(data) {
             $("#navbar-holder").html(data);
