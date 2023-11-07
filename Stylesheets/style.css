@@ -1,0 +1,49 @@
+
+.navbar-brand{
+    color: rgb(189, 189, 189);
+    font-size: xx-large;
+    font-weight: 600;
+    margin:15px;
+}
+
+.nav-item{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav-link{
+    color: rgb(189, 189, 189);
+    font-size: large;
+}
+
+#navbarRow{
+    margin: auto;
+}
+
+.navbar-container{
+    background-color: rgba(26, 26, 26, 1);
+    margin-bottom: 5%;
+}
+
+.navbar-toggler:hover{
+    border: 2px solid rgb(100, 100, 100);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navSlideIn {
+    float:down;
+    animation-duration: 1s;
+    animation-name: slideIn;
+}
+
+@keyframes slideIn {
+    from {
+        margin-top: -30%;
+    }
+    to {
+        margin-top: 0%;
+    }
+}
