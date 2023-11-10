@@ -38,6 +38,26 @@
     animation-name: slideIn;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-inner img{
+    height:780px;
+    vertical-align: middle;
+}
+
+.carousel-container{
+    padding: 0px;   
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(26, 26, 26, 1);
+}
 @keyframes slideIn {
     from {
         margin-top: -30%;
