@@ -31,5 +31,15 @@
         </script>
     </body>
     <footer>
+        <div class="container-fluid footer-container">
+            <div class="row" id="footerRow">
+                <nav id="footer-holder"></nav>
+            </div>
+        </div>
+        <script>
+            $.get("/Pages/footer.html", function(data) {
+            $("#footer-holder").html(data);
+            });
+        </script>
     </footer>
 </html>
