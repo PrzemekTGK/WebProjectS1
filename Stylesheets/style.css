@@ -1,4 +1,4 @@
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/search.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body{
     background-color: rgb(41, 41, 41);
@@ -21,7 +21,15 @@ body{
     font-size: large;
 }
 
+.nav-link:hover{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 .navbar-container{
+    position: fixed;
+    top: 0;
+    z-index:3;
     background-color: rgba(26, 26, 26, 1);
     flex-wrap: nowrap;
 }
@@ -31,7 +39,7 @@ body{
 }
 
 .navbar-toggler:hover{
-    border: 2px solid rgb(100, 100, 100);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .navbar-toggler:focus{
@@ -40,8 +48,8 @@ body{
 
 .nav-slide-in {
     float:down;
-    animation-duration: 1s;
     animation-name: slideIn;
+    animation-duration: 1s;
 }
 
 #navbarRow{
@@ -55,8 +63,9 @@ body{
 }
 
 .fa-search{
-    color: rgb(189, 189, 189);;
+    color: rgb(189, 189, 189);
 }
+
 
 #searchBar{
     float: right;
@@ -67,11 +76,21 @@ body{
 
 #linksMenu{
     margin: auto;
-    max-width: fit-content;
+    max-width: fit-content; 
 }
 
 #searchBtn{
     border-color: rgb(41, 41, 41) !important;
+}
+
+
+#searchBtn:hover{
+    border-color: rgb(255, 255, 255) !important;
+}
+
+#searchBtn:hover > #searchIcon {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 #burgerMenu{
@@ -85,8 +104,21 @@ body{
     max-width: 75%;
 }
 
+#searchInput:focus{ 
+    box-shadow: 1px 1px rgba(255, 255, 255) inset, 0 0 12px rgb(255, 255, 255, 0.8);
+    border-radius: 1px;
+    border-color: rgb(255, 255, 255);
+}
+
 .carousel-container{
+    vertical-align: middle;
     padding: 0;
+    margin-top: 64px;
+}
+
+.carousel-fade-in{    
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
 
 .cars{
@@ -182,5 +214,15 @@ body{
     }
     to {
         margin-top: 0%;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
     }
 }
