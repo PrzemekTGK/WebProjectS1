@@ -1,5 +1,8 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/search.css');
+
 body{
     background-color: rgb(41, 41, 41);
+    min-width: 480px;
 }
 .navbar-brand{
     color: rgb(189, 189, 189);
@@ -18,12 +21,13 @@ body{
     font-size: large;
 }
 
-#navbarRow{
-    margin: auto;
-}
-
 .navbar-container{
     background-color: rgba(26, 26, 26, 1);
+    flex-wrap: nowrap;
+}
+
+.navbar-toggler{
+    float: right;
 }
 
 .navbar-toggler:hover{
@@ -38,6 +42,47 @@ body{
     float:down;
     animation-duration: 1s;
     animation-name: slideIn;
+}
+
+#navbarRow{
+    flex-wrap: nowrap;
+}
+
+#logoCol{
+    float: left;
+    margin: auto 0px auto;
+    max-width: 400px;
+}
+
+.fa-search{
+    color: rgb(189, 189, 189);;
+}
+
+#searchBar{
+    float: right;
+    margin: auto 0px auto;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+#linksMenu{
+    margin: auto;
+    max-width: fit-content;
+}
+
+#searchBtn{
+    border-color: rgb(41, 41, 41) !important;
+}
+
+#burgerMenu{
+    margin: auto 0px auto;
+    max-width: fit-content;
+}
+
+.input-group{
+    float:right;
+    flex-wrap: nowrap;
+    max-width: 75%;
 }
 
 .carousel-container{
@@ -57,18 +102,6 @@ body{
     border-radius: 0px;
 }
 
-@media (max-width: 950px){
-    .card{        
-        max-width: 235px;
-    }
-}
-
-@media (max-width: 765px){
-    .card{        
-        max-width: 100%;
-    }
-}
-
 .card .btn{
     background-color: rgb(41, 41, 41);  
     border-color: rgb(189, 189, 189);
@@ -82,6 +115,7 @@ body{
 .car-row{
     margin: auto;
 }
+
 
 .footer-container{
     display: flex;
@@ -99,6 +133,47 @@ body{
 
 .footer-row{
     padding: 2%;
+}
+
+@media (max-width: 950px){
+    .card{        
+        max-width: 235px;
+    }
+}
+
+@media (max-width: 765px){
+    .card{        
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 998px){
+    #burgerMenu{
+        display: none;
+    }
+    #logoShort{
+        display: none;
+    }
+}
+
+@media (max-width: 998px){
+    #linksMenu{
+        display: none;
+    }
+    .input-group{
+        max-width: 100%;
+    }
+    #logoFull{
+        display: none;
+    }
+    #searchBar{
+        margin: auto;
+        min-width: 300px;
+    }
+    #logoCol{
+        float: left;
+        max-width: fit-content;
+    }
 }
 
 @keyframes slideIn {
