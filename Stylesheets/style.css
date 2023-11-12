@@ -53,13 +53,26 @@ body{
     background-color: rgba(26, 26, 26, 1);
     color: rgb(189, 189, 189);
     margin: auto;
-    min-width: 225px;
-    max-width: 240px;
+    box-shadow: 2px 2px rgb(10, 10, 10);
+    border-radius: 0px;
+}
+
+@media (max-width: 950px){
+    .card{        
+        max-width: 235px;
+    }
+}
+
+@media (max-width: 765px){
+    .card{        
+        max-width: 100%;
+    }
 }
 
 .card .btn{
     background-color: rgb(41, 41, 41);  
     border-color: rgb(189, 189, 189);
+    box-shadow: 3px 3px rgb(10, 10, 10);
 }
 
 .car-col{
