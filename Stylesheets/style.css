@@ -299,8 +299,23 @@ body {
 .p-about-text {
     color: rgb(189, 189, 189);
     padding-top: 90px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .p-text-orange {
     color: orange;
+}
+
+.p-picture-text {
+    color: rgb(189, 189, 189);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.first-word-uppercase-p::first-letter {
+    -webkit-initial-letter: 4;
+    initial-letter: 2;
+    font-weight: bold;
+    margin-right: .75em;
+    font-family: 'Ubuntu', sans-serif;
 }
