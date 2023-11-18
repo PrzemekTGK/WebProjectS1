@@ -1,0 +1,98 @@
+[
+    {
+      "index": 0,
+      "make": "Lexus",
+      "model": "LC",
+      "year": 2023,
+      "price": 142000,
+      "image": "card1.jpeg"
+    },
+    {
+      "index": 1,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card2.jpeg"
+    },
+    {
+      "index": 2,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card3.jpeg"
+    },
+    {
+      "index": 3,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card4.jpeg"
+    },
+    {
+      "index": 4,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card5.jpeg"
+    },
+    {
+      "index": 5,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card6.jpeg"
+    },
+    {
+      "index": 6,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card7.jpeg"
+    },
+    {
+      "index": 7,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card8.jpeg"
+    },
+    {
+      "index": 8,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card9.jpeg"
+    },
+    {
+      "index": 9,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card10.jpeg"
+    },
+    {
+      "index": 10,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card11.jpeg"
+    },
+    {
+      "index": 11,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "price": 27000,
+      "image": "card12.jpeg"
+    }
+  ]
