@@ -283,3 +283,24 @@ body {
 .p-bump:hover {
     font-size: 300%;
 }
+
+.p-p-indent {
+    text-indent: 50px;
+}
+
+.p-picture-about {
+    width: 300px
+}
+
+.p-padding {
+    padding-top: 90px
+}
+
+.p-about-text {
+    color: rgb(189, 189, 189);
+    padding-top: 90px;
+}
+
+.p-text-orange {
+    color: orange;
+}
