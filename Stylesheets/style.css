@@ -1,133 +1,138 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
-body{
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap');
+
+body {
     background-color: rgb(41, 41, 41);
     min-width: 480px;
 }
-.navbar-brand{
+
+.navbar-brand {
     color: rgb(189, 189, 189);
     font-size: xx-large;
     font-weight: 600;
-    margin:15px;
+    margin: 15px;
 }
 
-.nav-item{
+.nav-item {
     margin-right: 10px;
     margin-left: 10px;
 }
 
-.nav-link{
+.nav-link {
     color: rgb(189, 189, 189);
     font-size: large;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
-.navbar-container{
+.navbar-container {
     position: fixed;
     top: 0;
-    z-index:3;
+    z-index: 3;
     background-color: rgba(26, 26, 26, 1);
     flex-wrap: nowrap;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     float: right;
 }
 
-.navbar-toggler:hover{
+.navbar-toggler:hover {
     border: 2px solid rgb(255, 255, 255);
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: none;
 }
 
 .nav-slide-in {
-    float:down;
+    float: down;
     animation-name: slideIn;
     animation-duration: 1s;
 }
 
-#navbarRow{
+#navbarRow {
     flex-wrap: nowrap;
 }
 
-#logoCol{
+#logoCol {
     float: left;
     margin: auto 0px auto;
     max-width: 400px;
 }
 
-.fa-search{
+.fa-search {
     color: rgb(189, 189, 189);
 }
 
 
-#searchBar{
+#searchBar {
     float: right;
     margin: auto 0px auto;
     max-width: 400px;
     min-width: 300px;
 }
 
-#linksMenu{
+#linksMenu {
     margin: auto;
-    max-width: fit-content; 
+    max-width: fit-content;
 }
 
-#searchBtn{
+#searchBtn {
     border-color: rgb(41, 41, 41) !important;
 }
 
 
-#searchBtn:hover{
+#searchBtn:hover {
     border-color: rgb(255, 255, 255) !important;
 }
 
-#searchBtn:hover > #searchIcon {
+#searchBtn:hover>#searchIcon {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
-#burgerMenu{
+#burgerMenu {
     margin: auto 0px auto;
     max-width: fit-content;
 }
 
-.input-group{
-    float:right;
+.input-group {
+    float: right;
     flex-wrap: nowrap;
     max-width: 75%;
 }
 
-#searchInput:focus{ 
+#searchInput:focus {
     box-shadow: 1px 1px rgba(255, 255, 255) inset, 0 0 12px rgb(255, 255, 255, 0.8);
     border-radius: 1px;
     border-color: rgb(255, 255, 255);
 }
 
-.carousel-container{
+.carousel-container {
     vertical-align: middle;
     padding: 0;
     margin-top: 64px;
 }
 
-.carousel-fade-in{    
+.carousel-fade-in {
     animation-name: fadeIn;
     animation-duration: 3s;
 }
 
-.cars{
+.cars {
     margin: 2% auto 2%;
     padding-top: 2%;
     max-width: 1000px !important;
 }
 
-.card{
+.card {
     background-color: rgba(26, 26, 26, 1);
     color: rgb(189, 189, 189);
     margin: auto;
@@ -135,22 +140,22 @@ body{
     border-radius: 0px;
 }
 
-.card .btn{
-    background-color: rgb(41, 41, 41);  
+.card .btn {
+    background-color: rgb(41, 41, 41);
     border-color: rgb(189, 189, 189);
     box-shadow: 3px 3px rgb(10, 10, 10);
 }
 
-.car-col{
+.car-col {
     padding: 2%;
 }
 
-.car-row{
+.car-row {
     margin: auto;
 }
 
 .car-details-container {
-    color:rgb(189, 189, 189);
+    color: rgb(189, 189, 189);
 }
 
 #backToCars {
@@ -167,8 +172,8 @@ body{
     font-weight: bold;
 }
 
-.footer-container{
-    display: flex;
+.footer-container {
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     background-color: rgba(26, 26, 26, 1);
@@ -176,51 +181,56 @@ body{
     min-height: 200px;
 }
 
-.footer-col{
+.footer-col {
     padding: 0 5% 0;
 }
 
 
-.footer-row{
+.footer-row {
     padding: 2%;
 }
 
-@media (max-width: 950px){
-    .card{        
+@media (max-width: 950px) {
+    .card {
         max-width: 235px;
     }
 }
 
-@media (max-width: 765px){
-    .card{        
+@media (max-width: 765px) {
+    .card {
         max-width: 100%;
     }
 }
 
-@media (min-width: 998px){
-    #burgerMenu{
+@media (min-width: 998px) {
+    #burgerMenu {
         display: none;
     }
-    #logoShort{
+
+    #logoShort {
         display: none;
     }
 }
 
-@media (max-width: 998px){
-    #linksMenu{
+@media (max-width: 998px) {
+    #linksMenu {
         display: none;
     }
-    .input-group{
+
+    .input-group {
         max-width: 100%;
     }
-    #logoFull{
+
+    #logoFull {
         display: none;
     }
-    #searchBar{
+
+    #searchBar {
         margin: auto;
         min-width: 300px;
     }
-    #logoCol{
+
+    #logoCol {
         float: left;
         max-width: fit-content;
     }
@@ -230,6 +240,7 @@ body{
     from {
         margin-top: -30%;
     }
+
     to {
         margin-top: 0%;
     }
@@ -240,7 +251,35 @@ body{
     from {
         opacity: 0%;
     }
+
     to {
         opacity: 100%;
     }
+}
+
+/* ##########################################################################################################*/
+
+
+.p-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(189, 189, 189)
+}
+
+.p-dance-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.p-hr {
+    width: 90%;
+}
+
+.p-a-footer {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+.p-bump:hover {
+    font-size: 300%;
 }
