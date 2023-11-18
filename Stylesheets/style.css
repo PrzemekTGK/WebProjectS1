@@ -300,6 +300,7 @@ body {
     color: rgb(189, 189, 189);
     padding-top: 90px;
     font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
 }
 
 .p-text-orange {
@@ -318,4 +319,8 @@ body {
     font-weight: bold;
     margin-right: .75em;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.p-center {
+    text-align: center;
 }
