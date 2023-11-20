@@ -20,6 +20,10 @@ jQuery(document).ready(function($) {
                     .replace(/{MAKE}/g, selectedCar.make)
                     .replace(/{MODEL}/g, selectedCar.model)
                     .replace(/{YEAR}/g, selectedCar.year)
+                    .replace(/{ENGINE_SIZE}/g, selectedCar.engine_size)
+                    .replace(/{DESCRIPTION}/g, selectedCar.description)
+                    .replace(/{FUEL_TYPE}/g, selectedCar.fuel_type)
+                    .replace(/{TRANSMISSION}/g, selectedCar.transmission)
                     .replace(/{PRICE}/g, selectedCar.price);
 
                 $('#carDetailsContainer').html(filledTemplate);

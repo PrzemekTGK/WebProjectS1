@@ -27,14 +27,31 @@
     </header>
 
     <body>
-        <div class="container car-details-container mt-5 mb-5 pt-5"
-            id="carDetailsContainer">
+        <div class="container car-details-container mt-5 mb-5 pt-5" id="carDetailsContainer">            
             <div id="carDetailsTemplate" style="display: none;">
                 <a href="cars.html" id="backToCars"><i class="fa-solid fa-caret-left"></i> Browse</a>
-                <h1>{MAKE} {MODEL}</h1>
-                <p>Year: {YEAR}</p>
-                <p>Price: €{PRICE}</p>
-                <img id="carImage" alt="{MAKE} {MODEL}">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <img id="carImage" alt="{MAKE} {MODEL}">        
+                    </div>    
+                    <div class="col-lg-6 col-md-12">
+                        <h1>{MAKE} {MODEL}</h1>
+                        <p>
+                            Year: {YEAR}
+                            <br>Engine size: {ENGINE_SIZE}
+                            <br>Fuel Type: {FUEL_TYPE}
+                            <br>Transmission: {TRANSMISSION}
+                            <br>Price: €{PRICE}
+                        </p>
+                        <hr>
+                        <p>Description: <br>{DESCRIPTION}</p> 
+                        <hr>
+                        <a href="/Pages/contact.html"><button class="buy-button" type="button">Enquire</button></a>   
+                    </div>
+                </div>
+                <div class="row">
+                    
+                </div>
             </div>
         </div>
 

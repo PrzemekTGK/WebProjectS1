@@ -4,7 +4,11 @@
       "make": "Lexus",
       "model": "LC",
       "year": 2023,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 142000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card1.jpeg"
     },
     {
@@ -12,7 +16,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card2.jpeg"
     },
     {
@@ -20,7 +28,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card3.jpeg"
     },
     {
@@ -28,7 +40,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card4.jpeg"
     },
     {
@@ -36,7 +52,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card5.jpeg"
     },
     {
@@ -44,7 +64,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card6.jpeg"
     },
     {
@@ -52,7 +76,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card7.jpeg"
     },
     {
@@ -60,7 +88,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card8.jpeg"
     },
     {
@@ -68,7 +100,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card9.jpeg"
     },
     {
@@ -76,7 +112,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card10.jpeg"
     },
     {
@@ -84,7 +124,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card11.jpeg"
     },
     {
@@ -92,7 +136,11 @@
       "make": "Honda",
       "model": "Accord",
       "year": 2021,
+      "engine_size": "5.0L",
+      "fuel_type": "Petrol",
+      "transmission": "6-speed manual",
       "price": 27000,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "image": "card12.jpeg"
     }
   ]

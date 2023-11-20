@@ -166,8 +166,6 @@ body {
 }
 
 #backToCars:hover {
-    color: rgb(189, 189, 189);
-    font-size: larger;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -216,9 +214,34 @@ body {
     color: rgb(189, 189, 189);
     opacity: 85%;
     border-radius: 10px;
+    border-color: rgb(189, 189, 189);
     min-width: 25%;    
     min-height: 15%;
     margin-right: 2%;
+    box-shadow: 2px 2px rgb(10, 10, 10);
+}
+
+.buy-button{
+    background-color: rgb(41, 41, 41);
+    color: rgb(189, 189, 189);
+    border-radius: 10px;
+    border-color: rgb(189, 189, 189);
+    min-width: 25%;    
+    min-height: 10%;
+    margin-right: 2%;
+    box-shadow: 2px 2px rgb(10, 10, 10);
+}
+
+.link-button:hover, .buy-button:hover{
+    font-weight: bold;
+}
+
+.car-link:hover{    
+    font-weight: bold;
+}
+
+#carImage{
+    max-width: 100%;
 }
 
 .footer-container {
