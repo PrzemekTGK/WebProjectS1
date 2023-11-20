@@ -275,9 +275,8 @@ body {
 
 .p-a-footer {
     text-decoration: none;
-    color: white;
+    color: rgb(189, 189, 189);
     text-align: center;
-
 }
 
 .p-bump:hover {
@@ -294,6 +293,12 @@ body {
 
 .p-padding {
     padding-top: 90px
+}
+
+@media (max-width: 765px) {    
+    .p-about-text {
+        padding-top: 0px !important;
+    }
 }
 
 .p-about-text {
