@@ -173,13 +173,59 @@ body {
     font-weight: bold;
 }
 
+#usedCarsLink{
+    position: relative;
+    width: 573px;
+    height: 337px;
+    margin-bottom: 2%;
+    background-image: url('/Images/Backgrounds/CarsLinkBG.png');
+    background-size: contain;
+    box-shadow: 2px 2px rgb(10, 10, 10);
+}
+
+#financeLink{
+    position: relative;
+    width: 573px;
+    height: 337px;
+    margin-bottom: 2%;
+    background-image: url('/Images/Backgrounds/FinanceLinkBG.jpg');
+    background-size: contain;
+    box-shadow: 2px 2px rgb(10, 10, 10);
+}
+
+#usedCarsLinkInnerDiv, #financeLinkInnerDiv{
+    position: relative;
+    top: 15%;
+    left: 5%;
+    width: 70%; 
+    height: 90%;  
+    padding: 2%;
+    opacity: 85%;
+    font-size: large;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 2px 2px rgb(10, 10, 10);
+}
+
+.link-button{
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    background-color: rgb(41, 41, 41);
+    color: rgb(189, 189, 189);
+    opacity: 85%;
+    border-radius: 10px;
+    min-width: 25%;    
+    min-height: 15%;
+    margin-right: 2%;
+}
+
 .footer-container {
-    /*display: flex;*/
     justify-content: center;
     align-items: center;
     background-color: rgba(26, 26, 26, 1);
     color: rgb(189, 189, 189);
-    min-height: 200px;
 }
 
 .footer-col {
@@ -191,6 +237,75 @@ body {
     padding: 2%;
 }
 
+/* ##########################################################################################################*/
+
+
+.p-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(189, 189, 189)
+}
+
+.p-dance-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.p-hr {
+    width: 90%;
+}
+
+.p-a-footer {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    text-align: center;
+}
+
+.p-bump:hover {
+    font-size: 300%;
+}
+
+.p-p-indent {
+    text-indent: 50px;
+}
+
+.p-picture-about {
+    width: 300px
+}
+
+.p-padding {
+    padding-top: 90px
+}
+
+.p-about-text {
+    color: rgb(189, 189, 189);
+    padding-top: 90px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+
+.p-text-orange {
+    color: orange;
+}
+
+.p-picture-text {
+    color: rgb(189, 189, 189);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.first-word-uppercase-p::first-letter {
+    -webkit-initial-letter: 4;
+    initial-letter: 2;
+    font-weight: bold;
+    margin-right: .75em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.p-center {
+    text-align: center;
+}
+
+
+
 @media (max-width: 950px) {
     .card {
         max-width: 235px;
@@ -200,7 +315,15 @@ body {
 @media (max-width: 765px) {
     .card {
         max-width: 100%;
+    }    
+    .p-about-text {
+        padding-top: 0px !important;
     }
+    #usedCarsLink, #financeLink{
+        width: 382px;
+        height: 225px;
+    }
+    
 }
 
 @media (min-width: 998px) {
@@ -256,77 +379,4 @@ body {
     to {
         opacity: 100%;
     }
-}
-
-/* ##########################################################################################################*/
-
-
-.p-ubuntu {
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(189, 189, 189)
-}
-
-.p-dance-font {
-    font-family: 'Dancing Script', cursive;
-}
-
-.p-hr {
-    width: 90%;
-}
-
-.p-a-footer {
-    text-decoration: none;
-    color: rgb(189, 189, 189);
-    text-align: center;
-}
-
-.p-bump:hover {
-    font-size: 300%;
-}
-
-.p-p-indent {
-    text-indent: 50px;
-}
-
-.p-picture-about {
-    width: 300px
-}
-
-.p-padding {
-    padding-top: 90px
-}
-
-@media (max-width: 765px) {    
-    .p-about-text {
-        padding-top: 0px !important;
-    }
-}
-
-.p-about-text {
-    color: rgb(189, 189, 189);
-    padding-top: 90px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: justify;
-}
-
-.p-text-orange {
-    color: orange;
-}
-
-.p-picture-text {
-    color: rgb(189, 189, 189);
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-}
-
-.first-word-uppercase-p::first-letter {
-    -webkit-initial-letter: 4;
-    initial-letter: 2;
-    font-weight: bold;
-    margin-right: .75em;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.p-center {
-    text-align: center;
 }

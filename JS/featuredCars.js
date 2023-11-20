@@ -19,7 +19,8 @@ $(document).ready(function() {
                 <img class="card-img-top" src="/Images/Cards/${car.image}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">${car.make} ${car.model}</h5>
-                    <p class="card-text">${car.year} - ${car.price}</p>
+                    <p class="card-text">Year: ${car.year} 
+                    <br>Price: €${car.price}</p>
                     <a href="/Pages/car.html?carIndex=${car.index}" class="btn btn-primary car-link">More Details</a>
                 </div>
             </div>
