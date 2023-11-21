@@ -27,9 +27,13 @@ body {
     font-size: large;
 }
 
-.nav-link:hover {
+.nav-link:hover{
     color: rgb(255, 255, 255);
     font-weight: bold;
+}
+
+.navbar-brand:hover{
+    font-weight: bolder;
 }
 
 .navbar-container {
@@ -44,8 +48,11 @@ body {
     float: right;
 }
 
-.navbar-toggler:hover {
+.navbar-toggler:hover{
     border: 2px solid rgb(255, 255, 255);
+}
+.navbar-toggler:hover #navbarBurgerIcon{
+    color:rgb(255, 255, 255);;
 }
 
 .navbar-toggler:focus {
@@ -198,7 +205,7 @@ body {
 
 #aboutUsLink{
     position: relative;
-    height: 500px;
+    height: 500px;    
     background-image: url('/Images/Backgrounds/AboutUsLinkBG.jpg');
     background-position: bottom;
     background-position-x: left;
@@ -226,7 +233,7 @@ body {
     position: relative;
     top: 15%;
     left: 5%;
-    max-width: 70%; 
+    max-width: 60%; 
     max-height: 90%;  
     padding: 2%;
     opacity: 85%;
@@ -395,11 +402,19 @@ body {
     #usedCarsLink, #financeLink{
         width: 382px;
         height: 225px;
+    }    
+    #aboutUsLink{
+        height: 450px;
     }
-    
 }
 
-@media (min-width: 998px) {
+@media (min-width: 765px){
+    #aboutUsLinkInnerDiv{
+        width: 50%;
+    }
+}
+
+@media (min-width: 991px) {
     #burgerMenu {
         display: none;
     }
@@ -409,7 +424,7 @@ body {
     }
 }
 
-@media (max-width: 998px) {
+@media (max-width: 991px) {
     #linksMenu {
         display: none;
     }
@@ -430,6 +445,14 @@ body {
     #logoCol {
         float: left;
         max-width: fit-content;
+    }
+
+    #hiddenMenu{
+        display: contents !important;
+    }
+
+    #featuredCard{
+        max-width: 95%;
     }
 }
 
