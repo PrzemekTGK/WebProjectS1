@@ -147,6 +147,11 @@ body {
     box-shadow: 3px 3px rgb(10, 10, 10);
 }
 
+.btn:hover{
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+}
+
 .car-col {
     padding: 2%;
 }
@@ -191,12 +196,38 @@ body {
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
+#aboutUsLink{
+    position: relative;
+    height: 500px;
+    background-image: url('/Images/Backgrounds/AboutUsLinkBG.jpg');
+    background-position: bottom;
+    background-position-x: left;
+    box-shadow: 2px 0px rgb(10, 10, 10);
+}
+
+
 #usedCarsLinkInnerDiv, #financeLinkInnerDiv{
     position: relative;
     top: 15%;
     left: 5%;
     width: 70%; 
     height: 90%;  
+    padding: 2%;
+    opacity: 85%;
+    font-size: large;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 2px 2px rgb(10, 10, 10);
+}
+
+
+#aboutUsLinkInnerDiv{
+    position: relative;
+    top: 15%;
+    left: 5%;
+    max-width: 70%; 
+    max-height: 90%;  
     padding: 2%;
     opacity: 85%;
     font-size: large;
@@ -216,12 +247,27 @@ body {
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
     min-width: 25%;    
-    min-height: 15%;
+    min-height: 12.5%;
     margin-right: 2%;
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-.buy-button{
+.about-us-link-button{
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    background-color: rgb(41, 41, 41);
+    color: rgb(189, 189, 189);
+    opacity: 85%;
+    border-radius: 10px;
+    border-color: rgb(189, 189, 189);
+    min-width: 10%;        
+    min-height: 7.5%;
+    margin-right: 2%;
+    box-shadow: 2px 2px rgb(10, 10, 10);
+}
+
+.enquire-button{
     background-color: rgb(41, 41, 41);
     color: rgb(189, 189, 189);
     border-radius: 10px;
@@ -232,8 +278,10 @@ body {
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-.link-button:hover, .buy-button:hover{
+.link-button:hover, .enquire-button:hover, .about-us-link-button:hover{
     font-weight: bold;
+    border-color: white;
+    border-width: 3px;
 }
 
 .car-link:hover{    
@@ -283,7 +331,9 @@ body {
 }
 
 .p-bump:hover {
-    font-size: 300%;
+    color: white;
+    font-weight: bold;
+    font-size: 250%;
 }
 
 .p-p-indent {
