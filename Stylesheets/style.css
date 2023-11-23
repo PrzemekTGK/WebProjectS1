@@ -482,7 +482,30 @@ input:focus {
 
 }
 
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&Finance         */
 
+.right-pane-finance {
+    flex: 1;
+    background-color: #e8e1c7;
+    color: black;
+
+}
+
+.left-pane-finance {
+    flex: 1;
+
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    background-color: black;
+}
+
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
