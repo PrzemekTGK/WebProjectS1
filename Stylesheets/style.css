@@ -1,7 +1,4 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap');
 
 body {
@@ -117,21 +114,33 @@ body {
     max-width: 75%;
 }
 
-#searchInput:focus {
-    box-shadow: 1px 1px rgba(255, 255, 255) inset, 0 0 12px rgb(255, 255, 255, 0.8);
-    border-radius: 1px;
+#searchInput:focus + #searchBtn{
+    box-shadow: 0px 0px 10px 1px rgba(200, 200, 200);
+    border-color: rgb(255, 255, 255);
+}
+
+#searchInput:focus{
+    box-shadow: 0px 0px 10px 1px rgba(200, 200, 200);
     border-color: rgb(255, 255, 255);
 }
 
 .carousel-container {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     vertical-align: middle;
     padding: 0;
     margin-top: 64px;
+    box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
 }
 
 .carousel-fade-in {
     animation-name: fadeIn;
     animation-duration: 3s;
+}
+
+.carousel-image{
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 .cars {
@@ -144,14 +153,19 @@ body {
     background-color: rgba(26, 26, 26, 1);
     color: rgb(189, 189, 189);
     margin: auto;
-    box-shadow: 2px 2px rgb(10, 10, 10);
-    border-radius: 0px;
+    box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
+    border-radius: 20px;
+}
+
+.card-img-top{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .card .btn {
     background-color: rgb(41, 41, 41);
     border-color: rgb(189, 189, 189);
-    box-shadow: 3px 3px rgb(10, 10, 10);
+    box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
 .btn:hover{
@@ -183,14 +197,15 @@ body {
     font-weight: bold;
 }
 
-#usedCarsLink{
+#ourCarsLink{
     position: relative;
     width: 573px;
     height: 337px;
     margin-bottom: 2%;
     background-image: url('/Images/Backgrounds/CarsLinkBG.png');
     background-size: contain;
-    box-shadow: 2px 2px rgb(10, 10, 10);
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
 }
 
 #financeLink{
@@ -200,7 +215,8 @@ body {
     margin-bottom: 2%;
     background-image: url('/Images/Backgrounds/FinanceLinkBG.jpg');
     background-size: contain;
-    box-shadow: 2px 2px rgb(10, 10, 10);
+    box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
+    border-radius: 20px;
 }
 
 #aboutUsLink{
@@ -209,11 +225,13 @@ body {
     background-image: url('/Images/Backgrounds/AboutUsLinkBG.jpg');
     background-position: bottom;
     background-position-x: left;
-    box-shadow: 2px 0px rgb(10, 10, 10);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 10px 0px 15px 5px rgb(10, 10, 10);
 }
 
 
-#usedCarsLinkInnerDiv, #financeLinkInnerDiv{
+#ourCarsLinkInnerDiv, #financeLinkInnerDiv{
     position: relative;
     top: 15%;
     left: 5%;
@@ -223,9 +241,8 @@ body {
     opacity: 85%;
     font-size: large;
     background-color: rgb(41, 41, 41);
-    border-radius: 10px;
-    border-bottom-right-radius: 40px;
-    box-shadow: 2px 2px rgb(10, 10, 10);
+    border-radius: 20px;
+    border-bottom-right-radius: 50px;
 }
 
 
@@ -239,7 +256,7 @@ body {
     opacity: 85%;
     font-size: large;
     background-color: rgb(41, 41, 41);
-    border-radius: 10px;
+    border-radius: 20px;
     border-bottom-right-radius: 50px;
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
@@ -256,22 +273,21 @@ body {
     min-width: 25%;    
     min-height: 12.5%;
     margin-right: 2%;
-    box-shadow: 2px 2px rgb(10, 10, 10);
+    box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
 .about-us-link-button{
     position: absolute;
     bottom: 15%;
-    right: 10%;
+    right: 5%;
     background-color: rgb(41, 41, 41);
     color: rgb(189, 189, 189);
     opacity: 85%;
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
     min-width: 10%;        
-    min-height: 7.5%;
-    margin-right: 2%;
-    box-shadow: 2px 2px rgb(10, 10, 10);
+    min-height: 10%;
+    box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
 .enquire-button{
@@ -279,20 +295,39 @@ body {
     color: rgb(189, 189, 189);
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
-    min-width: 25%;    
+    min-width: 25%;
     min-height: 10%;
     margin-right: 2%;
+    margin-bottom: 5%;
+    box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
+}
+
+
+.car-link{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(41, 41, 41);
+    color: rgb(189, 189, 189);
+    border-radius: 10px;
+    border-color: rgb(189, 189, 189);
+    min-width: 25%;
+    min-height: 10%;
+    margin-right: 2%;
+    margin-bottom: 5%;
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-.link-button:hover, .enquire-button:hover, .about-us-link-button:hover{
+.link-button:hover, .enquire-button:hover, .about-us-link-button:hover, .car-link:hover{
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    border-color: white;
+    border-color: rgb(255, 255, 255);
     border-width: 3px;
+    opacity: 100%;
+    background-color: rgb(104, 104, 104);
 }
 
-.car-link:hover{    
-    font-weight: bold;
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    color: rgb(255, 255, 255);
 }
 
 #carImage{
@@ -385,20 +420,21 @@ body {
 
 
 
-@media (max-width: 950px) {
+@media (max-width: 991px) {
     .card {
         max-width: 235px;
+        min-height: 367px;
     }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 767px) {
     .card {
         max-width: 100%;
     }    
     .p-about-text {
         padding-top: 0px !important;
     }
-    #usedCarsLink, #financeLink{
+    #ourCarsLink, #financeLink{
         width: 382px;
         height: 225px;
     }    
@@ -420,6 +456,9 @@ body {
 
     #logoShort {
         display: none;
+    }
+    .card {
+        min-height: 375px;
     }
 }
 

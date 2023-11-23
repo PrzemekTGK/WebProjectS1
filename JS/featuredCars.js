@@ -21,7 +21,7 @@ $(document).ready(function() {
                     <h5 class="card-title">${car.make} ${car.model}</h5>
                     <p class="card-text">Year: ${car.year} 
                     <br>Price: €${car.price}</p>
-                    <a href="/Pages/car.html?carIndex=${car.index}" class="btn btn-primary car-link">More Details</a>
+                    <a href="/Pages/car.html?carIndex=${car.index}" class="btn car-link">More Details</a>
                 </div>
             </div>
          </div>`;
