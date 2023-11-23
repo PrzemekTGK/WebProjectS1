@@ -27,113 +27,134 @@
 
 
     <div class="container-fluid">
-        <div class="row">
 
-            <!--    PICTURE:    -->
-            <div class="col-lg-12 col-md-12 col-sm-12 p-padding">
+        <div class="row d-flex justify-content-center" style="margin-top: 80px;">
 
-                <!--    <img src="../Images/Contact/contact5.jpeg" alt="Cars" style="width: 100%">-->
+            <div class="col-lg-8 col-md-6 col-sm-12 ">
 
+                <main class=" flex-container">
+
+                    <section class="left-pane">
+                        <h1 style="border-style: dashed; border: 10px; border-color: white;" class="p-center">Speak With
+                            Us</h1>
+
+                        <div>
+                            <p>
+                                <span style="color: orange;;" class="fa fa-phone fa-2x mt-4"> </span><span
+                                    class="fw-bold">
+                                    Phone
+                                    us:</span>
+                            </p>
+                            <table>
+                                <tr>
+                                    <td style="padding-right: 50px;"> Sales:</td>
+                                    <td style="color: orange;"> (01) 12 34 567</td>
+                                </tr>
+                                <tr>
+                                    <td> Service:</td>
+                                    <td style="color: orange"> (01) 12 34 568</td>
+                                </tr>
+                            </table>
+                            </p>
+                        </div>
+                        <p>
+                            <span style="color: orange;" class=" fas fa-envelope fa-2x mt-3"></span>
+                            <span class="fw-bold"> General Support:</span>
+                        </p>
+                        <a a href="mailto:info@autotrade.ie" tooltip="Email us"
+                            style="color: orange;">info@autotrade.ie</a>
+                        </p>
+
+                        <p>
+                            <span style="color: orange;;" class="fa fa-map-marker-alt fa-2x mt-3"></span>
+                            <span class="fw-bold"> We are located at:</span>
+
+                        <table style="color: orange;;">
+                            <tr>
+                                <td>Liffey Valley Shopping Centre,</td>
+                            </tr>
+                            <tr>
+                                <td>Fonthill Rd,</td>
+                            </tr>
+                            <tr>
+                                <td>Clondalkin,</td>
+
+                            </tr>
+                            <tr>
+                                <td>Dublin 22</td>
+
+                            </tr>
+                        </table>
+                    </section>
+
+                    <!--          RIGHT PANE          -->
+
+                    <section class="right-pane" style=" padding: 30px; ">
+
+                        <h1 class="p-center">Contact Us</h1>
+
+
+                        <p><label for="selectTopic">Select a department </label> *</p>
+                        <p><select class="form-select form-control" id="selectTopic" style="width: 100%; padding: 5px;">
+                                <option>-- Select a department --</option>
+                                <option>Sale</option>
+                                <option>Service</option>
+                                <option>Finance</option>
+                                <option>Payments</option>
+                                <option>Parts</option>
+                                <option>General</option>
+                            </select></p>
+
+                        <p><label for="txt_name">Name</label> *</p>
+                        <p><input class="form-control" style="width: 100%; padding: 5px;" id="txt_name" type="text"
+                                Required="required" placeholder="ex. John Rock">
+                        </p>
+
+                        <p><label for="txt_email">E-mail</label> *</p>
+                        <p> <input class="form-control" style="width: 100%; padding: 5px;" id="txt_email" type="email"
+                                Required="required" placeholder="ex. John.Rock@mail.com">
+                        </p>
+
+                        <p>
+                            <label for="txt_phone">Phone *</label>
+                        </p>
+                        <p>
+                            <input type="tel" class="form-control" id="txt_phone" placeholder="ex. (087)9876543">
+                        </p>
+
+
+                        <p><label for=" txt_subject">Subject</label> *
+                        </p>
+                        <p><input class="form-control" style="width: 100%; padding: 5px;" id="txt_subject" type="text"
+                                Required="required" placeholder="ex. Trade-in">
+                        </p>
+
+                        <p><label for="txt_message"> Message</label> *</p>
+                        <textarea class="form-control" style="width: 100%; padding: 5px;" id="txt_message" rows="8"
+                            cols="20" Required="required" placeholder="Enter your message"></textarea>
+
+                        <div style="width: 100%; padding: 5px; text-align: center;" class="checkbox mt-2">
+                            <p>
+                                <input style="margin-right: 10px;" id="checkB" type="checkbox" name="remember">
+                                <label for="checkB"> I agree to
+                                    store
+                                    and
+                                    process my
+                                    information.
+                                </label>
+                            </p>
+                        </div>
+
+                        <input style="width: 100%; padding: 5px;" type="submit" id="btn " class="p-btn" value="REVIEW">
+                    </section>
+                </main>
             </div>
 
-            <div class="row d-flex justify-content-center mt-4">
 
-                <div class="col-lg-8 col-md-6 col-sm-12 ">
-
-                    <main class=" flex-container">
-
-                        <section class="left-pane">
-                            <h1>Left Pane</h1>
-                            <p>
-                                <i class="fa fa-map-marker-alt"></i> We are located at: <br />
-                                <span> Ash Lane 110
-                                    <br />
-                                    London, UK
-                                </span>
-                            </p>
-
-                            <p>
-                                <i class="fa fa-phone"></i> Phone us: <br />
-                                <span> Sales: (01) 1234567</span><br>
-                                <span> Service: (01) 1234568</span>
-                            </p>
-
-                            <p>
-                                <i class=" fas fa-envelope"></i> General Support <br />
-                                <span>contact@autotrade.ie</span>
-                            </p>
-                        </section>
-
-                        <!--          RIGHT PANE          -->
-
-                        <section class="right-pane" style=" padding: 30px; ">
-
-                            <h1 class="p-center">Contact Us</h1>
-
-
-                            <p><label for="selectTopic">Select a topic </label> *</p>
-                            <p><select class="form-select form-control" id="selectTopic"
-                                    style="width: 100%; padding: 5px;">
-                                    <option>-- SELECT A TOPIC --</option>
-                                    <option>Sale</option>
-                                    <option>Service</option>
-                                    <option>Finance</option>
-                                    <option>Payments</option>
-                                    <option>Parts</option>
-                                    <option>General</option>
-                                </select></p>
-
-                            <p><label for="txt_name">Name</label> *</p>
-                            <p><input class="form-control" style="width: 100%; padding: 5px;" id="txt_name" type="text"
-                                    Required="required" placeholder="Enter your first and second name ">
-                            </p>
-
-                            <p><label for="txt_email">E-mail</label> *</p>
-                            <p> <input class="form-control" style="width: 100%; padding: 5px;" id="txt_email"
-                                    type="email" Required="required" placeholder="Enter your e-mail">
-                            </p>
-
-                            <p>
-                                <label for="txt_phone">Phone *</label>
-                            </p>
-                            <p>
-                                <input type="tel" class="form-control" id="txt_phone" placeholder="Enter your phone#">
-                            </p>
-
-
-                            <p><label for=" txt_subject">Subject</label> *
-                            </p>
-                            <p><input class="form-control" style="width: 100%; padding: 5px;" id="txt_subject"
-                                    type="text" Required="required" placeholder="Enter a subject">
-                            </p>
-
-                            <p><label for="txt_message"> Message</label> *</p>
-                            <textarea class="form-control" style="width: 100%; padding: 5px;" id="txt_message" rows="8"
-                                cols="20" Required="required" placeholder="Enter your message"></textarea>
-
-                            <div style="width: 100%; padding: 5px; text-align: center;" class="checkbox mt-2">
-                                <p>
-                                    <input style="margin-right: 10px;" id="checkB" type="checkbox" name="remember">
-                                    <label for="checkB"> I agree to
-                                        store
-                                        and
-                                        process my
-                                        information.
-                                    </label>
-                                </p>
-                            </div>
-
-                            <input style="width: 100%; padding: 5px;" type="submit" id="btn " class="p-btn"
-                                value="SUBMIT">
-                        </section>
-                    </main>
-                </div>
-
-
-
-            </div>
 
         </div>
+
+
 
     </div>
 
@@ -142,7 +163,8 @@
         <div class="col-lg-8 col-md-12 col-sm-12 mt-4 mb-5">
             <div style="background-color: rgba(26, 26, 26, 1); border: 1px;">
                 <p class=" text-center" style="padding-top: 10px;">We are located at:</p>
-                <div class="fw-bold text-center mt-2">Liffey Valley Shopping Centre, Fonthill Rd,
+                <div class="fw-bold text-center mt-2 " style="color: orange;">Liffey Valley Shopping Centre,
+                    Fonthill Rd,
                     Clondalkin,
                     Dublin 22
                 </div>
