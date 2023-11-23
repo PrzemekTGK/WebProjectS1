@@ -469,9 +469,14 @@ input:focus {
 }
 
 
-@media (max-width: 950px) {
+@media (max-width: 800px) {
     .left-pane {
         display: none;
+
+    }
+
+    .right-pane {
+        background: linear-gradient(90deg, rgba(141, 136, 136, 1) 0%, rgba(198, 195, 192, 1) 41%, rgba(127, 126, 121, 1) 100%);
     }
 
 
