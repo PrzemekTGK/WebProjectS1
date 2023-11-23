@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,600&display=swap');
+
 body {
     color: rgb(189, 189, 189);
     background-color: rgb(41, 41, 41);
@@ -27,13 +29,13 @@ body {
     font-size: large;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
-.navbar-brand:hover{
-    font-weight: bolder;        
+.navbar-brand:hover {
+    font-weight: bolder;
 }
 
 .navbar-container {
@@ -48,11 +50,13 @@ body {
     float: right;
 }
 
-.navbar-toggler:hover{
+.navbar-toggler:hover {
     border: 2px solid rgb(255, 255, 255);
 }
-.navbar-toggler:hover #navbarBurgerIcon{
-    color:rgb(255, 255, 255);;
+
+.navbar-toggler:hover #navbarBurgerIcon {
+    color: rgb(255, 255, 255);
+    ;
 }
 
 .navbar-toggler:focus {
@@ -154,7 +158,7 @@ body {
     box-shadow: 3px 3px rgb(10, 10, 10);
 }
 
-.btn:hover{
+.btn:hover {
     border-color: rgb(255, 255, 255);
     border-width: 2px;
 }
@@ -183,7 +187,7 @@ body {
     font-weight: bold;
 }
 
-#usedCarsLink{
+#usedCarsLink {
     position: relative;
     width: 573px;
     height: 337px;
@@ -193,7 +197,7 @@ body {
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-#financeLink{
+#financeLink {
     position: relative;
     width: 573px;
     height: 337px;
@@ -203,9 +207,9 @@ body {
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-#aboutUsLink{
+#aboutUsLink {
     position: relative;
-    height: 500px;    
+    height: 500px;
     background-image: url('/Images/Backgrounds/AboutUsLinkBG.jpg');
     background-position: bottom;
     background-position-x: left;
@@ -213,12 +217,13 @@ body {
 }
 
 
-#usedCarsLinkInnerDiv, #financeLinkInnerDiv{
+#usedCarsLinkInnerDiv,
+#financeLinkInnerDiv {
     position: relative;
     top: 15%;
     left: 5%;
-    width: 70%; 
-    height: 90%;  
+    width: 70%;
+    height: 90%;
     padding: 2%;
     opacity: 85%;
     font-size: large;
@@ -229,12 +234,12 @@ body {
 }
 
 
-#aboutUsLinkInnerDiv{
+#aboutUsLinkInnerDiv {
     position: relative;
     top: 15%;
     left: 5%;
-    max-width: 60%; 
-    max-height: 90%;  
+    max-width: 60%;
+    max-height: 90%;
     padding: 2%;
     opacity: 85%;
     font-size: large;
@@ -244,7 +249,7 @@ body {
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-.link-button{
+.link-button {
     position: absolute;
     bottom: 15%;
     right: 10%;
@@ -253,13 +258,13 @@ body {
     opacity: 85%;
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
-    min-width: 25%;    
+    min-width: 25%;
     min-height: 12.5%;
     margin-right: 2%;
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-.about-us-link-button{
+.about-us-link-button {
     position: absolute;
     bottom: 15%;
     right: 10%;
@@ -268,34 +273,36 @@ body {
     opacity: 85%;
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
-    min-width: 10%;        
+    min-width: 10%;
     min-height: 7.5%;
     margin-right: 2%;
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-.enquire-button{
+.enquire-button {
     background-color: rgb(41, 41, 41);
     color: rgb(189, 189, 189);
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
-    min-width: 25%;    
+    min-width: 25%;
     min-height: 10%;
     margin-right: 2%;
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-.link-button:hover, .enquire-button:hover, .about-us-link-button:hover{
+.link-button:hover,
+.enquire-button:hover,
+.about-us-link-button:hover {
     font-weight: bold;
     border-color: white;
     border-width: 3px;
 }
 
-.car-link:hover{    
+.car-link:hover {
     font-weight: bold;
 }
 
-#carImage{
+#carImage {
     max-width: 100%;
 }
 
@@ -337,9 +344,29 @@ body {
     text-align: center;
 }
 
-.p-bump:hover {
-    color: white;
-    font-size: 250%;
+.p-bump-face:hover {
+
+    color: #4267B2
+}
+
+.p-bump-youtube:hover {
+
+    color: #FF0000
+}
+
+.p-bump-instagram:hover {
+
+    color: #FCAF45
+}
+
+.p-bump-twitter:hover {
+
+    color: #1DA1F2
+}
+
+.p-bump-pintrest:hover {
+
+    color: #E60023
 }
 
 .p-p-indent {
@@ -384,6 +411,73 @@ body {
 }
 
 
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%contact page*/
+
+.flex-container {
+
+    display: flex;
+}
+
+.right-pane {
+    flex: 1;
+    background-color: #e8e1c7;
+    color: black;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.left-pane {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../Images/Contact/contact1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
+}
+
+.p-btn {
+    background-color: black;
+    color: white;
+
+}
+
+.p-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+    border-radius: 0;
+}
+
+.form-control:hover {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+    border-radius: 0;
+}
+
+input:focus {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+}
+
+
+@media (max-width: 950px) {
+    .left-pane {
+        display: none;
+    }
+
+
+}
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 @media (max-width: 950px) {
     .card {
@@ -394,21 +488,25 @@ body {
 @media (max-width: 765px) {
     .card {
         max-width: 100%;
-    }    
+    }
+
     .p-about-text {
         padding-top: 0px !important;
     }
-    #usedCarsLink, #financeLink{
+
+    #usedCarsLink,
+    #financeLink {
         width: 382px;
         height: 225px;
-    }    
-    #aboutUsLink{
+    }
+
+    #aboutUsLink {
         height: 450px;
     }
 }
 
-@media (min-width: 765px){
-    #aboutUsLinkInnerDiv{
+@media (min-width: 765px) {
+    #aboutUsLinkInnerDiv {
         width: 50%;
     }
 }
@@ -446,11 +544,11 @@ body {
         max-width: fit-content;
     }
 
-    #hiddenMenu{
+    #hiddenMenu {
         display: contents !important;
     }
 
-    #featuredCard{
+    #featuredCard {
         max-width: 95%;
     }
 }

@@ -1,43 +1,177 @@
 <!DOCTYPE html>
 <html lang=en>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>AutoTrade Contact</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="/Stylesheets/style.css">
-        <script src="/jQuery/jquery-3.7.1.js"></script>
-    </head>
-    <header>
-        <div class="container-fluid navbar-container navSlideIn">
-            <nav id="navbar-holder"></nav>
-        </div>
-        <script>
-            $.get("navbar.html", function(data) {
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AutoTrade Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Stylesheets/style.css">
+    <script src="/jQuery/jquery-3.7.1.js"></script>
+</head>modern talkinganasta
+<header>
+    <div class="container-fluid navbar-container navSlideIn">
+        <nav id="navbar-holder"></nav>
+    </div>
+    <script>
+        $.get("navbar.html", function (data) {
             $("#navbar-holder").html(data);
         });
+    </script>
+</header>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
-    </header>
-    <body>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous">
-        </script>
-    </body>
-    <footer>
-        <div class="container-fluid footer-container">
-            <div class="row" id="footerRow">
-                <nav id="footer-holder"></nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--    PICTURE:    -->
+            <div class="col-lg-12 col-md-12 col-sm-12 p-padding">
+
+                <!--    <img src="../Images/Contact/contact5.jpeg" alt="Cars" style="width: 100%">-->
+
             </div>
+
+            <div class="row d-flex justify-content-center mt-4">
+
+                <div class="col-lg-8 col-md-6 col-sm-12 ">
+
+                    <main class=" flex-container">
+
+                        <section class="left-pane">
+                            <h1>Left Pane</h1>
+                            <p>
+                                <i class="fa fa-map-marker-alt"></i> We are located at: <br />
+                                <span> Ash Lane 110
+                                    <br />
+                                    London, UK
+                                </span>
+                            </p>
+
+                            <p>
+                                <i class="fa fa-phone"></i> Phone us: <br />
+                                <span> Sales: (01) 1234567</span><br>
+                                <span> Service: (01) 1234568</span>
+                            </p>
+
+                            <p>
+                                <i class=" fas fa-envelope"></i> General Support <br />
+                                <span>contact@autotrade.ie</span>
+                            </p>
+                        </section>
+
+                        <!--          RIGHT PANE          -->
+
+                        <section class="right-pane" style=" padding: 30px; ">
+
+                            <h1 class="p-center">Contact Us</h1>
+
+
+                            <p><label for="selectTopic">Select a topic </label> *</p>
+                            <p><select class="form-select form-control" id="selectTopic"
+                                    style="width: 100%; padding: 5px;">
+                                    <option>-- SELECT A TOPIC --</option>
+                                    <option>Sale</option>
+                                    <option>Service</option>
+                                    <option>Finance</option>
+                                    <option>Payments</option>
+                                    <option>Parts</option>
+                                    <option>General</option>
+                                </select></p>
+
+                            <p><label for="txt_name">Name</label> *</p>
+                            <p><input class="form-control" style="width: 100%; padding: 5px;" id="txt_name" type="text"
+                                    Required="required" placeholder="Enter your first and second name ">
+                            </p>
+
+                            <p><label for="txt_email">E-mail</label> *</p>
+                            <p> <input class="form-control" style="width: 100%; padding: 5px;" id="txt_email"
+                                    type="email" Required="required" placeholder="Enter your e-mail">
+                            </p>
+
+                            <p>
+                                <label for="txt_phone">Phone *</label>
+                            </p>
+                            <p>
+                                <input type="tel" class="form-control" id="txt_phone" placeholder="Enter your phone#">
+                            </p>
+
+
+                            <p><label for=" txt_subject">Subject</label> *
+                            </p>
+                            <p><input class="form-control" style="width: 100%; padding: 5px;" id="txt_subject"
+                                    type="text" Required="required" placeholder="Enter a subject">
+                            </p>
+
+                            <p><label for="txt_message"> Message</label> *</p>
+                            <textarea class="form-control" style="width: 100%; padding: 5px;" id="txt_message" rows="8"
+                                cols="20" Required="required" placeholder="Enter your message"></textarea>
+
+                            <div style="width: 100%; padding: 5px; text-align: center;" class="checkbox mt-2">
+                                <p>
+                                    <input style="margin-right: 10px;" id="checkB" type="checkbox" name="remember">
+                                    <label for="checkB"> I agree to
+                                        store
+                                        and
+                                        process my
+                                        information.
+                                    </label>
+                                </p>
+                            </div>
+
+                            <input style="width: 100%; padding: 5px;" type="submit" id="btn " class="p-btn"
+                                value="SUBMIT">
+                        </section>
+                    </main>
+                </div>
+
+
+
+            </div>
+
         </div>
-        <script>
-            $.get("/Pages/footer.html", function(data) {
+
+    </div>
+
+    <div class="row d-flex justify-content-center mt-4">
+
+        <div class="col-lg-8 col-md-12 col-sm-12 mt-4 mb-5">
+            <div style="background-color: rgba(26, 26, 26, 1); border: 1px;">
+                <p class=" text-center" style="padding-top: 10px;">We are located at:</p>
+                <div class="fw-bold text-center mt-2">Liffey Valley Shopping Centre, Fonthill Rd,
+                    Clondalkin,
+                    Dublin 22
+                </div>
+                <div class="card-body mt-3" style="height: 500px;">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.4829820660348!2d-6.394081123037247!3d53.35251067426196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486772d8e952e1f1%3A0x80358292d8c1c815!2sLiffey%20Valley%20Shopping%20Centre!5e0!3m2!1spl!2sie!4v1700742274526!5m2!1spl!2sie"
+                        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+<footer>
+    <div class="container-fluid footer-container">
+        <div class="row" id="footerRow">
+            <nav id="footer-holder"></nav>
+        </div>
+    </div>
+    <script>
+        $.get("/Pages/footer.html", function (data) {
             $("#footer-holder").html(data);
-            });
-        </script>
-    </footer>
+        });
+    </script>
+</footer>
+
 </html>
