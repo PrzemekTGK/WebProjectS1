@@ -451,13 +451,6 @@ body {
     padding-right: 50px;
 }
 
-.p-fontSizeLarger {
-    font-size: larger;
-}
-
-.p-marginR10 {
-    margin-right: 10px;
-}
 
 .p-btn {
     color: white;
@@ -490,6 +483,15 @@ label {
 .p-mapSize {
     width: 100%;
     height: 500px;
+}
+
+.p-width100 {
+    width: 100%;
+}
+
+
+.p-marginT105 {
+    margin-top: 105px;
 }
 
 .form-control:focus {
@@ -529,7 +531,7 @@ input:focus {
     flex: 1;
     background-color: #e8e1c7;
     color: black;
-
+    padding: 30px;
 }
 
 .left-pane-finance {
@@ -541,6 +543,36 @@ input:focus {
     background-color: black;
 }
 
+.p-fieldset {
+    border: solid 1px #080808 !important;
+}
+
+.p-inputFieldset {
+    width: 97%;
+    padding: 5px;
+    margin: auto
+}
+
+.p-fontSizeLarger {
+    font-size: larger;
+}
+
+.p-marginR10 {
+    margin-right: 10px;
+}
+
+.p-marginL10 {
+    margin-left: 10px;
+}
+
+.p-inline-flex {
+    display: inline-flex
+}
+
+.p-remBal {
+    font-size: xxx-large;
+    text-align: center;
+}
 
 @media (max-width: 800px) {
     .flex-container {
