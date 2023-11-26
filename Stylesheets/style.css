@@ -361,7 +361,6 @@ body {
 
 /* ##########################################################################################################*/
 
-
 .p-ubuntu {
     font-family: 'Ubuntu', sans-serif;
     color: rgb(189, 189, 189)
@@ -448,7 +447,7 @@ body {
 }
 
 
-/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%contact page*/
+/*    CONTAACT PAGE   */
 
 .flex-container {
 
@@ -562,7 +561,7 @@ input:focus {
 
 }
 
-/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&Finance         */
+/*    FINANCE   */
 
 .right-pane-finance {
     flex: 1;
@@ -573,7 +572,6 @@ input:focus {
 
 .left-pane-finance {
     flex: 1;
-
     background-size: cover;
     background-position: center;
     padding: 30px;
@@ -617,7 +615,7 @@ input:focus {
     }
 }
 
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-----Js-Contact---------@@*/
+/*    JS-CONTACT    */
 
 .input-control input:focus {
     outline: 0;
