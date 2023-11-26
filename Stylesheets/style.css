@@ -1,6 +1,8 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,600&display=swap');
+
 body {
     color: rgb(189, 189, 189);
     background-color: rgb(41, 41, 41);
@@ -24,13 +26,13 @@ body {
     font-size: large;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
-.navbar-brand:hover{
-    font-weight: bolder;        
+.navbar-brand:hover {
+    font-weight: bolder;
 }
 
 .navbar-container {
@@ -45,11 +47,13 @@ body {
     float: right;
 }
 
-.navbar-toggler:hover{
+.navbar-toggler:hover {
     border: 2px solid rgb(255, 255, 255);
 }
-.navbar-toggler:hover #navbarBurgerIcon{
-    color:rgb(255, 255, 255);;
+
+.navbar-toggler:hover #navbarBurgerIcon {
+    color: rgb(255, 255, 255);
+    ;
 }
 
 .navbar-toggler:focus {
@@ -168,7 +172,7 @@ body {
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
-.btn:hover{
+.btn:hover {
     border-color: rgb(255, 255, 255);
     border-width: 2px;
 }
@@ -208,7 +212,7 @@ body {
     box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
 }
 
-#financeLink{
+#financeLink {
     position: relative;
     width: 573px;
     height: 337px;
@@ -219,9 +223,9 @@ body {
     border-radius: 20px;
 }
 
-#aboutUsLink{
+#aboutUsLink {
     position: relative;
-    height: 500px;    
+    height: 500px;
     background-image: url('/Images/Backgrounds/AboutUsLinkBG.jpg');
     background-position: bottom;
     background-position-x: left;
@@ -235,8 +239,8 @@ body {
     position: relative;
     top: 15%;
     left: 5%;
-    width: 70%; 
-    height: 90%;  
+    width: 70%;
+    height: 90%;
     padding: 2%;
     opacity: 85%;
     font-size: large;
@@ -246,12 +250,12 @@ body {
 }
 
 
-#aboutUsLinkInnerDiv{
+#aboutUsLinkInnerDiv {
     position: relative;
     top: 15%;
     left: 5%;
-    max-width: 60%; 
-    max-height: 90%;  
+    max-width: 60%;
+    max-height: 90%;
     padding: 2%;
     opacity: 85%;
     font-size: large;
@@ -261,7 +265,7 @@ body {
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-.link-button{
+.link-button {
     position: absolute;
     bottom: 15%;
     right: 10%;
@@ -270,13 +274,13 @@ body {
     opacity: 85%;
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
-    min-width: 25%;    
+    min-width: 25%;
     min-height: 12.5%;
     margin-right: 2%;
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
-.about-us-link-button{
+.about-us-link-button {
     position: absolute;
     bottom: 15%;
     right: 5%;
@@ -290,7 +294,7 @@ body {
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
-.enquire-button{
+.enquire-button {
     background-color: rgb(41, 41, 41);
     color: rgb(189, 189, 189);
     border-radius: 10px;
@@ -311,12 +315,16 @@ body {
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
     min-width: 25%;
+    min-width: 25%;
     min-height: 10%;
     margin-right: 2%;
     margin-bottom: 5%;
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
+.link-button:hover,
+.enquire-button:hover,
+.about-us-link-button:hover {
 .link-button:hover, .enquire-button:hover, .about-us-link-button:hover, .car-link:hover{
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -330,7 +338,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-#carImage{
+#carImage {
     max-width: 100%;
 }
 
@@ -372,9 +380,29 @@ body {
     text-align: center;
 }
 
-.p-bump:hover {
-    color: white;
-    font-size: 250%;
+.p-bump-face:hover {
+
+    color: #4267B2
+}
+
+.p-bump-youtube:hover {
+
+    color: #FF0000
+}
+
+.p-bump-instagram:hover {
+
+    color: #FCAF45
+}
+
+.p-bump-twitter:hover {
+
+    color: #1DA1F2
+}
+
+.p-bump-pintrest:hover {
+
+    color: #E60023
 }
 
 .p-p-indent {
@@ -419,6 +447,388 @@ body {
 }
 
 
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%contact page*/
+
+.flex-container {
+
+    display: flex;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.right-pane {
+    flex: 1;
+    background-color: #e8e1c7;
+    color: black;
+    padding: 30px;
+}
+
+.left-pane {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../Images/Contact/contact1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
+}
+
+.p-orangeTxt {
+    color: orange;
+}
+
+.p-margin80 {
+    margin-top: 80px;
+}
+
+.p-margin80 {
+    margin-top: 80px;
+}
+
+.p-paddingR50 {
+    padding-right: 50px;
+}
+
+
+.p-btn {
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+}
+
+.p-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.p-paddingT10 {
+    padding-top: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.p-textArea {
+    height: 8em;
+}
+
+.p-mapArea {
+    background-color: rgba(26, 26, 26, 1);
+}
+
+.p-mapSize {
+    width: 100%;
+    height: 500px;
+}
+
+.p-width100 {
+    width: 100%;
+}
+
+
+.p-marginT105 {
+    margin-top: 105px;
+}
+
+.form-control:focus {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+    border-radius: 0;
+}
+
+.form-control:hover {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+    border-radius: 0;
+}
+
+input:focus {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+}
+
+
+@media (max-width: 800px) {
+    .left-pane {
+        display: none;
+
+    }
+
+    .right-pane {
+        background: linear-gradient(90deg, rgba(141, 136, 136, 1) 0%, rgba(198, 195, 192, 1) 41%, rgba(127, 126, 121, 1) 100%);
+    }
+
+
+}
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&Finance         */
+
+.right-pane-finance {
+    flex: 1;
+    background-color: #e8e1c7;
+    color: black;
+    padding: 30px;
+}
+
+.left-pane-finance {
+    flex: 1;
+
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    background-color: black;
+}
+
+.p-fieldset {
+    border: solid 1px #080808 !important;
+}
+
+.p-inputFieldset {
+    width: 97%;
+    padding: 5px;
+    margin: auto
+}
+
+.p-fontSizeLarger {
+    font-size: larger;
+}
+
+.p-marginR10 {
+    margin-right: 10px;
+}
+
+.p-marginL10 {
+    margin-left: 10px;
+}
+
+.p-inline-flex {
+    display: inline-flex
+}
+
+.p-remBal {
+    font-size: xxx-large;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-----Js-Contact---------@@*/
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%contact page*/
+
+.flex-container {
+
+    display: flex;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.right-pane {
+    flex: 1;
+    background-color: #e8e1c7;
+    color: black;
+    padding: 30px;
+}
+
+.left-pane {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../Images/Contact/contact1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
+}
+
+.p-orangeTxt {
+    color: orange;
+}
+
+.p-margin80 {
+    margin-top: 80px;
+}
+
+.p-margin80 {
+    margin-top: 80px;
+}
+
+.p-paddingR50 {
+    padding-right: 50px;
+}
+
+
+.p-btn {
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 5px;
+}
+
+.p-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.p-paddingT10 {
+    padding-top: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.p-textArea {
+    height: 8em;
+}
+
+.p-mapArea {
+    background-color: rgba(26, 26, 26, 1);
+}
+
+.p-mapSize {
+    width: 100%;
+    height: 500px;
+}
+
+.p-width100 {
+    width: 100%;
+}
+
+
+.p-marginT105 {
+    margin-top: 105px;
+}
+
+.form-control:focus {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+    border-radius: 0;
+}
+
+.form-control:hover {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+    border-radius: 0;
+}
+
+input:focus {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+}
+
+
+@media (max-width: 800px) {
+    .left-pane {
+        display: none;
+
+    }
+
+    .right-pane {
+        background: linear-gradient(90deg, rgba(141, 136, 136, 1) 0%, rgba(198, 195, 192, 1) 41%, rgba(127, 126, 121, 1) 100%);
+    }
+
+
+}
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&Finance         */
+
+.right-pane-finance {
+    flex: 1;
+    background-color: #e8e1c7;
+    color: black;
+    padding: 30px;
+}
+
+.left-pane-finance {
+    flex: 1;
+
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    background-color: black;
+}
+
+.p-fieldset {
+    border: solid 1px #080808 !important;
+}
+
+.p-inputFieldset {
+    width: 97%;
+    padding: 5px;
+    margin: auto
+}
+
+.p-fontSizeLarger {
+    font-size: larger;
+}
+
+.p-marginR10 {
+    margin-right: 10px;
+}
+
+.p-marginL10 {
+    margin-left: 10px;
+}
+
+.p-inline-flex {
+    display: inline-flex
+}
+
+.p-remBal {
+    font-size: xxx-large;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-----Js-Contact---------@@*/
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
 
 @media (max-width: 991px) {
     .card {
@@ -430,21 +840,23 @@ body {
 @media (max-width: 767px) {
     .card {
         max-width: 100%;
-    }    
+    }
+
     .p-about-text {
         padding-top: 0px !important;
     }
     #ourCarsLink, #financeLink{
         width: 382px;
         height: 225px;
-    }    
-    #aboutUsLink{
+    }
+
+    #aboutUsLink {
         height: 450px;
     }
 }
 
-@media (min-width: 765px){
-    #aboutUsLinkInnerDiv{
+@media (min-width: 765px) {
+    #aboutUsLinkInnerDiv {
         width: 50%;
     }
 }
@@ -485,11 +897,11 @@ body {
         max-width: fit-content;
     }
 
-    #hiddenMenu{
+    #hiddenMenu {
         display: contents !important;
     }
 
-    #featuredCard{
+    #featuredCard {
         max-width: 95%;
     }
 }
