@@ -4,11 +4,11 @@ $(document).ready(function () {
     if (savedState && savedState.lastLoadedPage) {
         loadPage(savedState.lastLoadedPage, savedState.lastCarIndex);
     } else {
-        loadPage('/Pages/home.html');
+        loadPage('../Pages/home.html', null);
     }
 });
 
-function loadPage(url, carIndex, callback) {
+function loadPage(url, carIndex) {
     $.getScript("../Js/carDetails.js", function () {
         $.ajax({
             url: url,
