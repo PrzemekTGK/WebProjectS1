@@ -31,6 +31,11 @@ body {
     font-weight: bold;
 }
 
+.current{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 .navbar-brand:hover {
     font-weight: bolder;
 }
@@ -186,6 +191,16 @@ body {
     border-width: 2px;
 }
 
+.form-btn{
+    color: rgb(189, 189, 189);
+    background-color: rgb(41, 41, 41);
+    border-color: rgb(189, 189, 189);
+    box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
+    border-radius: 10px;
+    min-width: 25%;
+    min-height: 40px !important;
+}
+
 .car-col {
     padding: 2%;
 }
@@ -335,7 +350,7 @@ body {
 
 .link-button:hover,
 .enquire-button:hover,
-.about-us-link-button:hover .car-link:hover {
+.about-us-link-button:hover, .car-link:hover, .form-btn:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
     border-color: rgb(255, 255, 255);
@@ -467,8 +482,8 @@ body {
 
 .right-pane {
     flex: 1;
-    background-color: #e8e1c7;
-    color: black;
+    background-color: rgb(2, 2, 2) !important;
+    color: rgb(189, 189, 189) !important;
     padding: 30px;
 }
 
@@ -541,29 +556,29 @@ label {
 }
 
 .form-control:focus {
-    border-color: black;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
-    border-radius: 0;
+    border-color: rgb(255, 255, 255) !important;
+    box-shadow: 0px 0px 10px 1px rgba(200, 200, 200) !important;
+    border-radius: 5px !important;
 }
 
 .form-control:hover {
-    border-color: black;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
-    border-radius: 0;
+    border-color: rgb(255, 255, 255) !important;
+    box-shadow: 0px 0px 10px 1px rgba(200, 200, 200) !important;
+    border-radius: 5px !important;
 }
 
 input:focus {
-    border-color: black;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(17, 17, 17, 0.6);
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 1px rgba(200, 200, 200);
 }
 
 /*    FINANCE   */
 
 .right-pane-finance {
     flex: 1;
-    background-color: #e8e1c7;
-    color: black;
+    color: rgb(189, 189, 189) !important;
     padding: 30px;
+    background-color: rgba(26, 26, 26, 1) !important;
 }
 
 .left-pane-finance {
@@ -571,11 +586,11 @@ input:focus {
     background-size: cover;
     background-position: center;
     padding: 30px;
-    background-color: black;
+    background-color: rgba(26, 26, 26, 1) !important;
 }
 
 .p-fieldset {
-    border: solid 1px #080808 !important;
+    border-color: rgb(189, 189, 189) !important;
 }
 
 .p-inputFieldset {
@@ -777,7 +792,7 @@ input:focus {
 }
 
 .p-fieldset {
-    border: solid 1px #080808 !important;
+    border: solid 1px #f8f7f7 !important;
 }
 
 .p-inputFieldset {
