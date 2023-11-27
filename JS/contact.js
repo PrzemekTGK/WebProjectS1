@@ -2,6 +2,7 @@ const form = document.getElementById('form');
 const txt_Department = document.getElementById('txt_Department');
 const txt_name = document.getElementById('txt_name');
 const txt_email = document.getElementById('txt_email');
+const txt_prefix = document.getElementById('txt_prefix');
 const txt_phone = document.getElementById('txt_phone');
 const txt_subject = document.getElementById('txt_subject');
 const txt_message = document.getElementById('txt_message')
@@ -44,6 +45,8 @@ const validateInputs = () => {
         return re.test(String(email).toLowerCase());
     }
 
+    const prefixValue = txt_prefix.value;
+    const phoneValue = txt_phone.value.trim();
     const subjectValue = txt_subject.value.trim();
     const messageValue = txt_message.value.trim();
     const tickValue = txt_tick.checked;
@@ -73,9 +76,26 @@ const validateInputs = () => {
         setSuccess(txt_email);
     }
 
+    // Validate Prefix
+    // if (prefixValue == 0) {
+    //     console.log(prefixValue);
+    //     setError(txt_prefix, 'Choose a prefix');
+    // } else {
+    //     setSuccess(txt_prefix);
+    // }
+
+    // Validate Phone number  (has to be 7 numbers long)
+    if (phoneValue.length != 7 || prefixValue == 0) {
+        console.log("prefix " + prefixValue);
+
+        setError(document.getElementById('phone'), 'Prefix and 7 digit number has to be entered');
+    } else {
+        setSuccess(document.getElementById('phone'));
+    }
+
     // Validate Subject - min. 5 letters (no space in front and back)
     if (subjectValue.length < 5) {
-        console.log("Subject " + subjectValue.length);
+        console.log("Subject " + subjectValue.length + " " + subjectValue);
 
         setError(txt_subject, 'Enter at least 5 letters');
     } else {
