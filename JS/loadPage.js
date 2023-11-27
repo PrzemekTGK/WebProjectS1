@@ -3,8 +3,7 @@ $(document).ready(function () {
 });
 
 function loadPage(url, carIndex, callback) {
-
-    // Include carDetails.js script
+    
     $.getScript("../Js/carDetails.js", function () {
 
         $.ajax({

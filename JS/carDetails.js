@@ -1,17 +1,9 @@
 function updateCarDetails(carIndex) {
-    console.log('Car Index received:', carIndex);
-
     $.ajax({
         url: '/Json/cars.json',
         dataType: 'json',
         success: function (data) {
             const selectedCar = data[carIndex];
-
-            if (!selectedCar) {
-                console.error('Selected car not found.');
-                return;
-            }
-
             const template = $('#carDetailsTemplate').html();
 
             const filledTemplate = template
