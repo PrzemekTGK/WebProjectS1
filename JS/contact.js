@@ -33,8 +33,6 @@ const setSuccess = element => {
     inputControl.classList.remove('error');
 };
 
-
-
 const validateInputs = () => {
 
     const departmentValue = txt_Department.value;
@@ -53,15 +51,17 @@ const validateInputs = () => {
 
     //Validate Department - check if 0 - no option chosen
     if (departmentValue == 0) {
+
         console.log(departmentValue);
         setError(txt_Department, 'Choose a department');
+
     } else {
+
         setSuccess(txt_Department);
     }
 
     // Validate Name - has to have at least 4 signs and space between words
     if (nameValue.length < 5 || (nameValue.indexOf(" ") < 0)) {
-        console.log(nameValue.length);
 
         setError(txt_name, 'Name and surname are required with a space between');
     } else {
@@ -70,23 +70,15 @@ const validateInputs = () => {
 
     // Validate Email - Reg Exp.
     if (!isValidEmail(emailValue)) {
-        console.log("email " + emailValue);
+
         setError(txt_email, 'Enter a valid E-mail');
     } else {
         setSuccess(txt_email);
     }
 
-    // Validate Prefix
-    // if (prefixValue == 0) {
-    //     console.log(prefixValue);
-    //     setError(txt_prefix, 'Choose a prefix');
-    // } else {
-    //     setSuccess(txt_prefix);
-    // }
 
     // Validate Phone number  (has to be 7 numbers long)
     if (phoneValue.length != 7 || prefixValue == 0) {
-        console.log("prefix " + prefixValue);
 
         setError(document.getElementById('phone'), 'Prefix and 7 digit number has to be entered');
     } else {
@@ -95,7 +87,6 @@ const validateInputs = () => {
 
     // Validate Subject - min. 5 letters (no space in front and back)
     if (subjectValue.length < 5) {
-        console.log("Subject " + subjectValue.length + " " + subjectValue);
 
         setError(txt_subject, 'Enter at least 5 letters');
     } else {
@@ -104,18 +95,15 @@ const validateInputs = () => {
 
     // Validate Message - min. 10 letters (no space in front and back)
     if (messageValue.length < 10) {
-        console.log("mess " + messageValue.length);
 
         setError(txt_message, 'Enter at least 10 letters');
     } else {
         setSuccess(txt_message);
     }
-    console.log("Space value" + nameValue.indexOf(" "));
 
     // Validate Checkbox
     console.log("tick " + tickValue);
     if (!tickValue) {
-        console.log("tick " + tickValue);
 
         setError(txt_tick, 'Tick the box');
     } else {

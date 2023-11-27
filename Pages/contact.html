@@ -112,18 +112,14 @@
                                     <option value="089">089</option>
                                 </select>
 
-                                <input type="tel" class="form-control" id="txt_phone" name="txt_phone"
-                                    placeholder="ex. (087)9876543" Required="required">
-
+                                <input type="tel" pattern="[0-9]{7}" class="form-control" id="txt_phone"
+                                    name="txt_phone" placeholder="ex. 1234567" required">
                             </div>
                             <div class="error" id="phone"></div>
                         </div>
 
-
-
-
                         <!--    Subject input     -->
-                        <div class="input-control mt-4">
+                        <div class="input-control mt-3">
                             <p><label for="txt_subject">Subject</label> *</p>
                             <input class="form-control" id="txt_subject" name="txt_subject" type="text"
                                 Required="required" placeholder="ex. Trade-in">
