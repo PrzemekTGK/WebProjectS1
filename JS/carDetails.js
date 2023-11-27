@@ -1,8 +1,10 @@
 function updateCarDetails(carIndex) {
+
     $.ajax({
-        url: '/Json/cars.json',
+        url: '../Json/cars.json',
         dataType: 'json',
         success: function (data) {
+
             const selectedCar = data[carIndex];
             const template = $('#carDetailsTemplate').html();
 
@@ -14,7 +16,8 @@ function updateCarDetails(carIndex) {
                 .replace(/{DESCRIPTION}/g, selectedCar.description)
                 .replace(/{FUEL_TYPE}/g, selectedCar.fuel_type)
                 .replace(/{TRANSMISSION}/g, selectedCar.transmission)
-                .replace(/{PRICE}/g, selectedCar.price);
+                .replace(/{PRICE}/g, selectedCar.price)
+                .replace(/{INDEX}/g, selectedCar.index);
 
             $('#carDetailsContainer').html(filledTemplate);
 

@@ -1,7 +1,8 @@
 $(document).ready(function () {
-    $('#financeButton').on('click', function (e) {
+    $(document).on('click', '#financeButton', function (e) {
         e.preventDefault();
-        var carIndex = $(this).data('car-index');
+
+        var carIndex = $('#carIndex').text().trim().replace('Index: ', '');
         loadPage('/Pages/finance.html', carIndex);
     });
 });
