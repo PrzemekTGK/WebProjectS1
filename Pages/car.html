@@ -8,7 +8,7 @@
                 <img id="carImage" alt="{MAKE} {MODEL}">
             </div>
             <div class="col-lg-6 col-md-12">
-                <h1>{MAKE} {MODEL}</h1>
+                <h3>{MAKE} {MODEL}</h3>
                 <p>
                     Year: {YEAR}
                     <br>Engine size: {ENGINE_SIZE}
@@ -19,11 +19,11 @@
                 <hr>
                 <p>Description: <br>{DESCRIPTION}</p>
                 <hr>
-                <a href="#" onclick="loadPage('../Pages/contact.html'); return false">
+                <a href="#" onclick="loadPage('../Pages/contact.html'); return false" data-car-index="${car.index}">
                     <button class="car-page-button" type="button">Enquire</button>
                 </a>
-                <a href="#" onclick="loadPage('../Pages/finance.html'); return false">
-                    <button class="car-page-button" type="button">Finance</button>
+                <a href="#" data-car-index="${car.index}">
+                    <button class="car-page-button" type="button" id="financeButton">Finance</button>
                 </a>
             </div>
         </div>
@@ -32,4 +32,5 @@
         </div>
     </div>
 </div>
-<script src="../Js/carDetails.js"></script>
+<script src="../JS/carDetails.js"></script>
+<script src="../JS/loadFinancePage.js"></script>

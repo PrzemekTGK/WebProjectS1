@@ -9,11 +9,19 @@
                 <!--          LEFT PANE          -->
                 <section class="left-pane-finance">
                     <h1 class="p-center">Your Car</h1>
-
-                    <!--          Background Picture         -->
-                    <div>
-                        <img class="p-width100" src="/Images/Cards/card1.jpeg"
-                            alt="Italian Trulli">
+                    <div class="col" id="carDetailsTemplate">
+                        <img id="carImage" alt="{MAKE} {MODEL}">
+                        <h1>{MAKE} {MODEL}</h1>
+                        <p>
+                            Year: {YEAR}
+                            <br>Engine size: {ENGINE_SIZE}
+                            <br>Fuel Type: {FUEL_TYPE}
+                            <br>Transmission: {TRANSMISSION}
+                            <br>Price: €{PRICE}
+                        </p>
+                        <hr>
+                        <p>Description: <br>{DESCRIPTION}</p>
+                        <hr>
                     </div>
                 </section>
 
@@ -137,4 +145,5 @@
 </div>
 
 <!--    JAVA SCRIPT     -->
-<script type="text/javascript" src="/JS/finance.js"></script>
+<script type="text/javascript" src="../JS/carDetails.js"></script>
+<script type="text/javascript" src="../JS/finance.js"></script>
