@@ -372,6 +372,16 @@ h1, h3, h5 {
     max-width: 100%;
 }
 
+#txt_prefix, #txt_prefix:hover, #txt_prefix:focus, #txt_prefix:active {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+#txt_phone, #txt_phone:hover, #txt_phone:focus, #txt_phone:active {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
 .footer-container {
     justify-content: center;
     align-items: center;
