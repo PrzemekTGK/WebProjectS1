@@ -1,210 +1,153 @@
-<!DOCTYPE html>
-<html lang=en>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AutoTrade Contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Stylesheets/style.css">
-    <script src="/jQuery/jquery-3.7.1.js"></script>
-</head>
-<header>
-    <div class="container-fluid navbar-container navSlideIn">
-        <nav id="navbar-holder"></nav>
+<!--  Container for two panes    -->
+<div class="container-fluid">
+
+    <div class="row d-flex justify-content-center p-margin80">
+
+        <!--         LEFT PANE              -->
+        <div class="col-lg-9 col-md-12 col-sm-12">
+
+            <main class="flex-container">
+
+                <section class="left-pane">
+                    <h1 class="p-center">Speak With Us</h1>
+
+                    <!--  Phone us    -->
+                    <p>
+                        <span class="fa fa-phone fa-2x mt-4 p-orangeTxt"> </span>
+                        <span class="fw-bold">Phone us:</span>
+                    </p>
+                    <table>
+                        <tr>
+                            <td class="p-paddingR50">Sales:</td>
+                            <td class="p-orangeTxt">(01) 12 34 567</td>
+                        </tr>
+                        <tr>
+                            <td> Service:</td>
+                            <td class="p-orangeTxt">(01) 12 34 568</td>
+                        </tr>
+                    </table>
+                    </p>
+
+                    <!--  General Support    -->
+                    <p>
+                        <span class="p-orangeTxt fas fa-envelope fa-2x mt-3"></span>
+                        <span class="fw-bold">General Support:</span>
+                    </p>
+                    <a a href="mailto:info@autotrade.ie" tooltip="Email us"
+                        class="p-orangeTxt">info@autotrade.ie</a>
+                    </p>
+
+                    <!--  Location    -->
+                    <p>
+                        <span class="p-orangeTxt fa fa-map-marker-alt fa-2x mt-3"></span>
+                        <span class="fw-bold">We are located at:</span>
+
+                    <table class="p-orangeTxt">
+                        <tr>
+                            <td>Liffey Valley Shopping Centre,</td>
+                        </tr>
+                        <tr>
+                            <td>Fonthill Rd,</td>
+                        </tr>
+                        <tr>
+                            <td>Clondalkin,</td>
+                        </tr>
+                        <tr>
+                            <td>Dublin 22</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!--          RIGHT PANE          -->
+                <section class="right-pane">
+
+                    <!--  Contact us    -->
+                    <h1 class="p-center">Contact Us</h1>
+
+                    <!--    FORM     -->
+                    <form id="form" action="">
+
+                        <!--    Pulldown input     -->
+                        <p><label for="selectDepartment">Select a department </label> *</p>
+                        <p><select class="form-select form-control" id="selectDepartment">
+                                <option>-- Select a department --</option>
+                                <option value="1" id="sale">Sale</option>
+                                <option value="2" id="service">Service</option>
+                                <option value="3" id="finance">Finance</option>
+                                <option value="3" id="payments">Payments</option>
+                                <option value="4" id="parts">Parts</option>
+                                <option value="5" id="general">General</option>
+                            </select>
+                        </p>
+
+                        <!--    Name input     -->
+                        <div class="input-control">
+                            <p><label for="txt_name">Name</label> *</p>
+                            <input class="form-control" id="txt_name" name="txt_name" type="text"
+                                Required="required" placeholder="ex. John Rock">
+                            <div class="error"></div>
+
+                            <!--    Email input     -->
+                        </div>
+                        <p><label for="txt_email">E-mail</label> *</p>
+                        <p><input class="form-control" id="txt_email" type="email" Required="required" placeholder="ex. John.Rock@mail.com"></p>
+
+                        <!--    Phone input     -->
+                        <p><label for="txt_phone">Phone </label> *</p>
+                        <p><input type="tel" class="form-control" id="txt_phone" placeholder="ex. (087)9876543"></p>
+
+                        <!--    Subject input     -->
+                        <p><label for="txt_subject">Subject</label> *</p>
+                        <p><input class="form-control" id="txt_subject" type="text" Required="required" placeholder="ex. Trade-in"></p>
+
+                        <!--    Message input     -->
+                        <p><label for="txt_message"> Message</label> *</p>
+                        <textarea class="form-control p-fontSizeLarger p-textArea" id="txt_message"
+                            Required="required" placeholder="Enter your message">
+                        </textarea>
+
+                        <div class="checkbox mt-2 text-center ">
+
+                            <!--    Checkbox input     -->
+                            <p>
+                                <input class="p-marginR10" id="txt_tick" type="checkbox" name="remember">*
+                                <label for="checkB"> I agree to store and process my
+                                    information.
+                                </label>
+                            </p>
+                        </div>
+
+                        <!--    Review BUTTON     -->
+                        <button type="submit" id="btn" class="p-btn">Review</button>
+                    </form>
+                </section>
+            </main>
+        </div>
     </div>
-    <script>
-        $.get("navbar.html", function (data) {
-            $("#navbar-holder").html(data);
-        });
-    </script>
-</header>
+</div>
 
-<body>
+<!--    MAP AREA     -->
+<div class="row d-flex justify-content-center mt-4">
 
-    <!--  Container for two panes    -->
-    <div class="container-fluid">
+    <div class="col-lg-9 col-md-12 col-sm-12 mt-4 mb-5">
 
-        <div class="row d-flex justify-content-center p-margin80">
+        <!--    Text over the map     -->
+        <div class="p-mapArea ">
+            <p class=" text-center p-paddingT10">We are located at:</p>
+            <div class="fw-bold text-center mt-2 p-orangeTxt">Liffey Valley Shopping Centre,
+                Fonthill Rd,
+                Clondalkin,
+                Dublin 22
+            </div>
 
-            <!--         LEFT PANE              -->
-            <div class="col-lg-9 col-md-12 col-sm-12">
+            <!--    MAP ITSELF     -->
+            <div class="mt-3 p-3">
 
-                <main class="flex-container">
-
-                    <section class="left-pane">
-                        <h1 class="p-center">Speak With Us</h1>
-
-                        <!--  Phone us    -->
-                        <p>
-                            <span class="fa fa-phone fa-2x mt-4 p-orangeTxt"> </span>
-                            <span class="fw-bold">Phone us:</span>
-                        </p>
-                        <table>
-                            <tr>
-                                <td class="p-paddingR50">Sales:</td>
-                                <td class="p-orangeTxt">(01) 12 34 567</td>
-                            </tr>
-                            <tr>
-                                <td> Service:</td>
-                                <td class="p-orangeTxt">(01) 12 34 568</td>
-                            </tr>
-                        </table>
-                        </p>
-
-                        <!--  General Support    -->
-                        <p>
-                            <span class="p-orangeTxt fas fa-envelope fa-2x mt-3"></span>
-                            <span class="fw-bold">General Support:</span>
-                        </p>
-                        <a a href="mailto:info@autotrade.ie" tooltip="Email us"
-                            class="p-orangeTxt">info@autotrade.ie</a>
-                        </p>
-
-                        <!--  Location    -->
-                        <p>
-                            <span class="p-orangeTxt fa fa-map-marker-alt fa-2x mt-3"></span>
-                            <span class="fw-bold">We are located at:</span>
-
-                        <table class="p-orangeTxt">
-                            <tr>
-                                <td>Liffey Valley Shopping Centre,</td>
-                            </tr>
-                            <tr>
-                                <td>Fonthill Rd,</td>
-                            </tr>
-                            <tr>
-                                <td>Clondalkin,</td>
-                            </tr>
-                            <tr>
-                                <td>Dublin 22</td>
-                            </tr>
-                        </table>
-                    </section>
-
-                    <!--          RIGHT PANE          -->
-                    <section class="right-pane">
-
-                        <!--  Contact us    -->
-                        <h1 class="p-center">Contact Us</h1>
-
-                        <!--    FORM     -->
-                        <form id="form" action="">
-
-                            <!--    Pulldown input     -->
-                            <p><label for="selectDepartment">Select a department </label> *</p>
-                            <p><select class="form-select form-control" id="selectDepartment">
-                                    <option>-- Select a department --</option>
-                                    <option value="1" id="sale">Sale</option>
-                                    <option value="2" id="service">Service</option>
-                                    <option value="3" id="finance">Finance</option>
-                                    <option value="3" id="payments">Payments</option>
-                                    <option value="4" id="parts">Parts</option>
-                                    <option value="5" id="general">General</option>
-                                </select>
-                            </p>
-
-                            <!--    Name input     -->
-                            <div class="input-control">
-                                <p><label for="txt_name">Name</label> *</p>
-                                <input class="form-control" id="txt_name" name="txt_name" type="text"
-                                    Required="required" placeholder="ex. John Rock">
-                                <div class="error"></div>
-
-                                <!--    Email input     -->
-                            </div>
-                            <p><label for="txt_email">E-mail</label> *</p>
-                            <p> <input class="form-control" id="txt_email" type="email" Required="required"
-                                    placeholder="ex. John.Rock@mail.com">
-                            </p>
-
-                            <!--    Phone input     -->
-                            <p>
-                                <label for="txt_phone">Phone </label> *
-                            </p>
-                            <p>
-                                <input type="tel" class="form-control" id="txt_phone" placeholder="ex. (087)9876543">
-                            </p>
-
-                            <!--    Subject input     -->
-                            <p><label for="txt_subject">Subject</label> *
-                            </p>
-                            <p><input class="form-control" id="txt_subject" type="text" Required="required"
-                                    placeholder="ex. Trade-in">
-                            </p>
-
-                            <!--    Message input     -->
-                            <p><label for="txt_message"> Message</label> *</p>
-                            <textarea class="form-control p-fontSizeLarger p-textArea" id="txt_message"
-                                Required="required" placeholder="Enter your message"></textarea>
-
-                            <div class="checkbox mt-2 text-center ">
-
-                                <!--    Checkbox input     -->
-                                <p>
-                                    <input class="p-marginR10" id="txt_tick" type="checkbox" name="remember">*
-                                    <label for="checkB"> I agree to store and process my
-                                        information.
-                                    </label>
-                                </p>
-                            </div>
-
-                            <!--    Review BUTTON     -->
-                            <button type="submit" id="btn" class="p-btn">Review</button>
-                        </form>
-                    </section>
-                </main>
+                <iframe class="p-mapSize"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.4829820660348!2d-6.394081123037247!3d53.35251067426196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486772d8e952e1f1%3A0x80358292d8c1c815!2sLiffey%20Valley%20Shopping%20Centre!5e0!3m2!1spl!2sie!4v1700742274526!5m2!1spl!2sie"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </div>
-
-    <!--    MAP AREA     -->
-    <div class="row d-flex justify-content-center mt-4">
-
-        <div class="col-lg-9 col-md-12 col-sm-12 mt-4 mb-5">
-
-            <!--    Text over the map     -->
-            <div class="p-mapArea ">
-                <p class=" text-center p-paddingT10">We are located at:</p>
-                <div class="fw-bold text-center mt-2 p-orangeTxt">Liffey Valley Shopping Centre,
-                    Fonthill Rd,
-                    Clondalkin,
-                    Dublin 22
-                </div>
-
-                <!--    MAP ITSELF     -->
-                <div class="mt-3">
-
-                    <iframe class="p-mapSize"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.4829820660348!2d-6.394081123037247!3d53.35251067426196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486772d8e952e1f1%3A0x80358292d8c1c815!2sLiffey%20Valley%20Shopping%20Centre!5e0!3m2!1spl!2sie!4v1700742274526!5m2!1spl!2sie"
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--    JAVA SCRIPT     -->
-    <script type="text/javascript" src="../JS/contact.js"></script>
-
-    <!--    BOOTSTRAP     -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
-</body>
-
-
-
-<footer>
-    <div class="container-fluid footer-container">
-        <div class="row" id="footerRow">
-            <nav id="footer-holder"></nav>
-        </div>
-    </div>
-    <script>
-        $.get("/Pages/footer.html", function (data) {
-            $("#footer-holder").html(data);
-        });
-    </script>
-</footer>
-
-</html>
+</div>
