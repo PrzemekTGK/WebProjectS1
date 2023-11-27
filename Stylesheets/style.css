@@ -76,7 +76,7 @@ body {
     max-width: 400px;
 }
 
-.fa-search {
+#searchIcon {
     color: rgb(189, 189, 189);
 }
 
@@ -94,17 +94,17 @@ body {
 }
 
 #searchBtn {
-    border-color: rgb(41, 41, 41) !important;
+    border-color: rgb(189, 189, 189) !important;
 }
 
 
 #searchBtn:hover {
     border-color: rgb(255, 255, 255) !important;
+    border-width: 3px !important;
 }
 
 #searchBtn:hover>#searchIcon {
     color: rgb(255, 255, 255);
-    font-weight: bold;
 }
 
 #burgerMenu {
@@ -126,6 +126,15 @@ body {
 #searchInput:focus {
     box-shadow: 0px 0px 10px 1px rgba(200, 200, 200);
     border-color: rgb(255, 255, 255);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#searchInput:hover {
+    box-shadow: 0px 0px 10px 1px rgba(200, 200, 200);
+    border-color: rgb(255, 255, 255);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .carousel-container {
