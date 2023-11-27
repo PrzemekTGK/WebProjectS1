@@ -52,7 +52,6 @@ const validateInputs = () => {
     //Validate Department - check if 0 - no option chosen
     if (departmentValue == 0) {
 
-        console.log(departmentValue);
         setError(txt_Department, 'Choose a department');
 
     } else {
@@ -75,7 +74,6 @@ const validateInputs = () => {
     } else {
         setSuccess(txt_email);
     }
-
 
     // Validate Phone number  (has to be 7 numbers long)
     if (phoneValue.length != 7 || prefixValue == 0) {
@@ -102,7 +100,7 @@ const validateInputs = () => {
     }
 
     // Validate Checkbox
-    console.log("tick " + tickValue);
+
     if (!tickValue) {
 
         setError(txt_tick, 'Tick the box');
