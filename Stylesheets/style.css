@@ -389,29 +389,29 @@ body {
     text-align: center;
 }
 
-.p-bump-face:hover {
-
-    color: #4267B2
+.p-bump-facebook:hover {
+    color: #4267B2;
+    font-size: 250%;
 }
 
 .p-bump-youtube:hover {
-
-    color: #FF0000
+    color: #FF0000;
+    font-size: 250%;
 }
 
 .p-bump-instagram:hover {
-
-    color: #FCAF45
+    color: rgb(114, 45, 224);
+    font-size: 250%;
 }
 
 .p-bump-twitter:hover {
-
-    color: #1DA1F2
+    color: #1DA1F2;
+    font-size: 250%;
 }
 
 .p-bump-pintrest:hover {
-
-    color: #E60023
+    color: #E60023;
+    font-size: 250%;
 }
 
 .p-p-indent {
