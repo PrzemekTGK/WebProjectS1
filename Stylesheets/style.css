@@ -30,7 +30,7 @@ body {
     font-weight: bold;
 }
 
-.current{
+.current {
     color: orange !important;
     font-weight: bold;
 }
@@ -185,7 +185,9 @@ body {
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
-h1, h3, h5{
+h1,
+h3,
+h5 {
     color: orange !important;
 }
 
@@ -194,7 +196,7 @@ h1, h3, h5{
     border-width: 2px;
 }
 
-.form-btn{
+.form-btn {
     color: rgb(189, 189, 189);
     background-color: rgb(41, 41, 41);
     border-color: rgb(189, 189, 189);
@@ -352,7 +354,9 @@ h1, h3, h5{
 
 .link-button:hover,
 .enquire-button:hover,
-.about-us-link-button:hover, .car-link:hover, .form-btn:hover {
+.about-us-link-button:hover,
+.car-link:hover,
+.form-btn:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
     border-color: rgb(255, 255, 255);
@@ -622,6 +626,7 @@ input:focus {
     font-size: xxx-large;
     text-align: center;
 }
+
 /*    JS-CONTACT    */
 
 .input-control input:focus {
@@ -630,16 +635,36 @@ input:focus {
 
 .input-control.success input {
     border-color: #09c372;
+
+}
+
+.input-control.success textarea {
+    border-color: #09c372;
+
 }
 
 .input-control.error input {
     border-color: #ff3860;
+
+}
+
+.input-control.success select {
+    border-color: #09c372;
+
+}
+
+.input-control.error textarea {
+    border-color: red;
+}
+
+.input-control.error select {
+    border-color: red;
 }
 
 .input-control .error {
     color: #ff3860;
-    font-size: 9px;
-    height: 13px;
+    font-size: 15px;
+    height: 20px;
 }
 
 @media (max-width: 765px) {
@@ -652,6 +677,7 @@ input:focus {
     .left-pane {
         display: none;
     }
+
     .right-pane {
         background: linear-gradient(90deg, rgba(141, 136, 136, 1) 0%, rgba(198, 195, 192, 1) 41%, rgba(127, 126, 121, 1) 100%);
     }
@@ -663,6 +689,7 @@ input:focus {
         display: none;
 
     }
+
     .right-pane {
         background: linear-gradient(90deg, rgba(141, 136, 136, 1) 0%, rgba(198, 195, 192, 1) 41%, rgba(127, 126, 121, 1) 100%);
     }
@@ -701,6 +728,7 @@ input:focus {
     #aboutUsLinkInnerDiv {
         width: 50%;
     }
+
     .p-mapSize {
         height: 500px;
     }

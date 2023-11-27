@@ -33,8 +33,7 @@
                         <span class="p-orangeTxt fas fa-envelope fa-2x mt-3"></span>
                         <span class="fw-bold">General Support:</span>
                     </p>
-                    <a a href="mailto:info@autotrade.ie" tooltip="Email us"
-                        class="p-orangeTxt">info@autotrade.ie</a>
+                    <a a href="mailto:info@autotrade.ie" tooltip="Email us" class="p-orangeTxt">info@autotrade.ie</a>
                     </p>
 
                     <!--  Location    -->
@@ -68,9 +67,10 @@
                     <form id="form" action="">
 
                         <!--    Pulldown input     -->
-                        <p><label for="selectDepartment">Select a department </label> *</p>
-                        <p><select class="form-select form-control" id="selectDepartment">
-                                <option>-- Select a department --</option>
+                        <div class="input-control">
+                            <p><label for="txt_Department">Select a department </label> *</p>
+                            <select class="form-select form-control" id="txt_Department" name="txt_Department">
+                                <option value="0">-- Select a department --</option>
                                 <option value="1" id="sale">Sale</option>
                                 <option value="2" id="service">Service</option>
                                 <option value="3" id="finance">Finance</option>
@@ -78,44 +78,76 @@
                                 <option value="4" id="parts">Parts</option>
                                 <option value="5" id="general">General</option>
                             </select>
-                        </p>
+                            <div class="error"></div>
+                        </div>
 
                         <!--    Name input     -->
                         <div class="input-control">
-                            <p><label for="txt_name">Name</label> *</p>
-                            <input class="form-control" id="txt_name" name="txt_name" type="text"
-                                Required="required" placeholder="ex. John Rock">
+                            <p><label for="txt_name" class="mt-3">Name</label> *</p>
+                            <input class="form-control" id="txt_name" name="txt_name" type="text" Required="required"
+                                placeholder="ex. John Rock">
                             <div class="error"></div>
-
-                            <!--    Email input     -->
                         </div>
-                        <p><label for="txt_email">E-mail</label> *</p>
-                        <p><input class="form-control" id="txt_email" type="email" Required="required" placeholder="ex. John.Rock@mail.com"></p>
+
+                        <!--    Email input     -->
+
+
+                        <div class="input-control">
+                            <p><label for="txt_email" class="mt-3">E-mail</label> *</p>
+                            <input class="form-control mt-3" id="txt_email" type="email" Required="required"
+                                placeholder="ex. John.Rock@mail.com">
+                            <div class="error"></div>
+                        </div>
 
                         <!--    Phone input     -->
-                        <p><label for="txt_phone">Phone </label> *</p>
-                        <p><input type="tel" class="form-control" id="txt_phone" placeholder="ex. (087)9876543"></p>
+                        <div class="input-control">
+                            <p> <label for="txt_phone" class="mt-3">Phone </label> *</p>
+                            <div class="input-container d-flex ">
+                                <select class="form-select form-control" id="txt_prefix"
+                                    style="width: 100px; padding-left: 20px; ">
+                                    <option value="0">prefix</option>
+                                    <option value="083">083</option>
+                                    <option value="085">085</option>
+                                    <option value="086">086</option>
+                                    <option value="089">089</option>
+                                </select>
+
+                                <input type="tel" class="form-control" id="txt_phone" placeholder="ex. (087)9876543"
+                                    Required="required">
+                                <div class="error"></div>
+                            </div>
+                        </div>
 
                         <!--    Subject input     -->
-                        <p><label for="txt_subject">Subject</label> *</p>
-                        <p><input class="form-control" id="txt_subject" type="text" Required="required" placeholder="ex. Trade-in"></p>
+                        <div class="input-control">
+                            <p><label for="txt_subject" class="mt-3">Subject</label> *</p>
+                            <input class="form-control" id="txt_subject" name="txt_subject" type="text"
+                                Required="required" placeholder="ex. Trade-in">
+                            <div class="error"></div>
+                        </div>
 
                         <!--    Message input     -->
-                        <p><label for="txt_message"> Message</label> *</p>
-                        <textarea class="form-control p-fontSizeLarger p-textArea" id="txt_message"
-                            Required="required" placeholder="Enter your message">
-                        </textarea>
+                        <div class="input-control">
+                            <p><label for="txt_message"> Message</label> *</p>
+                            <textarea class="form-control p-fontSizeLarger p-textArea" id="txt_message"
+                                Required="required" placeholder="Enter your message">
+                            </textarea>
+                            <div class="error"></div>
+                        </div>
 
                         <div class="checkbox mt-2 text-center ">
 
                             <!--    Checkbox input     -->
-                            <p>
-                                <input class="p-marginR10" id="txt_tick" type="checkbox" name="remember">*
+                            <div class="input-control">
+                                <input class="p-marginR10" id="txt_tick" type="checkbox" name="txt_tick">*
                                 <label for="checkB"> I agree to store and process my
                                     information.
                                 </label>
-                            </p>
+                                <div class="error"></div>
+                            </div>
                         </div>
+
+
 
                         <!--    Review BUTTON     -->
                         <button type="submit" class="form-btn">Review</button>
@@ -154,3 +186,5 @@
     </div>
 </div>
 
+<!--    JAVA SCRIPT     -->
+<script type="text/javascript" src="../JS/contact.js"></script>
