@@ -323,7 +323,7 @@ h1, h3, h5 {
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
-.enquire-button {
+.car-page-button {
     background-color: rgb(41, 41, 41);
     color: rgb(189, 189, 189);
     border-radius: 10px;
@@ -354,7 +354,8 @@ h1, h3, h5 {
 .enquire-button:hover,
 .about-us-link-button:hover,
 .car-link:hover,
-.form-btn:hover {
+.form-btn:hover,
+.car-page-button:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
     border-color: rgb(255, 255, 255);
