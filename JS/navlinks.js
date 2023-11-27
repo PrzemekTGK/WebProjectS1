@@ -28,22 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function checkLoadedPage() {
     var contentDiv = document.getElementById('contentDiv');
-    console.log("inside check loaded page");
 
     const childElements = contentDiv.children;
 
     for (const child of childElements) {
-        console.log('Child element:', child);
         if(child.classList.contains("carousel-container")){
-            console.log('Home !!!');
         } else if (child.classList.contains("cars-container")){
-            console.log('Cars !!!');
         } else if (child.classList.contains("finanace-container")){
-            console.log('Finance !!!');
         } else if (child.classList.contains("about-container")){
-            console.log('About !!!');
         } else if (child.classList.contains("contact-container")){
-            console.log('Contact !!!');
         }
     }
 
