@@ -331,7 +331,6 @@ body {
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
-
 .car-link {
     position: absolute;
     bottom: 0;
@@ -541,7 +540,8 @@ label {
 
 .p-mapSize {
     width: 100%;
-    height: 500px;
+    min-height: 300px;
+    max-height: 500px;
 }
 
 .p-width100 {
@@ -638,13 +638,13 @@ input:focus {
     height: 13px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 765px) {
     .flex-container {
         flex-direction: column;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 765px) {
     .left-pane {
         display: none;
     }
@@ -654,7 +654,7 @@ input:focus {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 765px) {
     .left-pane {
         display: none;
 
@@ -696,6 +696,9 @@ input:focus {
 @media (min-width: 765px) {
     #aboutUsLinkInnerDiv {
         width: 50%;
+    }
+    .p-mapSize {
+        height: 500px;
     }
 }
 
