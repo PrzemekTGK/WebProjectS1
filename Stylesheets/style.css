@@ -217,13 +217,7 @@ h1, h3, h5 {
     color: rgb(189, 189, 189);
 }
 
-#backToCars {
-    color: rgb(189, 189, 189);
-    font-size: large;
-    text-decoration: none;
-}
-
-#backToCars:hover {
+.back-to-cars:hover {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -344,11 +338,22 @@ h1, h3, h5 {
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
     min-width: 25%;
-    min-width: 25%;
     min-height: 10%;
     margin-right: 2%;
     margin-bottom: 5%;
     box-shadow: 2px 2px rgb(10, 10, 10);
+}
+
+.back-to-cars-button{
+    background-color: rgb(41, 41, 41);
+    color: rgb(189, 189, 189);
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: rgb(189, 189, 189);
+    min-width: 20%;
+    min-height: 40px;
+    box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
+
 }
 
 .link-button:hover,
@@ -356,7 +361,8 @@ h1, h3, h5 {
 .about-us-link-button:hover,
 .car-link:hover,
 .form-btn:hover,
-.car-page-button:hover {
+.car-page-button:hover,
+.back-to-cars-button:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
     border-color: rgb(255, 255, 255);

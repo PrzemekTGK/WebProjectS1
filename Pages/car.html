@@ -2,8 +2,7 @@
 <div class="container car-details-container mt-5 mb-5 pt-5"
     id="carDetailsContainer">
     <div id="carDetailsTemplate">
-        <a href="#" id="backToCars" onclick="loadPage('../Pages/cars.html'); return false"><i class="fa-solid fa-caret-left"></i>Browse</a>
-        <div class="row">
+        <div class="row mt-3">
             <div class="col-lg-6 col-md-12">
                 <img id="carImage" alt="{MAKE} {MODEL}">
             </div>
@@ -25,6 +24,9 @@
                 </a>
                 <a href="#">
                     <button class="car-page-button" type="button" id="financeLinkButton">Finance</button>
+                </a>
+                <a href="#" onclick="loadPage('../Pages/cars.html'); return false">
+                    <button  class="car-page-button" type="button" id="carsLinkButton" ><i class="fa-solid fa-caret-left"></i> Browse</button>
                 </a>
             </div>
         </div>
