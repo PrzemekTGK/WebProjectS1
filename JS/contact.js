@@ -7,6 +7,7 @@ const txt_phone = document.getElementById('txt_phone');
 const txt_subject = document.getElementById('txt_subject');
 const txt_message = document.getElementById('txt_message')
 const txt_tick = document.getElementById('txt_tick');
+let valid = true;
 
 
 form.addEventListener('submit', e => {
@@ -49,6 +50,7 @@ const validateInputs = () => {
     const messageValue = txt_message.value.trim();
     const tickValue = txt_tick.checked;
 
+    valid = true;
     //Validate Department - check if 0 - no option chosen
     if (departmentValue == 0) {
 
@@ -73,6 +75,7 @@ const validateInputs = () => {
         setError(txt_email, 'Enter a valid E-mail');
     } else {
         setSuccess(txt_email);
+        valid = false;
     }
 
     // Validate Phone number  (has to be 7 numbers long)
@@ -81,6 +84,7 @@ const validateInputs = () => {
         setError(document.getElementById('phone'), 'Prefix and 7 digit number has to be entered');
     } else {
         setSuccess(document.getElementById('phone'));
+        valid = false;
     }
 
     // Validate Subject - min. 5 letters (no space in front and back)
@@ -89,6 +93,7 @@ const validateInputs = () => {
         setError(txt_subject, 'Enter at least 5 letters');
     } else {
         setSuccess(txt_subject);
+        valid = false;
     }
 
     // Validate Message - min. 10 letters (no space in front and back)
@@ -97,6 +102,7 @@ const validateInputs = () => {
         setError(txt_message, 'Enter at least 10 letters');
     } else {
         setSuccess(txt_message);
+        valid = false;
     }
 
     // Validate Checkbox
@@ -106,6 +112,7 @@ const validateInputs = () => {
         setError(txt_tick, 'Tick the box');
     } else {
         setSuccess(txt_tick);
+        valid = false;
     }
 
 };
