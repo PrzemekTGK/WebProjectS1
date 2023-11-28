@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(document).on('click', '#financeButton', function (e) {
+    $(document).on('click', '#financeLinkButton', function (e) {
         e.preventDefault();
 
         var carIndex = $('#carIndex').text().trim().replace('Index: ', '');

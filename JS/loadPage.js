@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
     var savedState = JSON.parse(localStorage.getItem('pageState'));
 
     if (savedState && savedState.lastLoadedPage) {
@@ -30,3 +30,8 @@ function loadPage(url, carIndex) {
         });
     });
 }
+
+$(function(){
+    var navLinkHome = $('.nav-link[id="navLinkHome"]');
+    navLinkHome.addClass('current');
+})
