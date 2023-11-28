@@ -19,15 +19,24 @@
                 <hr>
                 <p>Description: <br>{DESCRIPTION}</p>
                 <hr>
-                <a href="#" onclick="loadPage('../Pages/contact.html'); return false" data-car-index="${car.index}">
-                    <button class="car-page-button" type="button" id="contactLinkButton">Enquire</button>
-                </a>
-                <a href="#">
-                    <button class="car-page-button" type="button" id="financeLinkButton">Finance</button>
-                </a>
-                <a href="#" onclick="loadPage('../Pages/cars.html'); return false">
-                    <button  class="car-page-button" type="button" id="carsLinkButton" ><i class="fa-solid fa-caret-left"></i> Browse</button>
-                </a>
+                <div class="container mt-4" style="text-align: center;">
+                    <a href="#"
+                        onclick="loadPage('../Pages/contact.html'); return false"
+                        data-car-index="${car.index}">
+                        <button class="car-page-button" type="button"
+                            id="contactLinkButton">Enquire</button>
+                    </a>
+                    <a href="#">
+                        <button class="car-page-button" type="button"
+                            id="financeLinkButton">Finance</button>
+                    </a>
+                    <a href="#"
+                        onclick="loadPage('../Pages/cars.html'); return false">
+                        <button class="car-page-button" type="button"
+                            id="carsLinkButton"><i
+                                class="fa-solid fa-caret-left"></i> Browse</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
