@@ -8,8 +8,8 @@
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous">
-        <link rel="stylesheet" href="/Stylesheets/style.css">
-        <script src="/jQuery/jquery-3.7.1.js"></script>
+        <link rel="stylesheet" href="../Stylesheets/style.css">
+        <script src="../jQuery/jquery-3.7.1.js"></script>
     </head>
     <header>
         <div class="container-fluid navbar-container navSlideIn">
@@ -43,15 +43,16 @@
                         <hr>
                         <p>Description: <br>{DESCRIPTION}</p>
                         <hr>
-                        <a href="/Pages/contact.html"><button class="enquire-button"
+                        <a href="../Pages/contact.html"><button class="enquire-button"
                                 type="button">Enquire</button></a>
                     </div>
                 </div>
-                <div class="row">
-        
+                <div class="row">        
                 </div>
             </div>
         </div>
+
+        <script src="../JS/carDetails.js"></script>
 
         <!-- BOOTSTRAP -->
         <script
@@ -68,7 +69,7 @@
             </div>
         </div>
         <script>
-        $.get("/Pages/footer.html", function (data) {
+        $.get("../Pages/footer.html", function (data) {
             $("#footer-holder").html(data);
         });
     </script>
