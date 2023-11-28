@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Fetch car data from JSON file
-    $.getJSON("/Json/cars.json", function(cars) {
+    $.getJSON("../Json/cars.json", function(cars) {
       // Reference to the cars container
       var carsContainer = $("#carsContainer");
   
