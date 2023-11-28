@@ -8,18 +8,19 @@
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous">
-        <link rel="stylesheet" href="/Stylesheets/style.css">
-        <script src="/jQuery/jquery-3.7.1.js"></script>
+        <link rel="stylesheet" href="../Stylesheets/style.css">
+        <script src="../jQuery/jquery-3.7.1.js"></script>
     </head>
     <header>
         <div class="container-fluid navbar-container navSlideIn">
-            <nav id="navbar-holder"></nav>
+            <nav id="navbarHolder"></nav>
         </div>
         <script>
         $.get("navbar.html", function (data) {
-            $("#navbar-holder").html(data);
+            $("#navbarHolder").html(data);
         });
         </script>
+        <script src="../JS/currentPage.js"></script>
     </header>
 
     <body>
@@ -30,7 +31,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-4 p-padding">
 
                     <figure>
-                        <img src="/Images/About/boss.jpg" alt="The Boss"
+                        <img src="../Images/About/boss.jpg" alt="The Boss"
                             class=" mx-auto d-block p-picture-about">
                         <figcaption>
                             <p class="p-picture-text">Our Chief Executive
@@ -122,12 +123,12 @@
     <footer>
         <div class="container-fluid footer-container">
             <div class="row" id="footerRow">
-                <nav id="footer-holder"></nav>
+                <nav id="footerHolder"></nav>
             </div>
         </div>
         <script>
         $.get("../Pages/footer.html", function (data) {
-            $("#footer-holder").html(data);
+            $("#footerHolder").html(data);
         });
     </script>
     </footer>
