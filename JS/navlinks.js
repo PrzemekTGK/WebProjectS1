@@ -1,18 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var navLinks = document.querySelectorAll('.nav-link');
-
-    navLinks.forEach(function (link) {
-        link.addEventListener('click', function (event) {
-            navLinks.forEach(function (link) {
-                link.classList.remove('current');
-            });
-
-            event.target.classList.add('current');
-        });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     var allLinks = document.querySelectorAll('a');
 
     allLinks.forEach(function (link) {
@@ -25,27 +11,41 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var navLinks = document.querySelectorAll('.nav-link');
 
-function checkLoadedPage() {
-    var contentDiv = document.getElementById('contentDiv');
-
-    const childElements = contentDiv.children;
-
-    for (const child of childElements) {
-        if(child.classList.contains("carousel-container")){
-        } else if (child.classList.contains("cars-container")){
-        } else if (child.classList.contains("finanace-container")){
-        } else if (child.classList.contains("about-container")){
-        } else if (child.classList.contains("contact-container")){
-        }
-    }
-
-}
-
-var observer = new MutationObserver(function () {
-    checkLoadedPage();
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            navLinks.forEach(function (link) {
+                link.classList.remove('current');
+            });
+            event.target.classList.add('current');
+        });
+    });
 });
 
-var config = { childList: true, subtree: true };
+document.addEventListener("DOMContentLoaded", function () {
+    var navBrand = document.querySelectorAll('.navbar-brand');
 
-observer.observe(document.getElementById('contentDiv'), config);
+    navBrand.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            var navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(function (link) {
+                link.classList.remove('current');
+            });
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var contentContainer = document.getElementById("contentDiv");
+    console.log("contentDiv listener added");
+
+
+    // Add a click event listener to the content container
+    contentContainer.addEventListener("click", function (event) {
+        if (event.target.tagName.toLowerCase() === "a" || event.target.tagName.toLowerCase() === "button") {
+            console.log("Link Clicked!");
+        }
+    });
+});
