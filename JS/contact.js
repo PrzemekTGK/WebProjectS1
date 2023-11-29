@@ -13,6 +13,20 @@ let valid = true;
 
 const myModal = new bootstrap.Modal("#myModal");
 
+document.addEventListener(
+    "click",
+    e => {
+
+        if (
+
+            e.target.closest(".modal")
+        ) {
+            console.log("I am here - click");
+            window.location.reload();
+        }
+    });
+
+
 form.addEventListener('submit', e => {
     e.preventDefault();
     console.log("I am here");
@@ -140,7 +154,8 @@ const validateInputs = () => {
 };
 
 function myModalTxt() {
-    document.getElementById("myModalTxt").innerHTML = "<p>You have just sent a message to: The " + txt_Department.value +
-        " Department.</p><p>We will contact you soon on: <b>(" + txt_prefix.value + ") " + txt_phone.value + "</b></p>" +
-        "<p><br>Best regards,</p>The " + txt_Department.value + " Department team. </p>";
+    document.getElementById("myModalTxt").innerHTML = "<p>You have just sent a message to: The " + txt_Department.value
+        + " Department.</p><p>We will contact you soon on: <b>(" + txt_prefix.value + ") " + txt_phone.value + "</b><br>"
+        + "A copy of the message, was sent to the provided e-mail: <b>" + txt_email.value + "</b>"
+        + "</p><p><br>Best regards,</p>The " + txt_Department.value + " Department team. </p>";
 }
