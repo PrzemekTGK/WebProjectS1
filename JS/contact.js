@@ -28,7 +28,7 @@ form.addEventListener('submit', e => {
 function dismissModal() {
 
     myModal.hide();
-
+    window.location.reload();
 };
 
 const setError = (element, message) => {
