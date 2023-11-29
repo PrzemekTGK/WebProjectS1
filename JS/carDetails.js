@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateCarDetails(carIndex) {
         $.ajax({
-            url: '../Json/cars.json',
+            url: '/Json/cars.json',
             dataType: 'json',
             success: function (data) {
                 const selectedCar = data[carIndex];
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (carIndex) {
         updateCarDetails(carIndex);
-        const financeLink = '../Pages/finance.html?carIndex=' + carIndex;
+        const financeLink = '/Pages/finance.html?carIndex=' + carIndex;
         $('#carToFinanceLink').parent().attr('href', financeLink);
     }    
 });

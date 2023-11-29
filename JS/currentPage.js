@@ -33,7 +33,7 @@ $(function () {
 
 function updateCarDetails(carIndex) {
     $.ajax({
-        url: '../Json/cars.json',
+        url: '/Json/cars.json',
         dataType: 'json',
         success: function (data) {
             const selectedCar = data[carIndex];
