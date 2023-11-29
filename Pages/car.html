@@ -20,7 +20,7 @@
             $("#navbarHolder").html(data);
         });
         </script>
-        <script src="../JS/currentPage.js"></script>
+        <script type="module" src="../JS/currentPage.js"></script>
     </header>
 
     <body>
@@ -39,7 +39,7 @@
                             <br>Fuel Type: {FUEL_TYPE}
                             <br>Transmission: {TRANSMISSION}
                             <br>Price: €{PRICE}
-                            <p id="carIndex">Index: {INDEX}</p>
+                            <p id="carIndex" style="display: none">Index: {INDEX}</p>
                         </p>
                         <hr>
                         <p>Description: <br>{DESCRIPTION}</p>
