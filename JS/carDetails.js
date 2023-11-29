@@ -10,10 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             dataType: 'json',
             success: function (data) {
                 const selectedCar = data[carIndex];
-
                 const template = $('#carDetailsTemplate').html();
-                
-                $('#carImage').attr('src', '../Images/Cards/' + selectedCar.image);
 
                 const filledTemplate = template
                     .replace(/{MAKE}/g, selectedCar.make)
@@ -27,15 +24,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     .replace(/{INDEX}/g, selectedCar.index);
 
                 $('#carDetailsContainer').html(filledTemplate);
-
+                $('#carImage').attr('src', '../Images/Cards/' + selectedCar.image);
             },
             error: function (error) {
                 console.error('Error fetching data:', error);
             }
         });
     }
+    
     const carIndex = getQueryParam('carIndex');
-
     if (carIndex) {
         updateCarDetails(carIndex);
         const financeLink = '../Pages/finance.html?carIndex=' + carIndex;
