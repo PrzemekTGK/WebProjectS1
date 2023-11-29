@@ -45,7 +45,10 @@ function chooseCredit() {
     let interest = 0;
 
     console.log("Credit years " + creaditYears);
-
+    if (deposit.value == "") {
+        deposit.value = 0;
+        leftToPay.value = carPrice.value;
+    }
 
 
     if (creaditYears == 0) {
@@ -88,8 +91,10 @@ function chooseCredit() {
     function remainingBalanceFun() {
         //carDeposit();
         priceOfCredit.value = parseInt(creaditYears * leftToPay.value / 100 * interest);
-        remainingBalance.value = (parseInt(leftToPay.value) + parseInt(priceOfCredit.value));
+        let remainingBalanceFloat = (parseFloat(leftToPay.value) + parseFloat(priceOfCredit.value));
         console.log("remBla" + remainingBalance.value);
-    }
+        let a = parseInt(remainingBalance.value);
+        remainingBalance.value = remainingBalanceFloat.toLocaleString("ie-IE", { style: "currency", currency: "EUR" });
 
+    }
 }
