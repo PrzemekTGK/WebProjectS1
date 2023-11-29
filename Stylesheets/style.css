@@ -186,7 +186,9 @@ body {
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
-h1, h3, h5 {
+h1,
+h3,
+h5 {
     color: orange !important;
 }
 
@@ -329,7 +331,7 @@ h1, h3, h5 {
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
-.car-link{
+.car-link {
     position: absolute;
     bottom: 0;
     background-color: rgb(41, 41, 41);
@@ -356,7 +358,7 @@ h1, h3, h5 {
     box-shadow: 2px 2px rgb(10, 10, 10);
 }
 
-.back-to-cars-button{
+.back-to-cars-button {
     background-color: rgb(41, 41, 41);
     color: rgb(189, 189, 189);
     border: solid 2px;
@@ -392,12 +394,18 @@ h1, h3, h5 {
     max-width: 100%;
 }
 
-#txt_prefix, #txt_prefix:hover, #txt_prefix:focus, #txt_prefix:active {
+#txt_prefix,
+#txt_prefix:hover,
+#txt_prefix:focus,
+#txt_prefix:active {
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
 }
 
-#txt_phone, #txt_phone:hover, #txt_phone:focus, #txt_phone:active {
+#txt_phone,
+#txt_phone:hover,
+#txt_phone:focus,
+#txt_phone:active {
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
 }
@@ -659,8 +667,10 @@ input:focus {
 }
 
 .p-remBal {
-    font-size: xxx-large;
+    font-size: xx-large;
     text-align: center;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
 }
 
 /*    JS-CONTACT    */
@@ -756,12 +766,13 @@ input:focus {
     }
 
     .left-pane-finance {
-        border-bottom-left-radius: 0px;    
+        border-bottom-left-radius: 0px;
         border-top-right-radius: 50px;
     }
+
     .right-pane-finance {
         border-top-right-radius: 0px;
-        border-bottom-left-radius: 50px;    
+        border-bottom-left-radius: 50px;
     }
 }
 
