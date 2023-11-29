@@ -79,6 +79,7 @@ const validateInputs = () => {
     const tickValue = txt_tick.checked;
 
     valid = true;
+
     //VALIDATE DEPARTMENT - check if 0 - no option chosen
     if (departmentValue == 0) {
 
