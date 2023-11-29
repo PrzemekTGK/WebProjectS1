@@ -120,9 +120,9 @@
                         </p>
 
                         <!--          Deposit Input         -->
-                        <p><label class for="txt_subject">Deposit</label></p>
+                        <p><label class for="deposit">Deposit</label> *</p>
                         <p><input class="form-control" id="deposit" type="number" Required="required"
-                                placeholder="ex. 3000" onchange="carPrice()"></p>
+                                placeholder="ex. 3000" onchange="carDeposit()"></p>
 
                         <!--          Left to Pay Input         -->
                         <p><label class for=" leftToPay">Left
@@ -131,10 +131,10 @@
 
                         <!--          Credit Select         -->
                         <p><label for="creaditYears">Credit
-                                (years)</label></p>
+                                (years)</label> *</p>
                         <p><select class="form-select form-control" id="creaditYears" onchange="chooseCredit()">
                                 <option value="-1">--Number of years--</option>
-                                <option value="0">0</option>
+                                <option value="0">No credit</option>
                                 <option value="1">1 year</option>
                                 <option value="3">3 years</option>
                                 <option value="5">5 years</option>
@@ -143,7 +143,7 @@
 
                         <!--          Interest Rate Input         -->
                         <p><label class for="interstRate">Interest
-                                rate</label></p>
+                                rate per year</label></p>
                         <p><input class="form-control" id="interstRate" type="text" disabled placeholder></p>
 
                         <!--          Price of the credit Input         -->
