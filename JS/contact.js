@@ -9,6 +9,8 @@ const txt_message = document.getElementById('txt_message')
 const txt_tick = document.getElementById('txt_tick');
 let valid = true;
 
+const modal = document.getElementById('#myModal');
+
 const myModal = new bootstrap.Modal("#myModal");
 
 form.addEventListener('submit', e => {
@@ -22,6 +24,12 @@ form.addEventListener('submit', e => {
 
     }
 });
+
+function dismissModal() {
+
+    myModal.hide();
+
+};
 
 const setError = (element, message) => {
     const inputControl = element.parentElement;
