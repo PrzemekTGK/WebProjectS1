@@ -9,11 +9,18 @@ const txt_message = document.getElementById('txt_message')
 const txt_tick = document.getElementById('txt_tick');
 let valid = true;
 
+const myModal = new bootstrap.Modal("#myModal");
 
 form.addEventListener('submit', e => {
     e.preventDefault();
+    console.log("I am here");
+    //validateInputs();
+    myModalTxt();
+    myModal.show();
 
-    validateInputs();
+    if (valid) {
+
+    }
 });
 
 const setError = (element, message) => {
@@ -55,7 +62,7 @@ const validateInputs = () => {
     if (departmentValue == 0) {
 
         setError(txt_Department, 'Choose a department');
-
+        valid = false;
     } else {
 
         setSuccess(txt_Department);
@@ -65,6 +72,7 @@ const validateInputs = () => {
     if (nameValue.length < 5 || (nameValue.indexOf(" ") < 0)) {
 
         setError(txt_name, 'Name and surname are required with a space between');
+        valid = false;
     } else {
         setSuccess(txt_name);
     }
@@ -73,36 +81,40 @@ const validateInputs = () => {
     if (!isValidEmail(emailValue)) {
 
         setError(txt_email, 'Enter a valid E-mail');
+        valid = false;
     } else {
         setSuccess(txt_email);
-        valid = false;
+
     }
 
     // Validate Phone number  (has to be 7 numbers long)
     if (phoneValue.length != 7 || prefixValue == 0) {
 
         setError(document.getElementById('phone'), 'Prefix and 7 digit number has to be entered');
+        valid = false;
     } else {
         setSuccess(document.getElementById('phone'));
-        valid = false;
+
     }
 
     // Validate Subject - min. 5 letters (no space in front and back)
     if (subjectValue.length < 5) {
 
         setError(txt_subject, 'Enter at least 5 letters');
+        valid = false;
     } else {
         setSuccess(txt_subject);
-        valid = false;
+
     }
 
     // Validate Message - min. 10 letters (no space in front and back)
     if (messageValue.length < 10) {
 
         setError(txt_message, 'Enter at least 10 letters');
+        valid = false;
     } else {
         setSuccess(txt_message);
-        valid = false;
+
     }
 
     // Validate Checkbox
@@ -110,10 +122,15 @@ const validateInputs = () => {
     if (!tickValue) {
 
         setError(txt_tick, 'Tick the box');
+        valid = false;
     } else {
         setSuccess(txt_tick);
-        valid = false;
+
     }
+    console.log("check box " + valid);
 
 };
 
+function myModalTxt() {
+    document.getElementById("myModalTxt").innerHTML = "You have just sent a message to: " + txt_Department.value + " Department";
+}
