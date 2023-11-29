@@ -11,11 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
             success: function (data) {
                 const selectedCar = data[carIndex];
 
-                if(!carIndex){
-                    console.log("Car Index: " + carIndex);
-                }
-
                 const template = $('#carDetailsTemplate').html();
+                
+                $('#carImage').attr('src', '../Images/Cards/' + selectedCar.image);
 
                 const filledTemplate = template
                     .replace(/{MAKE}/g, selectedCar.make)
@@ -30,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 $('#carDetailsContainer').html(filledTemplate);
 
-                $('#carImage').attr('src', '../Images/Cards/' + selectedCar.image);
             },
             error: function (error) {
                 console.error('Error fetching data:', error);
