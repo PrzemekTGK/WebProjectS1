@@ -27,7 +27,9 @@ $(function () {
             highlightCurrentPage();
         }, 500);
     } else {
-        highlightCurrentPage();
+        setTimeout(function(){
+            highlightCurrentPage();
+        },500);
     }
 });
 
