@@ -13,7 +13,7 @@ function carPrice() {
 }
 
 //CALCULATE FULL PRICE LEFT TO PAY
-function finalAmoutToPay() {
+function chooseCredit() {
 
     const creaditYears = document.getElementById("creaditYears").value;
     console.log(creaditYears);
@@ -39,7 +39,16 @@ function finalAmoutToPay() {
         deposit.value = 0;
         document.getElementById("interstRate").value = "10%";
         carPrice();
+    } else {
+        if (deposit.value != "") {
+
+        }
+        document.getElementById("interstRate").value = "";
+        carPrice();
     }
 
-
+    document.getElementById("priceOfCredit").value = (7 * document.getElementById("leftToPay").value / 100);
+    document.getElementById("remainingBalance").value = (parseFloat(document.getElementById("leftToPay").value) + parseFloat(document.getElementById("priceOfCredit").value));
 }
+
+

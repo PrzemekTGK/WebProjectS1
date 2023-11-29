@@ -125,15 +125,15 @@
                                 placeholder="ex. 3000" onchange="carPrice()"></p>
 
                         <!--          Left to Pay Input         -->
-                        <p><label class for=" txt_subject">Left
+                        <p><label class for=" leftToPay">Left
                                 to pay</label></p>
                         <p><input class="form-control" id="leftToPay" type="text" disabled placeholder></p>
 
                         <!--          Credit Select         -->
                         <p><label for="creaditYears">Credit
                                 (years)</label></p>
-                        <p><select class="form-select form-control" id="creaditYears" onchange="finalAmoutToPay()">
-                                <option>--Number of years--</option>
+                        <p><select class="form-select form-control" id="creaditYears" onchange="chooseCredit()">
+                                <option value="-1">--Number of years--</option>
                                 <option value="0">0</option>
                                 <option value="1">1 year</option>
                                 <option value="3">3 years</option>
@@ -146,15 +146,15 @@
                                 rate</label></p>
                         <p><input class="form-control" id="interstRate" type="text" disabled placeholder></p>
 
-                        <!--          Price with credit Input         -->
-                        <p><label class for="priceWithCredit">Price
-                                with credit</label></p>
-                        <p><input class="form-control" id="priceWithCredit" type="text" disabled placeholder></p>
+                        <!--          Price of the credit Input         -->
+                        <p><label class for="priceOfCredit">Price
+                                of the credit</label></p>
+                        <p><input class="form-control" id="priceOfCredit" type="number" disabled placeholder></p>
 
                         <!--          Remaining Balance Input         -->
                         <p><label class for="remainingBalance">Remaining
                                 balance</label></p>
-                        <p><input class="form-control fw-bold p-remBal" id="remainingBalance" type="text" disabled
+                        <p><input class="form-control fw-bold p-remBal" id="remainingBalance" type="number" disabled
                                 placeholder></p>
 
                         <!--          BUTTON REVIEW         -->
