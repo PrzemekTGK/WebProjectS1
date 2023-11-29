@@ -10,11 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
             dataType: 'json',
             success: function (data) {
                 const selectedCar = data[carIndex];
-
-                if(!carIndex){
-                    console.log("Car Index: " + carIndex);
-                }
-
                 const template = $('#carDetailsTemplate').html();
 
                 const filledTemplate = template
@@ -29,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     .replace(/{INDEX}/g, selectedCar.index);
 
                 $('#carDetailsContainer').html(filledTemplate);
-
                 $('#carImage').attr('src', '../Images/Cards/' + selectedCar.image);
             },
             error: function (error) {
@@ -37,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+    
     const carIndex = getQueryParam('carIndex');
-
     if (carIndex) {
         updateCarDetails(carIndex);
         const financeLink = '../Pages/finance.html?carIndex=' + carIndex;
