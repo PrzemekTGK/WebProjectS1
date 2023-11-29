@@ -9,7 +9,7 @@ const txt_message = document.getElementById('txt_message')
 const txt_tick = document.getElementById('txt_tick');
 let valid = true;
 
-const modal = document.getElementById('#myModal');
+
 
 const myModal = new bootstrap.Modal("#myModal");
 

@@ -213,29 +213,30 @@
     <!--    Modal window     -->
 
     <div class="modal fade" data-bs-theme="dark" id="myModal" tabindex="-1" aria-labelledby="modal-title"
-        aria-hidden="true" style="font-family: Roboto Flex, sans-serif;">
+        aria-hidden="true" style="font-family: Roboto Flex, sans-serif; min-width: 300px;">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title" id="modal-title">Congratulations!</h1>
+                    <h1 class="modal-title ms-auto" id="modal-title">Congratulations!
+                    </h1>
                     <button type="button" class="btn-close" data-bs-dimiss="modal" aria-label="Close" name="close"
                         onclick="dismissModal()"></button>
                 </div>
-                <div id="myModalTxt">
+                <div class=" modal-body " style="margin-bottom: 0px !important; padding-bottom: 0px;">
+                    <div id="myModalTxt">
+
+
+                    </div>
+                    <div class="">
+                        <p class="navbar-brand" id="logoFull" style="text-align: center;">AutoTrade</p>
+                        <p class="navbar-brand" id="logoShort">AT</p>
+
+                    </div>
                 </div>
-
                 <div class="modal-footer">
-                    <p>
-                    <p class="navbar-brand" id="logoFull">AutoTrade</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores quas nesciunt
-                        dolores nemo molestiae reprehenderit, rerum quos quasi accusamus culpa aliquam deserunt
-                        repudiandae ratione. Unde sapiente non aperiam inventore.
-                    </p>
 
-                    </p>
-                    <button type="button" class="form-btn button-close-modal btn btn-default" name="dismiss"
-                        data-dismiss="modal" id="dismissModal" onclick="dismissModal()">Dismiss</button>
+                    <button type=" button" class="form-btn  btn " name="dismiss" onclick="dismissModal()">
+                        Dismiss</button>
                 </div>
             </div>
         </div>
