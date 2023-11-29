@@ -7,7 +7,6 @@ function highlightCurrentPage() {
         if (linkPage === currentPage) {
             $(this).addClass('current');
         } else if (currentPage === 'car.html') {
-            console.log("in car.html");
             $('.navbar-container #navLinkCars').addClass('current');
         }
     });
