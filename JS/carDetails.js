@@ -1,17 +1,14 @@
-function getQueryParam(name) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(name);
-}
+document.addEventListener('DOMContentLoaded', function () {
+    function getQueryParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
 
-const carIndex = getQueryParam('carIndex');
-
-jQuery(document).ready(function($) {
-    function updateCarDetails() {
-
+    function updateCarDetails(carIndex) {
         $.ajax({
             url: '/Json/cars.json',
             dataType: 'json',
-            success: function(data) {
+            success: function (data) {
                 const selectedCar = data[carIndex];
 
                 const template = $('#carDetailsTemplate').html();
@@ -24,17 +21,23 @@ jQuery(document).ready(function($) {
                     .replace(/{DESCRIPTION}/g, selectedCar.description)
                     .replace(/{FUEL_TYPE}/g, selectedCar.fuel_type)
                     .replace(/{TRANSMISSION}/g, selectedCar.transmission)
-                    .replace(/{PRICE}/g, selectedCar.price);
+                    .replace(/{PRICE}/g, selectedCar.price)
+                    .replace(/{INDEX}/g, selectedCar.index);
 
                 $('#carDetailsContainer').html(filledTemplate);
 
                 $('#carImage').attr('src', '/Images/Cards/' + selectedCar.image);
             },
-            error: function(error) {
+            error: function (error) {
                 console.error('Error fetching data:', error);
             }
         });
     }
+    const carIndex = getQueryParam('carIndex');
 
-    updateCarDetails();
+    if (carIndex) {
+        updateCarDetails(carIndex);
+        const financeLink = '../Pages/finance.html?carIndex=' + carIndex;
+        $('#carToFinanceLink').parent().attr('href', financeLink);
+    }    
 });
