@@ -6,6 +6,9 @@ function highlightCurrentPage() {
         var linkPage = $(this).attr('href').split('/').pop();
         if (linkPage === currentPage) {
             $(this).addClass('current');
+        } else if (currentPage === 'car.html') {
+            console.log("in car.html");
+            $('.navbar-container #navLinkCars').addClass('current');
         }
     });
 }
