@@ -1,54 +1,100 @@
 
-function carPrice() {
+//VARS
+let carPrice = document.getElementById("carFullPrice");
+let priceOfCredit = document.getElementById("priceOfCredit");
+let deposit = document.getElementById("deposit");
+let leftToPay = document.getElementById("leftToPay");
+let interestRate = document.getElementById("interstRate");
+let remainingBalance = document.getElementById("remainingBalance");
 
-    let carPrice = document.getElementById("carFullPrice").value;
-    console.log('value changed');
-    console.log(carPrice);
-    let deposit = document.getElementById("deposit");
-    let leftToPay = document.getElementById("leftToPay");
-    let leftToPayValue = (carPrice - deposit.value);
-    document.getElementById("leftToPay").value = leftToPayValue;
+
+//CALCULATE LEFT TO PAY FIELD
+function carDeposit() {
+
+    console.log('value changed carPrice Func');
+    console.log("car price value" + carPrice.value);
+
+    let leftToPayValue = (carPrice.value - deposit.value);
+
+    leftToPay.value = leftToPayValue;
     console.log(leftToPayValue);
 
+    if (deposit.value == "") {
+        deposit.value = 0;
+        leftToPay.value = carPrice.value;
+    }
+
+    if (deposit.value < 0) {
+        deposit.value = 0;
+        leftToPay.value = carPrice.value;
+    } else if (deposit.value > parseInt(carPrice.value)) {
+        deposit.value = parseInt(carPrice.value);
+        leftToPay.value = 0;
+    }
+
+    console.log("depozyt" + deposit.value);
+
+
+    chooseCredit();
 }
 
 //CALCULATE FULL PRICE LEFT TO PAY
 function chooseCredit() {
 
-    const creaditYears = document.getElementById("creaditYears").value;
-    console.log(creaditYears);
+    let creaditYears = document.getElementById("creaditYears").value;
+    let interest = 0;
+
+    console.log("Credit years " + creaditYears);
+    if (deposit.value == "") {
+        deposit.value = 0;
+        leftToPay.value = carPrice.value;
+    }
+
 
     if (creaditYears == 0) {
-        if (deposit.value == 0) {
-            document.getElementById("deposit").value = 0;
-            document.getElementById("interstRate").value = 0;
-            carPrice();
-        }
+
+
+        deposit.value = 0;
+        interestRate.value = "0%";
+        interest = 0;
+        leftToPay.value = carPrice.value;
+        remainingBalanceFun()
+
 
 
     } else if (creaditYears == 1) {
-        deposit.value = 0;
-        document.getElementById("interstRate").value = "5%";
-        carPrice();
+
+        interestRate.value = "5%";
+        interest = 5;
+        remainingBalanceFun()
+
+
     } else if (creaditYears == 3) {
-        deposit.value = 0;
-        document.getElementById("interstRate").value = "7%";
-        carPrice();
+
+        interestRate.value = "7%";
+        interest = 7;
+        remainingBalanceFun()
     }
     else if (creaditYears == 5) {
-        deposit.value = 0;
-        document.getElementById("interstRate").value = "10%";
-        carPrice();
-    } else {
-        if (deposit.value != "") {
 
-        }
-        document.getElementById("interstRate").value = "";
-        carPrice();
+        interestRate.value = "10%";
+        interest = 10;
+        remainingBalanceFun()
+    } else {
+
+        interestRate.value = "";
+        priceOfCredit.value = "";
+        remainingBalance.value = "";
+
     }
 
-    document.getElementById("priceOfCredit").value = (7 * document.getElementById("leftToPay").value / 100);
-    document.getElementById("remainingBalance").value = (parseFloat(document.getElementById("leftToPay").value) + parseFloat(document.getElementById("priceOfCredit").value));
+    function remainingBalanceFun() {
+        //carDeposit();
+        priceOfCredit.value = parseInt(creaditYears * leftToPay.value / 100 * interest);
+        let remainingBalanceFloat = (parseFloat(leftToPay.value) + parseFloat(priceOfCredit.value));
+        console.log("remBla" + remainingBalance.value);
+        let a = parseInt(remainingBalance.value);
+        remainingBalance.value = remainingBalanceFloat.toLocaleString("ie-IE", { style: "currency", currency: "EUR" });
+
+    }
 }
-
-
