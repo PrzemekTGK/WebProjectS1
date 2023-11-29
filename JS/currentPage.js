@@ -10,14 +10,14 @@ function highlightCurrentPage() {
     var navLinks = $('.navbar-container').find('.nav-link');
     navLinks.each(function () {
         var linkPage = $(this).attr('href').split('/').pop();
-        if (currentPage === 'car.html') {
+        if (linkPage === currentPage) {
+            $(this).addClass('current');
+        } else if (currentPage === 'car.html') {
             $('.navbar-container #navLinkCars').addClass('current');
         } else if (currentPage === 'finance.html') {
             $('.navbar-container #navLinkFinance').addClass('current');
             updateCarDetails(carIndex);
-        } else if (linkPage === currentPage) {
-            $(this).addClass('current');
-        }
+        } 
     });
 }
 
@@ -33,7 +33,7 @@ $(function () {
 
 function updateCarDetails(carIndex) {
     $.ajax({
-        url: '/Json/cars.json',
+        url: '../Json/cars.json',
         dataType: 'json',
         success: function (data) {
             const selectedCar = data[carIndex];
@@ -50,7 +50,7 @@ function updateCarDetails(carIndex) {
                 .replace(/{PRICE}/g, selectedCar.price)
                 .replace(/{INDEX}/g, selectedCar.index);
             $('#carDetailsContainer').html(filledTemplate);
-            $('#carImage').attr('src', '/Images/Cards/' + selectedCar.image);
+            $('#carImage').attr('src', '../Images/Cards/' + selectedCar.image);
 
             var carFullPriceInput = document.getElementById("carFullPrice");
             if(carFullPriceInput){
