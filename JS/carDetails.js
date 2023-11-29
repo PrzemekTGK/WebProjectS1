@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
             success: function (data) {
                 const selectedCar = data[carIndex];
 
+                if(!carIndex){
+                    console.log("Car Index: " + carIndex);
+                }
+
                 const template = $('#carDetailsTemplate').html();
 
                 const filledTemplate = template
