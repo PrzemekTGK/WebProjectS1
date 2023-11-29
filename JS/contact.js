@@ -1,3 +1,5 @@
+
+//CONST AND VARS
 const form = document.getElementById('form');
 const txt_Department = document.getElementById('txt_Department');
 const txt_name = document.getElementById('txt_name');
@@ -8,30 +10,22 @@ const txt_subject = document.getElementById('txt_subject');
 const txt_message = document.getElementById('txt_message')
 const txt_tick = document.getElementById('txt_tick');
 let valid = true;
-
-
-
 const myModal = new bootstrap.Modal("#myModal");
 
-document.addEventListener(
-    "click",
-    e => {
+//EVENT LISTENER ON CLICK WHILE MODAL IS DISPLAYED - RELOAD THE PAGE
+document.addEventListener("click", e => {
 
-        if (
+    if (e.target.closest(".modal")) {
 
-            e.target.closest(".modal")
-        ) {
-            console.log("I am here - click");
-            window.location.reload();
-        }
-    });
+        window.location.reload();
+    }
+});
 
-
+//EVENT LISTENING ON SIBMIT BUTTON CLICK - STARTS VALIDATION AND SHOWS MODAL IF VALIDATION IS OK
 form.addEventListener('submit', e => {
     e.preventDefault();
-    console.log("I am here");
-    validateInputs();
 
+    validateInputs();
 
     if (valid) {
         myModalTxt();
@@ -39,12 +33,14 @@ form.addEventListener('submit', e => {
     }
 });
 
+//DISMIS MODAL IF BUTTON OR X IS CLICKED ON MODAL
 function dismissModal() {
 
     myModal.hide();
     window.location.reload();
 };
 
+//SETS CLASS ERROR TO INPUT
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -54,6 +50,7 @@ const setError = (element, message) => {
     inputControl.classList.remove('success')
 }
 
+//SETS CLASS SUCCESS TO INPUT
 const setSuccess = element => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -63,11 +60,13 @@ const setSuccess = element => {
     inputControl.classList.remove('error');
 };
 
+//FUNCTION VALIDATES INPUTS
 const validateInputs = () => {
 
     const departmentValue = txt_Department.value;
     const nameValue = txt_name.value.trim();
     const emailValue = txt_email.value.trim();
+    //REG EXP. TO CHECK EMAIL FORMAT
     const isValidEmail = email => {
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(email).toLowerCase());
@@ -80,7 +79,7 @@ const validateInputs = () => {
     const tickValue = txt_tick.checked;
 
     valid = true;
-    //Validate Department - check if 0 - no option chosen
+    //VALIDATE DEPARTMENT - check if 0 - no option chosen
     if (departmentValue == 0) {
 
         setError(txt_Department, 'Choose a department');
@@ -90,7 +89,7 @@ const validateInputs = () => {
         setSuccess(txt_Department);
     }
 
-    // Validate Name - has to have at least 4 signs and space between words
+    // VALIDATE NAME - has to have at least 4 signs and space between words
     if (nameValue.length < 5 || (nameValue.indexOf(" ") < 0)) {
 
         setError(txt_name, 'Name and surname are required with a space between');
@@ -99,7 +98,7 @@ const validateInputs = () => {
         setSuccess(txt_name);
     }
 
-    // Validate Email - Reg Exp.
+    // VALIDATE EMAIL - Reg Exp.
     if (!isValidEmail(emailValue)) {
 
         setError(txt_email, 'Enter a valid E-mail');
@@ -109,7 +108,7 @@ const validateInputs = () => {
 
     }
 
-    // Validate Phone number  (has to be 7 numbers long)
+    // VALIDATE PHONE NUMBER -  has to be 7 numbers long
     if (phoneValue.length != 7 || prefixValue == 0) {
 
         setError(document.getElementById('phone'), 'Prefix and 7 digit number has to be entered');
@@ -119,7 +118,7 @@ const validateInputs = () => {
 
     }
 
-    // Validate Subject - min. 5 letters (no space in front and back)
+    // VALIDATE SUBJECT - min. 5 letters (no space in front and back)
     if (subjectValue.length < 5) {
 
         setError(txt_subject, 'Enter at least 5 letters');
@@ -129,7 +128,7 @@ const validateInputs = () => {
 
     }
 
-    // Validate Message - min. 10 letters (no space in front and back)
+    // VALIDATE MESSAGE - min. 10 letters (no space in front and back)
     if (messageValue.length < 10) {
 
         setError(txt_message, 'Enter at least 10 letters');
@@ -139,7 +138,7 @@ const validateInputs = () => {
 
     }
 
-    // Validate Checkbox
+    // VALIDATE CHECKBOX
 
     if (!tickValue) {
 
@@ -153,6 +152,7 @@ const validateInputs = () => {
 
 };
 
+//CREATES TEXT IN MODAL WINDOW
 function myModalTxt() {
     document.getElementById("myModalTxt").innerHTML = "<p>You have just sent a message to: The " + txt_Department.value
         + " Department.</p><p>We will contact you soon on: <b>(" + txt_prefix.value + ") " + txt_phone.value + "</b><br>"
