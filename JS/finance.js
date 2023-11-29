@@ -41,6 +41,7 @@ function chooseCredit() {
         deposit.value = 0;
         interestRate.value = "0%";
         interest = 0;
+        leftToPay.value = carPrice.value;
         remainingBalanceFun()
 
 
