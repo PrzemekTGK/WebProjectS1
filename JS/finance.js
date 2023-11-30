@@ -1,4 +1,4 @@
-
+//#region 
 //VARS
 let carPrice = document.getElementById("carFullPrice");
 let priceOfCredit = document.getElementById("priceOfCredit");
@@ -97,4 +97,192 @@ function chooseCredit() {
         remainingBalance.value = remainingBalanceFloat.toLocaleString("ie-IE", { style: "currency", currency: "EUR" });
 
     }
+}
+
+//#endregion
+//--------------------------------------VALIDATION---------------------------------------------------
+
+//CONST AND VARS
+const form = document.getElementById('form');
+const txt_Mr = document.getElementById('Mr');
+const txt_name = document.getElementById('txt_name');
+const txt_street = document.getElementById('txt_street');
+const txt_town = document.getElementById('txt_town');
+const txt_county = document.getElementById('txt_county');
+const txt_email = document.getElementById('txt_email');
+const txt_prefix = document.getElementById('txt_prefix')
+const txt_phone = document.getElementById('txt_phone');
+const txt_deposit = document.getElementById('deposit');
+const txt_creditSelect = document.getElementById('creaditYears');
+let valid = true;
+const myModal = new bootstrap.Modal("#myModal");
+
+//EVENT LISTENER ON CLICK WHILE MODAL IS DISPLAYED - RELOAD THE PAGE
+document.addEventListener("click", e => {
+
+    if (e.target.closest(".modal")) {
+
+        window.location.reload();
+    }
+});
+
+//EVENT LISTENING ON SIBMIT BUTTON CLICK - STARTS VALIDATION AND SHOWS MODAL IF VALIDATION IS OK
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+
+    if (valid) {
+        myModalTxt();
+        myModal.show();
+    }
+});
+
+//DISMIS MODAL IF BUTTON OR X IS CLICKED ON MODAL
+function dismissModal() {
+
+    myModal.hide();
+    window.location.reload();
+};
+
+//SETS CLASS ERROR TO INPUT
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+
+//SETS CLASS SUCCESS TO INPUT
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+//FUNCTION VALIDATES INPUTS
+const validateInputs = () => {
+
+    const mrValue = txt_Mr.value;
+    const nameValue = txt_name.value.trim();
+    const streetValue = txt_street.value.trim();
+    const townValue = txt_town.value.trim();
+    const countyValue = txt_county.value.trim();
+    const emailValue = txt_email.value.trim();
+    //REG EXP. TO CHECK EMAIL FORMAT
+    const isValidEmail = email => {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    const prefixValue = txt_prefix.value;
+    const phoneValue = txt_phone.value.trim();
+    //const subjectValue = txt_subject.value.trim();
+    //const messageValue = txt_message.value.trim();
+    //const tickValue = txt_tick.checked;
+
+    valid = true;
+
+    // // VALIDATE MR RADIO 
+    // if (streetValue.length < 3) {
+
+    //     setError(txt_Mr, 'Enter 3 letters at least');
+    //     valid = false;
+    // } else {
+    //     setSuccess(txt_Mr);
+    // }
+
+
+
+
+    // VALIDATE NAME - has to have at least 4 signs and space between words
+    if (nameValue.length < 5 || (nameValue.indexOf(" ") < 0)) {
+
+        setError(txt_name, 'Name and surname are required with a space between');
+        valid = false;
+    } else {
+        setSuccess(txt_name);
+    }
+
+    // VALIDATE STREET - Reg Exp.
+    if (streetValue.length < 3) {
+
+        setError(txt_street, 'Enter 3 letters at least');
+        valid = false;
+    } else {
+        setSuccess(txt_street);
+    }
+
+    // VALIDATE TOWN - Reg Exp.
+    if (townValue.length < 3) {
+
+        setError(txt_town, 'Enter 3 letters at least');
+        valid = false;
+    } else {
+        setSuccess(txt_town);
+    }
+
+    // VALIDATE COUNTY 
+    if (countyValue.length < 3) {
+
+        setError(txt_county, 'Enter 3 letters at least');
+        valid = false;
+    } else {
+        setSuccess(txt_county);
+    }
+
+    // VALIDATE EMAIL - Reg Exp.
+    if (!isValidEmail(emailValue)) {
+
+        setError(txt_email, 'Enter a valid E-mail');
+        valid = false;
+    } else {
+        setSuccess(txt_email);
+
+    }
+
+    // VALIDATE PHONE NUMBER -  has to be 7 numbers long
+    if (phoneValue.length != 7 || prefixValue == 0) {
+
+        setError(document.getElementById('phone'), 'Prefix and 7 digit number has to be entered');
+        valid = false;
+    } else {
+        setSuccess(document.getElementById('phone'));
+
+    }
+
+
+    // VALIDATE DEPOSIT 
+    if (txt_deposit.value == "") {
+
+        setError(txt_deposit, 'Enter a number');
+        valid = false;
+    } else {
+        setSuccess(txt_deposit);
+    }
+
+    // VALIDATE CREDIT SELECT 
+    if (txt_creditSelect.value == -1) {
+
+        setError(txt_creditSelect, 'Select an option');
+        valid = false;
+    } else {
+        setSuccess(txt_creditSelect);
+    }
+
+
+
+};
+
+//CREATES TEXT IN MODAL WINDOW
+function myModalTxt() {
+    document.getElementById("myModalTxt").innerHTML = "<p>You have just sent a message to: The " + txt_street.value
+        + " Department.</p><p>We will contact you soon on: <b>(" + txt_prefix.value + ") " + txt_phone.value + "</b><br>"
+        + "A copy of the message, was sent to the provided e-mail: <b>" + txt_email.value + "</b>"
+        + "</p><p><br>Best regards,</p>The " + txt_street.value + " Department team. </p>";
 }
