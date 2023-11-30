@@ -663,7 +663,7 @@ input:focus {
     border-radius: 25px;
     background-color: rgb(41, 41, 41);
     overflow-y: auto; 
-    box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
+    box-shadow: inset  10px 10px 20px 10px rgb(10, 10, 10);
 }
 
 #financeCarsContainer::-webkit-scrollbar {
@@ -674,10 +674,12 @@ input:focus {
     max-width: 250px !important;
     min-width: 225px !important;
 }
+
 .car-row-finance{
     padding-left: 2%;
     padding-right: 2%;
 }
+
 .car-col-finance{
     padding: 1%;
 }
@@ -796,7 +798,7 @@ input:focus {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 764px) {
     .card {
         max-width: 100%;
     }
@@ -829,18 +831,13 @@ input:focus {
         margin-top: 5%;
         margin-bottom: 5%;
     }
-}
 
-@media (min-width: 767px) {
-    .flex-container-finance {
-        display: flex;
+    #financeCarsContainer{
+        padding-top: 0px;
+        max-height: 355px !important;
     }
-    .left-pane-finance {
-        flex: 1;
-    }
-
-    .right-pane-finance {
-        flex: 1;
+    .car-col-finance{
+        margin: auto !important;
     }
 }
 
@@ -854,6 +851,16 @@ input:focus {
     }
     #financeCarsContainer{
         max-height: 1100px !important;
+    }
+    .flex-container-finance {
+        display: flex;
+    }
+    .left-pane-finance {
+        flex: 1;
+    }
+
+    .right-pane-finance {
+        flex: 1;
     }
 }
 
