@@ -437,7 +437,7 @@ h5 {
 
 .p-ubuntu {
     font-family: 'Ubuntu', sans-serif;
-    color: rgb(189, 189, 189)
+    color: rgb(189, 189, 189);
 }
 
 .p-dance-font {
@@ -714,6 +714,13 @@ input:focus {
     color: #ff3860;
     font-size: 20px;
     height: 20px;
+}
+
+.location-table, .contact-table{
+    margin-left: auto; 
+    margin-right: auto;
+
+    min-width: 235px;
 }
 
 @media (max-width: 765px) {
