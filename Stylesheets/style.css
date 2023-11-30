@@ -674,6 +674,13 @@ input:focus {
     max-width: 250px !important;
     min-width: 225px !important;
 }
+.car-row-finance{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.car-col-finance{
+    padding: 1%;
+}
 
 .p-fieldset {
     border: solid 1px rgb(189, 189, 189) !important;
