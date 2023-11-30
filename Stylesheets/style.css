@@ -218,7 +218,8 @@ h5 {
 }
 
 .car-row {
-    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .car-details-container {
@@ -745,10 +746,10 @@ input:focus {
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 991px) {
-    .card {
-        max-width: 235px;
-        min-height: 367px;
+@media (max-width: 576px) {
+    .car-row {
+        margin-top: 7.5% !important;
+        margin-bottom: 7.5% !important;
     }
 }
 
@@ -779,6 +780,11 @@ input:focus {
     .right-pane-finance {
         border-top-right-radius: 0px;
         border-bottom-left-radius: 50px;
+    }
+
+    .car-row {
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 }
 
@@ -838,6 +844,10 @@ input:focus {
 
     #featuredCard {
         max-width: 95%;
+    }
+    .card {
+        max-width: 235px;
+        min-height: 367px;
     }
 }
 
