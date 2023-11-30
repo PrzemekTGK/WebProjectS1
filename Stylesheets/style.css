@@ -793,16 +793,19 @@ input:focus {
 }
 
 @media (min-width: 991px) {
-    #burgerMenu {
-        display: none;
+
+    .card {
+        min-height: 375px;
     }
+}
+
+@media (min-width: 992px) {
 
     #logoShort {
         display: none;
     }
-
-    .card {
-        min-height: 375px;
+    #burgerMenu {
+        display: none;
     }
 }
 
