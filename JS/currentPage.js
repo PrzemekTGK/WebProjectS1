@@ -29,7 +29,7 @@ $(function () {
     } else {
         setTimeout(function(){
             highlightCurrentPage();
-        },200);
+        }, 250);
     }
 });
 
