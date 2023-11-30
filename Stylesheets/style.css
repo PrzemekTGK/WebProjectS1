@@ -5,7 +5,13 @@
 body {
     color: rgb(189, 189, 189);
     background-color: rgb(41, 41, 41);
-    min-width: 480px;
+    max-width: 100%;
+    min-width: 360px;
+}
+
+.current {
+    color: orange !important;
+    font-weight: bold;
 }
 
 .navbar-brand {
@@ -30,10 +36,6 @@ body {
     font-weight: bold;
 }
 
-.current {
-    color: orange !important;
-    font-weight: bold;
-}
 
 .navbar-brand:hover {
     color: rgb(255, 255, 255) !important;
@@ -46,11 +48,12 @@ body {
     z-index: 3;
     background-color: rgba(26, 26, 26, 1);
     flex-wrap: nowrap;
-    max-width: 100%;
+    max-width: 100% !important;
 }
 
 .navbar-toggler {
-    float: right;
+    float: right !important;
+    margin: auto;
 }
 
 .navbar-toggler:hover {
@@ -73,7 +76,9 @@ body {
 }
 
 #navbarRow {
+    width: 100%;
     flex-wrap: nowrap;
+    
 }
 
 #logoCol {
@@ -90,8 +95,8 @@ body {
 #searchBar {
     float: right;
     margin: auto 0px auto;
-    max-width: 400px;
-    min-width: 300px;
+    max-width: 100%;
+    min-width: 200px;
 }
 
 #linksMenu {
@@ -816,7 +821,7 @@ input:focus {
 
     #searchBar {
         margin: auto;
-        min-width: 300px;
+        min-width: 225px;
     }
 
     #logoCol {

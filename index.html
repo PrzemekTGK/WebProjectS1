@@ -15,9 +15,7 @@
     </head>
     <header>
         <div class="container-fluid navbar-container nav-slide-in">
-            <div class="row" id="navbarRow">
-                <nav id="navbarHolder"></nav>
-            </div>
+            <nav id="navbarHolder"></nav>
         </div>
         <script>
             $.get("../Pages/navbar.html", function(data) {
@@ -26,7 +24,8 @@
         </script>
         <script type="module" src="../JS/currentPage.js"></script>
     </header>
-    <body><div class="container carousel-container carousel-fade-in">
+    <body>
+        <div class="container carousel-container carousel-fade-in">
             <div id="myCarousel" class="carousel slide carousel-fade"
                 data-bs-ride="carousel">
                 <div class="carousel-indicators">
