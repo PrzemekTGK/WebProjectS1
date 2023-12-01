@@ -671,8 +671,17 @@ input:focus {
 }
 
 .finance-card{
-    max-width: 250px !important;
-    min-width: 225px !important;
+    max-width: 250px;
+    min-width: 225px;
+}
+
+.card:hover, .finance-card:hover{
+    transform: scale(1.1) !important;
+}
+
+.card-active{
+    transform: scale(1.05) !important;
+    box-shadow: 0px 0px 20px 10px rgb(150, 150, 150);
 }
 
 .car-row-finance{
