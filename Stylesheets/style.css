@@ -434,7 +434,7 @@ h5 {
     color: rgb(189, 189, 189);
 }
 
-#searchContainer{
+#searchContainer {
     position: relative;
     align-items: center;
     min-height: 300px;
@@ -452,12 +452,9 @@ h5 {
     padding: 0 5% 0;
 }
 
-
 .footer-row {
     padding: 2%;
 }
-
-/* ##########################################################################################################*/
 
 .p-ubuntu {
     font-family: 'Ubuntu', sans-serif;
@@ -541,9 +538,6 @@ h5 {
     text-align: center;
 }
 
-
-/*    CONTACT PAGE   */
-
 .flex-container {
     display: flex;
     font-family: 'Roboto Flex', sans-serif;
@@ -552,7 +546,6 @@ h5 {
     background-size: cover;
     background-position: left;
     border-radius: 50px;
-
 }
 
 .right-pane {
@@ -582,7 +575,6 @@ h5 {
 .p-paddingR50 {
     padding-right: 50px;
 }
-
 
 .p-btn {
     color: white;
@@ -710,6 +702,28 @@ input:focus {
     padding: 1%;
 }
 
+.p-input-phone {
+    padding-left: 10px;
+}
+
+.p-input-phone2 {
+    width: 100px;
+    padding-left: 20px;
+}
+
+
+.p-modal-0 {
+    font-family: Roboto Flex, sans-serif;
+}
+
+.p-modal2-1 {
+    text-align: right;
+}
+
+.p-modal2-2 {
+    font-size: x-large;
+}
+
 .p-fieldset {
     border: solid 1px rgb(189, 189, 189) !important;
     border-radius: 5px;
@@ -803,11 +817,6 @@ input:focus {
         background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(39, 39, 39) 41%, rgb(54, 53, 53) 100%);
     }
 }
-
-
-
-
-/*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 576px) {
     .car-row {
