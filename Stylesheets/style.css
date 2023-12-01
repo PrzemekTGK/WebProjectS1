@@ -78,7 +78,7 @@ body {
 #navbarRow {
     width: 100%;
     flex-wrap: nowrap;
-    
+
 }
 
 #logoCol {
@@ -173,7 +173,8 @@ body {
     max-width: 1000px !important;
 }
 
-.card, .finance-card {
+.card,
+.finance-card {
     background-color: rgba(26, 26, 26, 1);
     color: rgb(189, 189, 189);
     margin: auto;
@@ -536,7 +537,7 @@ h5 {
     background-size: cover;
     background-position: left;
     border-radius: 50px;
-    box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
+
 }
 
 .right-pane {
@@ -658,12 +659,12 @@ input:focus {
     border-bottom-left-radius: 50px;
 }
 
-#financeCarsContainer{
+#financeCarsContainer {
     flex: 1;
     border-radius: 25px;
     background-color: rgb(41, 41, 41);
-    overflow-y: auto; 
-    box-shadow: inset  10px 10px 20px 10px rgb(10, 10, 10);
+    overflow-y: auto;
+    box-shadow: inset 10px 10px 20px 10px rgb(10, 10, 10);
 }
 
 #financeCarsContainer::-webkit-scrollbar {
@@ -684,12 +685,12 @@ input:focus {
     box-shadow: 0px 0px 20px 10px rgb(150, 150, 150);
 }
 
-.car-row-finance{
+.car-row-finance {
     padding-left: 2%;
     padding-right: 2%;
 }
 
-.car-col-finance{
+.car-col-finance {
     padding: 1%;
 }
 
@@ -763,8 +764,9 @@ input:focus {
     height: 20px;
 }
 
-.location-table, .contact-table{
-    margin-left: auto; 
+.location-table,
+.contact-table {
+    margin-left: auto;
     margin-right: auto;
 
     min-width: 235px;
@@ -782,21 +784,12 @@ input:focus {
     }
 
     .right-pane {
-        background: linear-gradient(90deg, rgba(141, 136, 136, 1) 0%, rgba(198, 195, 192, 1) 41%, rgba(127, 126, 121, 1) 100%);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(39, 39, 39) 41%, rgb(54, 53, 53) 100%);
     }
 }
 
 
-@media (max-width: 765px) {
-    .left-pane {
-        display: none;
 
-    }
-
-    .right-pane {
-        background: linear-gradient(90deg, rgba(141, 136, 136, 1) 0%, rgba(198, 195, 192, 1) 41%, rgba(127, 126, 121, 1) 100%);
-    }
-}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -841,11 +834,12 @@ input:focus {
         margin-bottom: 5%;
     }
 
-    #financeCarsContainer{
+    #financeCarsContainer {
         padding-top: 0px;
         max-height: 355px !important;
     }
-    .car-col-finance{
+
+    .car-col-finance {
         margin: auto !important;
     }
 }
@@ -858,12 +852,15 @@ input:focus {
     .p-mapSize {
         height: 500px;
     }
-    #financeCarsContainer{
+
+    #financeCarsContainer {
         max-height: 1100px !important;
     }
+
     .flex-container-finance {
         display: flex;
     }
+
     .left-pane-finance {
         flex: 1;
     }
@@ -885,10 +882,12 @@ input:focus {
     #logoShort {
         display: none;
     }
+
     #burgerMenu {
         display: none;
     }
-    #financeCarsContainer{
+
+    #financeCarsContainer {
         max-height: 1100px !important;
     }
 }
@@ -923,20 +922,21 @@ input:focus {
     #featuredCard {
         max-width: 95%;
     }
+
     .card {
         max-width: 235px;
         min-height: 367px;
     }
 }
 
-@media (min-width: 1200px){
-    #financeCarsContainer{
+@media (min-width: 1200px) {
+    #financeCarsContainer {
         max-height: 1000px !important;
     }
 }
 
-@media (min-width: 1400){
-    #financeCarsContainer{
+@media (min-width: 1400) {
+    #financeCarsContainer {
         max-height: 870px !important;
     }
 }

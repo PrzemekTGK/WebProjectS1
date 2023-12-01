@@ -281,7 +281,9 @@ const validateInputs = () => {
 
 //CREATES TEXT IN MODAL WINDOW
 function myModalTxt() {
-    document.getElementById("myModalTxt").innerHTML = "<p>You have just applied for finance. Amout:  "
-        + remainingBalance.value
-        + " to buy a " + "</p>";
+    document.getElementById("myModalTxt").innerHTML = "<p>You have just applied for finance to buy a car.  </p>";
+    document.getElementById("myModalTxt2").innerHTML = "<p>The remaining balance to pay is: " + remainingBalance.value +
+        "</p><p>Please, contact directly AutoTrade within 7 days to secure your purchase. After 7 days the offer expires.</p>";
+
+
 }
