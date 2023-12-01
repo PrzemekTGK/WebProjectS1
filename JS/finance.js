@@ -1,4 +1,6 @@
-//#region 
+//#region
+
+//--------------------------------------COUNT FINANCE FIELDS---------------------------------------------------
 //VARS
 let carPrice = document.getElementById("carFullPrice");
 let priceOfCredit = document.getElementById("priceOfCredit");
@@ -50,7 +52,6 @@ function chooseCredit() {
         leftToPay.value = carPrice.value;
     }
 
-
     if (creaditYears == 0) {
 
 
@@ -60,14 +61,11 @@ function chooseCredit() {
         leftToPay.value = carPrice.value;
         remainingBalanceFun()
 
-
-
     } else if (creaditYears == 1) {
 
         interestRate.value = "5%";
         interest = 5;
         remainingBalanceFun()
-
 
     } else if (creaditYears == 3) {
 
@@ -85,17 +83,16 @@ function chooseCredit() {
         interestRate.value = "";
         priceOfCredit.value = "";
         remainingBalance.value = "";
-
     }
 
+    //FINAL PRICE INPUT BOX
     function remainingBalanceFun() {
-        //carDeposit();
+
         priceOfCredit.value = parseInt(creaditYears * leftToPay.value / 100 * interest);
         let remainingBalanceFloat = (parseFloat(leftToPay.value) + parseFloat(priceOfCredit.value));
         console.log("remBla" + remainingBalance.value);
         let a = parseInt(remainingBalance.value);
         remainingBalance.value = remainingBalanceFloat.toLocaleString("ie-IE", { style: "currency", currency: "EUR" });
-
     }
 }
 
@@ -114,8 +111,8 @@ const txt_prefix = document.getElementById('txt_prefix')
 const txt_phone = document.getElementById('txt_phone');
 const txt_deposit = document.getElementById('deposit');
 const txt_creditSelect = document.getElementById('creaditYears');
-let valid = true;
 const myModal = new bootstrap.Modal("#myModal");
+let valid = true;
 
 //EVENT LISTENER ON CLICK WHILE MODAL IS DISPLAYED - RELOAD THE PAGE
 document.addEventListener("click", e => {
@@ -182,23 +179,8 @@ const validateInputs = () => {
 
     const prefixValue = txt_prefix.value;
     const phoneValue = txt_phone.value.trim();
-    //const subjectValue = txt_subject.value.trim();
-    //const messageValue = txt_message.value.trim();
-    //const tickValue = txt_tick.checked;
 
     valid = true;
-
-    // // VALIDATE MR RADIO 
-    // if (streetValue.length < 3) {
-
-    //     setError(txt_Mr, 'Enter 3 letters at least');
-    //     valid = false;
-    // } else {
-    //     setSuccess(txt_Mr);
-    // }
-
-
-
 
     // VALIDATE NAME - has to have at least 4 signs and space between words
     if (nameValue.length < 5 || (nameValue.indexOf(" ") < 0)) {
@@ -243,7 +225,6 @@ const validateInputs = () => {
         valid = false;
     } else {
         setSuccess(txt_email);
-
     }
 
     // VALIDATE PHONE NUMBER -  has to be 7 numbers long
@@ -253,9 +234,7 @@ const validateInputs = () => {
         valid = false;
     } else {
         setSuccess(document.getElementById('phone'));
-
     }
-
 
     // VALIDATE DEPOSIT 
     if (txt_deposit.value == "") {
@@ -274,9 +253,6 @@ const validateInputs = () => {
     } else {
         setSuccess(txt_creditSelect);
     }
-
-
-
 };
 
 //CREATES TEXT IN MODAL WINDOW
@@ -284,6 +260,5 @@ function myModalTxt() {
     document.getElementById("myModalTxt").innerHTML = "<p>You have just applied for finance to buy a car.  </p>";
     document.getElementById("myModalTxt2").innerHTML = "<p>The remaining balance to pay is: " + remainingBalance.value +
         "</p><p>Please, contact directly AutoTrade within 7 days to secure your purchase. After 7 days the offer expires.</p>";
-
 
 }
