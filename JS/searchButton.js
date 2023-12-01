@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+    
+    console.log("Adding Search Button Event listener");
     // Get references to the search button and input field
     var searchBtn = document.getElementById("searchBtn");
     var searchInput = document.getElementById("searchInput");
 
     // Add click event listener to the search button
     searchBtn.addEventListener("click", function () {
+    event.preventDefault(); // Prevent the default form submission
         console.log("Search Button clicked! ");
         // Get the user's input from the search input field
         var userInput = searchInput.value;
