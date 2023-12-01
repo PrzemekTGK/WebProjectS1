@@ -62,7 +62,6 @@ body {
 
 .navbar-toggler:hover #navbarBurgerIcon {
     color: rgb(255, 255, 255);
-    ;
 }
 
 .navbar-toggler:focus {
@@ -712,9 +711,8 @@ input:focus {
     padding-left: 20px;
 }
 
-
 .p-modal-0 {
-    font-family: Roboto Flex, sans-serif;
+    font-family: "Roboto Flex, sans-serif";
 }
 
 .p-modal2-1 {
@@ -982,7 +980,6 @@ input:focus {
     from {
         opacity: 0%;
     }
-
     to {
         opacity: 100%;
     }
