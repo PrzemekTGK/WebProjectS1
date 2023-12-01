@@ -435,7 +435,6 @@ h5 {
 }
 
 #searchContainer{
-    display: flex;
     align-items: center;
     min-height: 300px;
 }
