@@ -435,12 +435,14 @@ h5 {
 }
 
 #searchContainer{
+    position: relative;
     align-items: center;
     min-height: 300px;
 }
 
 #noResultMessageContainer {
-    margin: 0;
+    position: absolute;
+    top: 50%;
     text-align: center;
     font-size: xx-large;
     color: orange;
