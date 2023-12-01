@@ -70,7 +70,6 @@ body {
 }
 
 .nav-slide-in {
-    float: down;
     animation-name: slideIn;
     animation-duration: 1s;
 }
@@ -962,7 +961,7 @@ input:focus {
     }
 }
 
-@media (min-width: 1400) {
+@media (min-width: 1400px) {
     #financeCarsContainer {
         max-height: 870px !important;
     }
