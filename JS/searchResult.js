@@ -2,10 +2,7 @@ $(document).ready(function () {
   var urlParams = new URLSearchParams(window.location.search);
   var searchTerm = urlParams.get('query');
 
-  console.log("Search term from URL:", searchTerm);
-
   $.getJSON("../Json/cars.json", function (cars) {
-    console.log("Cars data:", cars);
 
     var searchContainer = $("#searchContainer");
     var searchInput = $("#searchInput");
@@ -27,8 +24,6 @@ $(document).ready(function () {
           return false;
         });
       });
-
-      console.log("Filtered cars:", filteredCars);
 
       if (searchTerm === "") {
         searchContainer.append("<div class=\"container\" id=\"noResultMessageContainer\"><h1>No search term entered.</h1></div>");
@@ -61,7 +56,6 @@ $(document).ready(function () {
 
     searchInput.on("input", function () {
       searchTerm = $(this).val().toLowerCase();
-      console.log("Updated search term:", searchTerm);
       updateSearchResults();
     });
 
