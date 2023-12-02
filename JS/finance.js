@@ -274,7 +274,7 @@ function myModalTxt() {
     } else {
 
         document.getElementById("myModalTxt2").innerHTML = "<p>A price of the car is: " + cp + "</p>" +
-            "<p>Deposit paied: " + dep + "</p>" +
+            "<p>Deposit paid: " + dep + "</p>" +
             "<p>You are taking a credit for " + creaditYears + " year(s)</p>" +
             "<p>The remaining balance to pay is: " + remainingBalance.value +
             "</p><p>Please, contact directly AutoTrade within 7 days to secure your purchase. After 7 days the offer expires.</p>";
