@@ -995,11 +995,11 @@ input:focus {
     }
 
     .carousel-image{
-        max-height: 746px !important;
+        max-height: 780px !important;
     }
 
     .carousel-container{
-        max-height: 746px !important;
+        max-height: 780px !important;
     }
 }
 
