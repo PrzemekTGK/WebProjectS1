@@ -407,6 +407,7 @@ h5 {
 }
 
 .car-image-finance {
+    max-width: 100% !important;
     border-radius: 20px !important;
     box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
 }
