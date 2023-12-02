@@ -8,7 +8,7 @@ let deposit = document.getElementById("deposit");
 let leftToPay = document.getElementById("leftToPay");
 let interestRate = document.getElementById("interstRate");
 let remainingBalance = document.getElementById("remainingBalance");
-
+let creaditYears = document.getElementById("creaditYears").value;
 
 //CALCULATE LEFT TO PAY FIELD
 function carDeposit() {
@@ -42,8 +42,7 @@ function carDeposit() {
 
 //CALCULATE FULL PRICE LEFT TO PAY
 function chooseCredit() {
-
-    let creaditYears = document.getElementById("creaditYears").value;
+    creaditYears = document.getElementById("creaditYears").value;
     let interest = 0;
 
     console.log("Credit years " + creaditYears);
@@ -90,8 +89,8 @@ function chooseCredit() {
 
         priceOfCredit.value = parseInt(creaditYears * leftToPay.value / 100 * interest);
         let remainingBalanceFloat = (parseFloat(leftToPay.value) + parseFloat(priceOfCredit.value));
-        console.log("remBla" + remainingBalance.value);
-        let a = parseInt(remainingBalance.value);
+        //console.log("remBla" + remainingBalance.value);
+        //let a = parseInt(remainingBalance.value);
         remainingBalance.value = remainingBalanceFloat.toLocaleString("ie-IE", { style: "currency", currency: "EUR" });
     }
 }
@@ -257,8 +256,27 @@ const validateInputs = () => {
 
 //CREATES TEXT IN MODAL WINDOW
 function myModalTxt() {
-    document.getElementById("myModalTxt").innerHTML = "<p>You have just applied for finance to buy a car.  </p>";
-    document.getElementById("myModalTxt2").innerHTML = "<p>The remaining balance to pay is: " + remainingBalance.value +
-        "</p><p>Please, contact directly AutoTrade within 7 days to secure your purchase. After 7 days the offer expires.</p>";
 
+    document.getElementById("myModalTxt").innerHTML = "<p>You have just applied for finance to buy a car.  </p>";
+
+    let cp = parseFloat(carPrice.value);
+    cp = cp.toLocaleString("ie-IE", { style: "currency", currency: "EUR" });
+    let dep = parseFloat(deposit.value);
+    dep = dep.toLocaleString("ie-IE", { style: "currency", currency: "EUR" });
+
+    if (creaditYears == 0) {
+
+        document.getElementById("myModalTxt2").innerHTML = "<p>A price of the car is: " + cp + "</p>" +
+            "<p>You are going to pay a full amout.</p>" +
+            "</p><p>The remaining balance to pay is: " + remainingBalance.value +
+            "</p><p>Please, contact directly AutoTrade within 7 days to secure your purchase. After 7 days the offer expires.</p>";
+
+    } else {
+
+        document.getElementById("myModalTxt2").innerHTML = "<p>A price of the car is: " + cp + "</p>" +
+            "<p>Deposit paied: " + dep + "</p>" +
+            "<p>You are taking a credit for " + creaditYears + " year(s)</p>" +
+            "<p>The remaining balance to pay is: " + remainingBalance.value +
+            "</p><p>Please, contact directly AutoTrade within 7 days to secure your purchase. After 7 days the offer expires.</p>";
+    }
 }

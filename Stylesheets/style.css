@@ -710,15 +710,16 @@ input:focus {
     padding-left: 20px;
 }
 
-.p-modal-0 {
-    font-family: "Roboto Flex, sans-serif";
+.p-modalz {
+    font-family: 'Roboto Flex', sans-serif;
 }
 
-.p-modal2-1 {
+.p-modaldj {
     text-align: right;
+
 }
 
-.p-modal2-2 {
+.p-modaldd {
     font-size: x-large;
 }
 
@@ -979,6 +980,7 @@ input:focus {
     from {
         opacity: 0%;
     }
+
     to {
         opacity: 100%;
     }
