@@ -404,6 +404,18 @@ h5 {
     color: rgb(255, 255, 255);
 }
 
+#carImageCol {
+    max-width: 100%;
+    margin-bottom: auto;
+}
+
+#carImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .car-image {
     max-width: 100%;
     box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
