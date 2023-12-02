@@ -967,6 +967,7 @@ input:focus {
     #financeCarsContainer {
         max-height: 870px !important;
     }
+    
 }
 
 @keyframes slideIn {
