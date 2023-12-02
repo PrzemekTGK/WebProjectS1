@@ -11,18 +11,18 @@
         <link rel="stylesheet" href="../Stylesheets/style.css">
         <script src="../jQuery/jquery-3.7.1.js"></script>
     </head>
-    <header>
-        <div class="container-fluid navbar-container navSlideIn">
-            <nav id="navbarHolder"></nav>
-        </div>
-        <script>
-        $.get("navbar.html", function (data) {
-            $("#navbarHolder").html(data);
-        });
-        </script>
-        <script type="module" src="../JS/currentPage.js"></script> 
-    </header>
     <body>
+        <header>
+            <div class="container-fluid navbar-container navSlideIn">
+                <nav id="navbarHolder"></nav>
+            </div>
+            <script>
+            $.get("navbar.html", function (data) {
+                $("#navbarHolder").html(data);
+            });
+            </script>
+            <script type="module" src="../JS/currentPage.js"></script> 
+        </header>
         <div class="container car-details-container mt-5 mb-5 pt-5"
             id="carDetailsContainer">
             <div id="carDetailsTemplate">

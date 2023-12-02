@@ -12,18 +12,18 @@
         <script src="https://kit.fontawesome.com/0dbc7933f2.js" crossorigin="anonymous"></script>
         <script src="/jQuery/jquery-3.7.1.js"></script>
     </head>
-    <header>
-        <div class="container-fluid navbar-container">
-            <nav id="navbarHolder"></nav>
-        </div>
-        <script>
-            $.get("/Pages/navbar.html", function(data) {
-                $("#navbarHolder").html(data);
-            });
-        </script>
-        <script type="module" src="../JS/currentPage.js"></script>
-    </header>
-    <body>        
+    <body>   
+        <header>
+            <div class="container-fluid navbar-container">
+                <nav id="navbarHolder"></nav>
+            </div>
+            <script>
+                $.get("/Pages/navbar.html", function(data) {
+                    $("#navbarHolder").html(data);
+                });
+            </script>
+            <script type="module" src="../JS/currentPage.js"></script>
+        </header>     
         <div class="container-fluid search-result mt-5" id="searchContainer"></div>
         <script src="../JS/searchResult.js"></script>
         <script

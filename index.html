@@ -13,18 +13,18 @@
             crossorigin="anonymous"></script>
         <script src="../jQuery/jquery-3.7.1.js"></script>
     </head>
-    <header>
-        <div class="container-fluid navbar-container nav-slide-in">
-            <nav id="navbarHolder"></nav>
-        </div>
-        <script>
-            $.get("../Pages/navbar.html", function(data) {
-                $("#navbarHolder").html(data);
-            });
-        </script>
-        <script type="module" src="../JS/currentPage.js"></script>
-    </header>
     <body>
+        <header>
+            <div class="container-fluid navbar-container nav-slide-in">
+                <nav id="navbarHolder"></nav>
+            </div>
+            <script>
+                $.get("../Pages/navbar.html", function(data) {
+                    $("#navbarHolder").html(data);
+                });
+            </script>
+            <script type="module" src="../JS/currentPage.js"></script>
+        </header>
         <div class="container carousel-container carousel-fade-in">
             <div id="myCarousel" class="carousel slide carousel-fade"
                 data-bs-ride="carousel">
