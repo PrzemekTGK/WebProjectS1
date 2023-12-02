@@ -147,17 +147,17 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous">
         </script>
-    <footer>
-        <div class="container-fluid footer-container">
-            <div class="row" id="footerRow">
-                <nav id="footerHolder"></nav>
+        <footer>
+            <div class="container-fluid footer-container">
+                <div class="row" id="footerRow">
+                    <nav id="footerHolder"></nav>
+                </div>
             </div>
-        </div>
-        <script>
-            $.get("../Pages/footer.html", function(data) {
-                $("#footerHolder").html(data);
-            });
-        </script>
-    </footer>
+            <script>
+                $.get("../Pages/footer.html", function(data) {
+                    $("#footerHolder").html(data);
+                });
+            </script>
+        </footer>
     </body>
 </html>
