@@ -822,9 +822,27 @@ input:focus {
 }
 
 @media screen and (max-width: 576px) {
-    .car-row {
-        margin-top: 7.5% !important;
-        margin-bottom: 7.5% !important;
+    .carousel-container {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .carousel-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    .carousel-container {
+        max-height: 305px !important;
+    }
+
+    .carousel-image {
+        max-height: 305px !important;
     }
 }
 
@@ -870,14 +888,6 @@ input:focus {
     .car-col-finance {
         margin: auto !important;
     }
-
-    .carousel-image {
-        max-height: 306px !important;
-    }
-
-    .carousel-container {
-        max-height: 306px !important;
-    }
 }
 
 @media screen and (min-width: 765px) {
@@ -905,12 +915,12 @@ input:focus {
         flex: 1;
     }
 
-    .carousel-image {
-        max-height: 406px !important;
+    .carousel-container {
+        max-height: 407px !important;
     }
 
-    .carousel-container {
-        max-height: 406px !important;
+    .carousel-image {
+        max-height: 407px !important;
     }
 }
 
@@ -918,14 +928,6 @@ input:focus {
 
     .card {
         min-height: 375px;
-    }
-
-    .carousel-image {
-        max-height: 542px !important;
-    }
-
-    .carousel-container {
-        max-height: 542px !important;
     }
 }
 
@@ -941,6 +943,14 @@ input:focus {
 
     #financeCarsContainer {
         max-height: 1100px !important;
+    }
+
+    .carousel-container {
+        max-height: 543px !important;
+    }
+
+    .carousel-image {
+        max-height: 543px !important;
     }
 }
 
@@ -986,12 +996,12 @@ input:focus {
         max-height: 1000px !important;
     }
 
-    .carousel-image {
-        max-height: 746px !important;
+    .carousel-container {
+        max-height: 645px !important;
     }
 
-    .carousel-container {
-        max-height: 746px !important;
+    .carousel-image {
+        max-height: 645px !important;
     }
 }
 
@@ -1000,12 +1010,12 @@ input:focus {
         max-height: 870px !important;
     }
 
-    .carousel-image {
-        max-height: 780px !important;
+    .carousel-container {
+        max-height: 746px !important;
     }
 
-    .carousel-container {
-        max-height: 780px !important;
+    .carousel-image {
+        max-height: 746px !important;
     }
 }
 
