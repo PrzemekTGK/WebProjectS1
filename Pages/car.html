@@ -21,14 +21,15 @@
                 $("#navbarHolder").html(data);
             });
             </script>
-            <script type="module" src="../JS/currentPage.js"></script> 
+            <script type="module" src="../JS/currentPage.js"></script>
         </header>
         <div class="container car-details-container mt-5 mb-5 pt-5"
             id="carDetailsContainer">
             <div id="carDetailsTemplate">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <img class="car-image" id="carImage" alt="{MAKE} {MODEL}">
+                        <img class="car-image" id="carImage"
+                            alt="{MAKE} {MODEL}">
                     </div>
                     <div class="col-lg-6 col-md-12">
                         <h3>{MAKE} {MODEL}</h3>
@@ -38,20 +39,24 @@
                             <br>Fuel Type: {FUEL_TYPE}
                             <br>Transmission: {TRANSMISSION}
                             <br>Price: €{PRICE}
-                            <p id="carIndex" style="display: none">Index: {INDEX}</p>
+                            <p id="carIndex" style="display: none">Index:
+                                {INDEX}</p>
                         </p>
                         <hr>
                         <p>Description: <br>{DESCRIPTION}</p>
                         <hr>
-                        <a href="../Pages/contact.html"><button class="enquire-button"
+                        <a href="../Pages/contact.html"><button
+                                class="enquire-button"
                                 type="button">Enquire</button></a>
                         <a href="#"><button class="enquire-button"
-                            type="button" id="carToFinanceLink">Finance</button></a>                            
-                        <a href="../Pages/cars.html"><button class="enquire-button"
-                            type="button"><i class="fa-solid fa-caret-left"></i> Back</button></a>
+                                type="button" id="carToFinanceLink">Finance</button></a>
+                        <a href="../Pages/cars.html"><button
+                                class="enquire-button"
+                                type="button"><i class="fa-solid fa-caret-left"></i>
+                                Back</button></a>
                     </div>
                 </div>
-                <div class="row">        
+                <div class="row">
                 </div>
             </div>
         </div>
@@ -63,18 +68,17 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous">
         </script>
-
-    </body>
-    <footer>
-        <div class="container-fluid footer-container">
-            <div class="row" id="footerRow">
-                <nav id="footerHolder"></nav>
+        <footer>
+            <div class="container-fluid footer-container">
+                <div class="row" id="footerRow">
+                    <nav id="footerHolder"></nav>
+                </div>
             </div>
-        </div>
-        <script>
-        $.get("../Pages/footer.html", function (data) {
-            $("#footerHolder").html(data);
-        });
-    </script>
-    </footer>
+            <script>
+                $.get("../Pages/footer.html", function (data) {
+                    $("#footerHolder").html(data);
+                });
+            </script>
+        </footer>
+    </body>
 </html>

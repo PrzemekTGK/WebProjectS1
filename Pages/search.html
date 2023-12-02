@@ -9,10 +9,11 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous">
         <link rel="stylesheet" href="/Stylesheets/style.css">
-        <script src="https://kit.fontawesome.com/0dbc7933f2.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/0dbc7933f2.js"
+            crossorigin="anonymous"></script>
         <script src="/jQuery/jquery-3.7.1.js"></script>
     </head>
-    <body>   
+    <body>
         <header>
             <div class="container-fluid navbar-container">
                 <nav id="navbarHolder"></nav>
@@ -23,7 +24,7 @@
                 });
             </script>
             <script type="module" src="../JS/currentPage.js"></script>
-        </header>     
+        </header>
         <div class="container-fluid search-result mt-5" id="searchContainer"></div>
         <script src="../JS/searchResult.js"></script>
         <script
@@ -31,17 +32,17 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous">
         </script>
-    </body>
-    <footer>
-        <div class="container-fluid footer-container">
-            <div class="row" id="footerRow">
-                <nav id="footer-holder"></nav>
+        <footer>
+            <div class="container-fluid footer-container">
+                <div class="row" id="footerRow">
+                    <nav id="footer-holder"></nav>
+                </div>
             </div>
-        </div>
-        <script>
-            $.get("/Pages/footer.html", function(data) {
-                $("#footer-holder").html(data);
-            });
-        </script>
-    </footer>
+            <script>
+                $.get("/Pages/footer.html", function(data) {
+                    $("#footer-holder").html(data);
+                });
+            </script>
+        </footer>
+    </body>
 </html>
