@@ -146,7 +146,7 @@ body {
     border-bottom-right-radius: 0px !important;
 }
 
-#myCarousel{
+#myCarousel {
     padding: 0px;
 }
 
@@ -805,13 +805,13 @@ input:focus {
     min-width: 235px;
 }
 
-@media screen and   (max-width: 765px) {
+@media screen and (max-width: 765px) {
     .flex-container {
         flex-direction: column;
     }
 }
 
-@media screen and  (max-width: 765px) {
+@media screen and (max-width: 765px) {
     .left-pane {
         display: none;
     }
@@ -821,22 +821,14 @@ input:focus {
     }
 }
 
-@media screen and  (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .car-row {
         margin-top: 7.5% !important;
         margin-bottom: 7.5% !important;
     }
-
-    .carousel-image{
-        max-height: 205px !important;
-    }
-
-    .carousel-container{
-        max-height: 205px !important;
-    }
 }
 
-@media screen and  (max-width: 764px) {
+@media screen and (max-width: 764px) {
     .card {
         max-width: 100%;
     }
@@ -879,16 +871,16 @@ input:focus {
         margin: auto !important;
     }
 
-    .carousel-image{
+    .carousel-image {
         max-height: 306px !important;
     }
 
-    .carousel-container{
+    .carousel-container {
         max-height: 306px !important;
     }
 }
 
-@media screen and  (min-width: 765px) {
+@media screen and (min-width: 765px) {
     #aboutUsLinkInnerDiv {
         width: 50%;
     }
@@ -913,31 +905,31 @@ input:focus {
         flex: 1;
     }
 
-    .carousel-image{
+    .carousel-image {
         max-height: 406px !important;
     }
 
-    .carousel-container{
+    .carousel-container {
         max-height: 406px !important;
     }
 }
 
-@media screen and  (min-width: 991px) {
+@media screen and (min-width: 991px) {
 
     .card {
         min-height: 375px;
     }
 
-    .carousel-image{
+    .carousel-image {
         max-height: 542px !important;
     }
 
-    .carousel-container{
+    .carousel-container {
         max-height: 542px !important;
     }
 }
 
-@media screen and  (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
     #logoShort {
         display: none;
@@ -952,7 +944,7 @@ input:focus {
     }
 }
 
-@media screen and  (max-width: 991px) {
+@media screen and (max-width: 991px) {
     #linksMenu {
         display: none;
     }
@@ -989,23 +981,31 @@ input:focus {
     }
 }
 
-@media screen and  (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     #financeCarsContainer {
         max-height: 1000px !important;
     }
 
-    .carousel-image{
-        max-height: 780px !important;
+    .carousel-image {
+        max-height: 746px !important;
     }
 
-    .carousel-container{
-        max-height: 780px !important;
+    .carousel-container {
+        max-height: 746px !important;
     }
 }
 
-@media screen and  (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
     #financeCarsContainer {
         max-height: 870px !important;
+    }
+
+    .carousel-image {
+        max-height: 780px !important;
+    }
+
+    .carousel-container {
+        max-height: 780px !important;
     }
 }
 
