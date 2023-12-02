@@ -1,17 +1,17 @@
-const viewStockButton = document.getElementById('carslinkButton');
-const applyNowButton = document.getElementById('financeLinkButton');
-const learnMoreButton = document.getElementById('aboutUsLinkButton');
+const carsButton = document.getElementById('carslinkButton');
+const financeButton = document.getElementById('financeLinkButton');
+const aboutUsButton = document.getElementById('aboutUsLinkButton');
 
 
-viewStockButton.addEventListener('click', function() {
-    console.log(viewStockButton);
+carsButton.addEventListener('click', function() {
+    console.log(carsButton);
     window.location.href = '../Pages/cars.html';
 });
-applyNowButton.addEventListener('click', function() {
-    console.log(applyNowButton);
+financeButton.addEventListener('click', function() {
+    console.log(financeButton);
     window.location.href = '../Pages/finance.html';
 });
-learnMoreButton.addEventListener('click', function() {
-    console.log(learnMoreButton);
+aboutUsButton.addEventListener('click', function() {
+    console.log(aboutUsButton);
     window.location.href = '../Pages/about.html';
 });

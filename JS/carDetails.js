@@ -34,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
     const carIndex = getQueryParam('carIndex');
     if (carIndex) {
-        const financeLink = '../Pages/finance.html?carIndex=' + carIndex;
-        $('#carToFinanceLink').parent().attr('href', financeLink);
         updateCarDetails(carIndex);
     }    
 });
