@@ -52,7 +52,7 @@ function updateCarDetails(carIndex) {
                 .replace(/{PRICE}/g, selectedCar.price)
                 .replace(/{INDEX}/g, selectedCar.index);
             $('#carDetailsContainer').html(filledTemplate);
-            $('#carImage').attr('src', '../Images/Cards/' + selectedCar.image);
+            $('#carImage').attr('src', '../Images/Cars/' + selectedCar.image);
 
             var carFullPriceInput = document.getElementById("carFullPrice");
             if(carFullPriceInput){

@@ -12,7 +12,7 @@ $(document).ready(function () {
           <div class="col car-col-finance">
             <div class="finance-card mt-4">
               <a href="#" class="car-update-finance" style="text-decoration: none;" data-index="${index}">
-                <img class="card-img-top" src="/Images/Cards/${car.image}" alt="Card image cap">
+                <img class="card-img-top" src="/Images/Cars/${car.image}">
                 <div class="card-body p-2" style="color: rgb(255, 255, 255);">
                   <p class="card-title" style="color: orange; font-weight: bold; font-size: large; text-wrap: wrap;">${car.make} ${car.model}<p>
                   <p class="card-text">Year: ${car.year}
@@ -56,7 +56,7 @@ $(document).ready(function () {
     function updateCarDetails(car) {
       // Update the content of carDetailsContainer with car details
       var carDetailsHtml = `
-        <img class="car-image-finance mt-3 mb-3" id="carImage" alt="${car.make} ${car.model}" src="/Images/Cards/${car.image}">
+        <img class="car-image-finance mt-3 mb-3" id="carImage" alt="${car.make} ${car.model}" src="../Images/Cars/${car.image}">
         <h3>${car.make} ${car.model}</h3>
         <p>
           Year: ${car.year}

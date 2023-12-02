@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     .replace(/{INDEX}/g, selectedCar.index);
 
                 $('#carDetailsContainer').html(filledTemplate);
-                $('#carImage').attr('src', '../Images/Cards/' + selectedCar.image);
+                $('#carImage').attr('src', '../Images/Cars/' + selectedCar.image);
             },
             error: function (error) {
                 console.error('Error fetching data:', error);
