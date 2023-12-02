@@ -237,7 +237,7 @@ h5 {
     width: 573px;
     height: 337px;
     margin-bottom: 2%;
-    background-image: url('/Images/Backgrounds/CarsLinkBG.png');
+    background-image: url('/Images/Backgrounds/CarsLinkBG.webp');
     background-size: contain;
     border-radius: 20px;
     box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
@@ -248,7 +248,7 @@ h5 {
     width: 573px;
     height: 337px;
     margin-bottom: 2%;
-    background-image: url('/Images/Backgrounds/FinanceLinkBG.jpg');
+    background-image: url('/Images/Backgrounds/FinanceLinkBG.webp');
     background-size: contain;
     box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
     border-radius: 20px;
@@ -257,7 +257,7 @@ h5 {
 #aboutUsLink {
     position: relative;
     height: 500px;
-    background-image: url('/Images/Backgrounds/AboutUsLinkBG.jpg');
+    background-image: url('/Images/Backgrounds/AboutUsLinkBG.webp');
     background-position: bottom;
     background-position-x: left;
     border-top-left-radius: 20px;
@@ -541,7 +541,7 @@ h5 {
     display: flex;
     font-family: 'Roboto Flex', sans-serif;
     flex: 1;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../Images/Backgrounds/contact.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../Images/Backgrounds/contact.webp);
     background-size: cover;
     background-position: left;
     border-radius: 50px;
