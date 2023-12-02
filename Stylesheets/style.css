@@ -384,13 +384,26 @@ h5 {
 
 }
 
+.game-reset-button {
+    width: 120px;
+    background-color: rgb(41, 41, 41);
+    color: rgb(189, 189, 189);
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: rgb(189, 189, 189);
+    min-width: 20%;
+    min-height: 40px;
+    box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
+}
+
 .link-button:hover,
 .enquire-button:hover,
 .about-us-link-button:hover,
 .car-link:hover,
 .form-btn:hover,
 .car-page-button:hover,
-.back-to-cars-button:hover {
+.back-to-cars-button:hover,
+.game-reset-button:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
     border-color: rgb(255, 255, 255);
@@ -817,6 +830,57 @@ input:focus {
     min-width: 235px;
 }
 
+#gameTitle{
+    margin-top: 84px;
+    text-align: center;
+
+}
+
+.game-container{
+    background-color: rgba(26, 26, 26, 1);
+    color: rgb(189, 189, 189);
+    margin: auto;
+    box-shadow: 10px 10px 15px 5px rgb(10, 10, 10);
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.game-col {
+    max-width: fit-content; 
+    margin: 20px auto 30px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto 30px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.cell img {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+}
+
+#gameMessage{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+    color: orange !important;
+}
+
 @media screen and (max-width: 765px) {
     .flex-container {
         flex-direction: column;
@@ -1002,7 +1066,7 @@ input:focus {
         min-height: 330px;
     }
 
-    .card > img{
+    .card>img {
         max-width: 100%;
         height: auto;
         display: block;

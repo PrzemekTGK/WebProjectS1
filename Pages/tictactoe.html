@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AT TicTacToe</title>
+        <meta name="description"
+            content="Looking for your dream car? Browse our selection of the most expensive cars in the world, from luxury brands like Ferrari, Lamborghini, Bugatti, and more. Find out the features, specifications, and prices of these exclusive vehicles. Whether you want to buy, sell, or trade, we are the ultimate destination for car enthusiasts. Visit us today and discover the best deals on the most expensive cars.">
+        <meta charset="UTF-8">
+        <meta name="keywords"
+            content="AutoTrade, cars, car, luxary, buy, finance">
+        <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../Stylesheets/style.css">
+        <script src="https://kit.fontawesome.com/0dbc7933f2.js"
+            crossorigin="anonymous"></script>
+        <script src="../jQuery/jquery-3.7.1.js"></script>
+    </head>
+    <header>
+        <div class="container-fluid navbar-container nav-slide-in">
+            <nav id="navbarHolder"></nav>
+        </div>
+        <script>
+            $.get("../Pages/navbar.html", function(data) {
+                $("#navbarHolder").html(data);
+            });
+        </script>
+        <script type="module" src="../JS/currentPage.js"></script>
+        <script type="module" src="../JS/searchButton.js"></script>
+    </header>
+    <body>
+        <h1 id="gameTitle">AutoTrade TicTacToe!</h1>
+        <div class="container game-container">
+            <div class="row h-100">
+                <div class="col game-col">
+                    <div id="gameMessage"></div>
+                    <div class="board" id="board"></div>
+                    <div class="row justify-content-center">
+                        <button id="resetButton" class="btn game-reset-button">Reset Game</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <script src="../JS/tictactoe.js"></script>
+        <script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
+        <footer>
+            <div class="container-fluid footer-container">
+                <div class="row" id="footerRow">
+                    <nav id="footerHolder"></nav>
+                </div>
+            </div>
+            <script>
+                $.get("../Pages/footer.html", function(data) {
+                    $("#footerHolder").html(data);
+                });
+            </script>
+        </footer>
+    </body>
+</html>
