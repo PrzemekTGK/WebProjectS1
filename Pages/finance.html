@@ -35,11 +35,10 @@
 
                         <!--          LEFT PANE          -->
                         <section class="left-pane-finance">
-                            <h1 class="p-center">Your Car</h1>
+                            <h2 class="p-center" style="color: orange; font-weight: bold;">Your Car</h2>
                             <div id="carDetailsContainer">
                                 <div id="carDetailsTemplate">
-                                    <img class="car-image-finance mt-3 mb-3"
-                                        id="carImage" alt="{MAKE} {MODEL}">
+                                    <img src="#" class="car-image-finance mt-3 mb-3" id="carImage" alt="{MAKE} {MODEL}">
                                     <h3>{MAKE} {MODEL}</h3>
                                     <p>
                                         Year: {YEAR}
@@ -51,9 +50,7 @@
                                         {TRANSMISSION}
                                         <br>Price:
                                         €{PRICE}
-                                        <p id="carIndex" style="display: none;">Index:
-                                            {INDEX}
-                                        </p>
+                                        <span id="carIndex" style="display: none;">Index: {INDEX}</span>
                                     </p>
                                     <hr>
                                 </div>
@@ -66,12 +63,11 @@
                         <!--          RIGHT PANE          -->
                         <section class="right-pane-finance">
 
-                            <h1 class="p-center">Finance</h1>
+                            <h2 class="p-center" style="color: orange; font-weight: bold;">Finance</h2>
                             <form id="form">
                                 <!--          PERSONAL INFORMATION BOX          -->
                                 <fieldset class="p-2 p-fieldset">
-                                    <legend class="float-none w-auto">Personal
-                                        Information:</legend>
+                                    <legend class="float-none w-auto">Personal Information:</legend>
                                     <div>
                                         <!--          RADIO GROUP          -->
                                         <fieldset id="group1"
@@ -316,7 +312,7 @@
             crossorigin="anonymous">
         </script>
         <!--    JAVA SCRIPT     -->
-        <script type="text/javascript" src="../JS/finance.js"></script>
+        <script src="../JS/finance.js"></script>
         <footer>
             <div class="container-fluid footer-container">
                 <div class="row" id="footerRow">
