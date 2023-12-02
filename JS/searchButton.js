@@ -12,5 +12,5 @@ document.addEventListener("DOMContentLoaded", function () {
             
             window.location.href = searchUrl;
         });
-    }, 500);
+    }, 250);
 });

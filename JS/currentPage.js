@@ -25,7 +25,7 @@ $(function () {
     if (window.location.pathname.endsWith('index.html')) {
         setTimeout(function () {
             highlightCurrentPage();
-        }, 500);
+        }, 250);
     } else {
         setTimeout(function(){
             highlightCurrentPage();
