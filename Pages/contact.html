@@ -1,308 +1,273 @@
 <!DOCTYPE html>
 <html lang=en>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>AutoTrade Contact</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="../Stylesheets/style.css">
-        <script src="../jQuery/jquery-3.7.1.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="container-fluid navbar-container navSlideIn">
-                <nav id="navbarHolder"></nav>
-            </div>
-            <script>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AutoTrade Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Stylesheets/style.css">
+    <script src="../jQuery/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid navbar-container navSlideIn">
+            <nav id="navbarHolder"></nav>
+        </div>
+        <script>
             $.get("navbar.html", function (data) {
                 $("#navbarHolder").html(data);
             });
         </script>
-            <script type="module" src="../JS/currentPage.js"></script>
-            <script type="module" src="../JS/searchButton.js"></script>
-        </header>
-        <!--  CONTAINER FOR TWO PANES    -->
-        <div class="container-fluid contact-container">
+        <script type="module" src="../JS/currentPage.js"></script>
+        <script type="module" src="../JS/searchButton.js"></script>
+    </header>
+    <!--  CONTAINER FOR TWO PANES    -->
+    <div class="container-fluid contact-container">
 
-            <div class="row d-flex justify-content-center p-margin80">
+        <div class="row d-flex justify-content-center p-margin80">
 
-                <!--         LEFT PANE              -->
-                <div class="col-lg-9 col-md-12 col-sm-12">
+            <!--         LEFT PANE              -->
+            <div class="col-lg-9 col-md-12 col-sm-12">
 
-                    <main class="flex-container">
+                <main class="flex-container">
 
-                        <section class="left-pane">
-                            <h2 class="p-center" style="color: orange; font-weight: bold;">Speak With Us</h2>
+                    <section class="left-pane">
+                        <h2 class="p-center" style="color: orange; font-weight: bold;">Speak With Us</h2>
 
-                            <!--  PHONE US     -->
-                            <p>
-                                <span class="fa fa-phone fa-2x mt-4 p-orangeTxt">
-                                </span>
-                                <span class="fw-bold">Phone us:</span>
-                            </p>
-                            <table>
-                                <tr>
-                                    <td class="p-paddingR50">Sales:</td>
-                                    <td class="p-orangeTxt">(01) 123 4567</td>
-                                </tr>
-                                <tr>
-                                    <td> Service:</td>
-                                    <td class="p-orangeTxt">(01) 123 4568</td>
-                                </tr>
-                            </table>
+                        <!--  PHONE US     -->
+                        <p>
+                            <span class="fa fa-phone fa-2x mt-4 p-orangeTxt">
+                            </span>
+                            <span class="fw-bold">Phone us:</span>
+                        </p>
+                        <table>
+                            <tr>
+                                <td class="p-paddingR50">Sales:</td>
+                                <td class="p-orangeTxt">(01) 123 4567</td>
+                            </tr>
+                            <tr>
+                                <td> Service:</td>
+                                <td class="p-orangeTxt">(01) 123 4568</td>
+                            </tr>
+                        </table>
 
-                            <!--  GENERAL SUPPORT    -->
-                            <p>
-                                <span
-                                    class="p-orangeTxt fas fa-envelope fa-2x mt-3"></span>
-                                <span class="fw-bold">General Support:</span>
-                            </p>
-                            <p>
-                                <a href="mailto:info@autotrade.ie" class="p-orangeTxt">info@autotrade.ie</a>
-                            </p>
+                        <!--  GENERAL SUPPORT    -->
+                        <p>
+                            <span class="p-orangeTxt fas fa-envelope fa-2x mt-3"></span>
+                            <span class="fw-bold">General Support:</span>
+                        </p>
+                        <p>
+                            <a href="mailto:info@autotrade.ie" class="p-orangeTxt">info@autotrade.ie</a>
+                        </p>
 
-                            <!--  LOCATION    -->
-                            <p>
-                                <span
-                                    class="p-orangeTxt fa fa-map-marker-alt fa-2x mt-3"></span>
-                                <span class="fw-bold">We are located at:</span>
+                        <!--  LOCATION    -->
+                        <p>
+                            <span class="p-orangeTxt fa fa-map-marker-alt fa-2x mt-3"></span>
+                            <span class="fw-bold">We are located at:</span>
 
-                                <table class="p-orangeTxt">
-                                    <tr>
-                                        <td>Liffey Valley Shopping Centre,</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fonthill Rd,</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Clondalkin,</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dublin 22</td>
-                                    </tr>
-                                </table>
-                            </section>
+                        <table class="p-orangeTxt">
+                            <tr>
+                                <td>Liffey Valley Shopping Centre,</td>
+                            </tr>
+                            <tr>
+                                <td>Fonthill Rd,</td>
+                            </tr>
+                            <tr>
+                                <td>Clondalkin,</td>
+                            </tr>
+                            <tr>
+                                <td>Dublin 22</td>
+                            </tr>
+                        </table>
+                    </section>
 
-                            <!--          RIGHT PANE          -->
-                            <section class="right-pane">
+                    <!--          RIGHT PANE          -->
+                    <section class="right-pane">
 
-                                <!--  CONTACT US    -->
-                                <h2 class="p-center" style="color: orange; font-weight: bold;">Contact Us</h2>
+                        <!--  CONTACT US    -->
+                        <h2 class="p-center" style="color: orange; font-weight: bold;">Contact Us</h2>
 
-                                <!--    FORM     -->
-                                <form id="form">
+                        <!--    FORM     -->
+                        <form id="form">
 
-                                    <!--    PULLDOWN SELECT     -->
-                                    <div class="input-control">
-                                        <p><label for="txt_Department">Select a
-                                                department </label> *</p>
-                                        <select class="form-select form-control"
-                                            id="txt_Department"
-                                            name="txt_Department">
-                                            <option value="0">-- Select a
-                                                department
-                                                --</option>
-                                            <option value="Sales" id="sales">Sales</option>
-                                            <option value="Service" id="service">Service</option>
-                                            <option value="Finance" id="finance">Finance</option>
-                                            <option value="Payments"
-                                                id="payments">Payments</option>
-                                            <option value="Parts" id="parts">Parts</option>
-                                            <option value="General" id="general">General</option>
-                                        </select>
-                                        <div class="error"></div>
-                                    </div>
-
-                                    <!--    NAME INPUT     -->
-                                    <div class="input-control">
-                                        <p><label for="txt_name" class="mt-3">Name</label>
-                                            *</p>
-                                        <input class="form-control"
-                                            id="txt_name"
-                                            name="txt_name" type="text"
-                                            Required="required"
-                                            placeholder="ex. John Rock">
-                                        <div class="error"></div>
-                                    </div>
-
-                                    <!--    EMAIL INPUT     -->
-
-                                    <div class="input-control">
-                                        <p><label for="txt_email" class="mt-3">E-mail</label>
-                                            *</p>
-                                        <input class="form-control mt-3"
-                                            id="txt_email" type="email"
-                                            Required="required"
-                                            placeholder="ex. John.Rock@mail.com">
-                                        <div class="error"></div>
-                                    </div>
-
-                                    <!--    PHONE INPUT     -->
-                                    <div class="input-control">
-                                        <p> <label for="txt_phone" class="mt-3">Phone
-                                            </label> *</p>
-                                        <div class="input-container d-flex ">
-                                            <select
-                                                class="form-select form-control p-input-phone2"
-                                                id="txt_prefix">
-                                                <option value="0">prefix</option>
-                                                <option value="083">083</option>
-                                                <option value="085">085</option>
-                                                <option value="086">086</option>
-                                                <option value="086">087</option>
-                                                <option value="089">089</option>
-                                            </select>
-
-                                            <input type="tel" pattern="[0-9]{7}"
-                                                class="form-control"
-                                                id="txt_phone"
-                                                name="txt_phone"
-                                                placeholder="ex. 1234567"
-                                                Required="required">
-                                        </div>
-                                        <div class="error" id="phone"></div>
-                                    </div>
-
-                                    <!--    SELECT INPUT     -->
-                                    <div class="input-control mt-3">
-                                        <p><label for="txt_subject">Subject</label>
-                                            *</p>
-                                        <input class="form-control"
-                                            id="txt_subject"
-                                            name="txt_subject" type="text"
-                                            Required="required"
-                                            placeholder="ex. Trade-in">
-                                        <div class="error"></div>
-                                    </div>
-
-                                    <!--    MESSAGE INPUT     -->
-                                    <div class="input-control">
-                                        <p><label for="txt_message" class="mt-3">
-                                                Message</label> *</p>
-                                        <textarea
-                                            class="form-control p-fontSizeLarger p-textArea"
-                                            id="txt_message"
-                                            Required="required"
-                                            placeholder="Enter your message"></textarea>
-                                        <div class="error"></div>
-                                    </div>
-
-                                    <div class="checkbox mt-2 text-center ">
-
-                                        <!--    CHECKBOX INPUT     -->
-                                        <div class="input-control">
-                                            <input class="p-marginR10 mt-3"
-                                                id="txt_tick" type="checkbox"
-                                                name="txt_tick">*
-                                            <label for="txt_tick"> I agree to
-                                                store
-                                                and process my
-                                                information.
-                                            </label>
-                                            <div class="error"></div>
-                                        </div>
-                                    </div>
-
-                                    <!--    SUBMIT BUTTON     -->
-                                    <button type="submit" id="submit"
-                                        class="form-btn">Submit</button>
-                                </form>
-                            </section>
-                        </main>
-                    </div>
-                </div>
-            </div>
-
-            <!--    MAP AREA     -->
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center mt-4">
-
-                    <div class="col-lg-9 col-md-12 col-sm-12 mt-4 mb-5">
-
-                        <!--    TEXT OVER THE MAP     -->
-                        <div class="p-mapArea ">
-                            <p class=" text-center p-paddingT10 h2">We are
-                                located
-                                at:</p>
-                            <div class="fw-bold text-center mt-2 p-orangeTxt">Liffey
-                                Valley Shopping Centre,
-                                Fonthill Rd,
-                                Clondalkin,
-                                Dublin 22
+                            <!--    PULLDOWN SELECT     -->
+                            <div class="input-control">
+                                <p><label for="txt_Department">Select a
+                                        department </label> *</p>
+                                <select class="form-select form-control" id="txt_Department" name="txt_Department">
+                                    <option value="0">-- Select a
+                                        department
+                                        --</option>
+                                    <option value="Sales" id="sales">Sales</option>
+                                    <option value="Service" id="service">Service</option>
+                                    <option value="Finance" id="finance">Finance</option>
+                                    <option value="Payments" id="payments">Payments</option>
+                                    <option value="Parts" id="parts">Parts</option>
+                                    <option value="General" id="general">General</option>
+                                </select>
+                                <div class="error"></div>
                             </div>
 
-                            <!--    MAP ITSELF     -->
-                            <div class="mt-3 p-3">
-
-                                <iframe class="p-mapSize"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.4829820660348!2d-6.394081123037247!3d53.35251067426196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486772d8e952e1f1%3A0x80358292d8c1c815!2sLiffey%20Valley%20Shopping%20Centre!5e0!3m2!1spl!2sie!4v1700742274526!5m2!1spl!2sie"
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                </iframe>
+                            <!--    NAME INPUT     -->
+                            <div class="input-control">
+                                <p><label for="txt_name" class="mt-3">Name</label>
+                                    *</p>
+                                <input class="form-control" id="txt_name" name="txt_name" type="text"
+                                    Required="required" placeholder="ex. John Rock">
+                                <div class="error"></div>
                             </div>
-                        </div>
+
+                            <!--    EMAIL INPUT     -->
+
+                            <div class="input-control">
+                                <p><label for="txt_email" class="mt-3">E-mail</label>
+                                    *</p>
+                                <input class="form-control mt-3" id="txt_email" type="email" Required="required"
+                                    placeholder="ex. John.Rock@mail.com">
+                                <div class="error"></div>
+                            </div>
+
+                            <!--    PHONE INPUT     -->
+                            <div class="input-control">
+                                <p> <label for="txt_phone" class="mt-3">Phone
+                                    </label> *</p>
+                                <div class="input-container d-flex ">
+                                    <select class="form-select form-control p-input-phone2" id="txt_prefix">
+                                        <option value="0">prefix</option>
+                                        <option value="083">083</option>
+                                        <option value="085">085</option>
+                                        <option value="086">086</option>
+                                        <option value="086">087</option>
+                                        <option value="089">089</option>
+                                    </select>
+
+                                    <input type="tel" pattern="[0-9]{7}" class="form-control" id="txt_phone"
+                                        name="txt_phone" placeholder="ex. 1234567" Required="required">
+                                </div>
+                                <div class="error" id="phone"></div>
+                            </div>
+
+                            <!--    SELECT INPUT     -->
+                            <div class="input-control mt-3">
+                                <p><label for="txt_subject">Subject</label>
+                                    *</p>
+                                <input class="form-control" id="txt_subject" name="txt_subject" type="text"
+                                    Required="required" placeholder="ex. Trade-in">
+                                <div class="error"></div>
+                            </div>
+
+                            <!--    MESSAGE INPUT     -->
+                            <div class="input-control">
+                                <p><label for="txt_message" class="mt-3">
+                                        Message</label> *</p>
+                                <textarea class="form-control p-fontSizeLarger p-textArea" id="txt_message"
+                                    Required="required" placeholder="Enter your message"></textarea>
+                                <div class="error"></div>
+                            </div>
+
+                            <div class="checkbox mt-2 text-center ">
+
+                                <!--    CHECKBOX INPUT     -->
+                                <div class="input-control">
+                                    <input class="p-marginR10 mt-3" id="txt_tick" type="checkbox" name="txt_tick">*
+                                    <label for="txt_tick"> I agree to
+                                        store
+                                        and process my
+                                        information.
+                                    </label>
+                                    <div class="error"></div>
+                                </div>
+                            </div>
+
+                            <!--    SUBMIT BUTTON     -->
+                            <button type="submit" id="submit" class="form-btn">Submit</button>
+                        </form>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!--    MAP AREA     -->
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center mt-4">
+
+            <div class="col-lg-9 col-md-12 col-sm-12 mt-4 mb-5">
+
+                <!--    TEXT OVER THE MAP     -->
+                <div class="p-mapArea ">
+                    <p class=" text-center p-paddingT10 h2">We are
+                        located
+                        at:</p>
+                    <div class="fw-bold text-center mt-2 p-orangeTxt">Liffey
+                        Valley Shopping Centre,
+                        Fonthill Rd,
+                        Clondalkin,
+                        Dublin 22
+                    </div>
+
+                    <!--    MAP ITSELF     -->
+                    <div class="mt-3 p-3">
+
+                        <iframe class="p-mapSize"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.4829820660348!2d-6.394081123037247!3d53.35251067426196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486772d8e952e1f1%3A0x80358292d8c1c815!2sLiffey%20Valley%20Shopping%20Centre!5e0!3m2!1spl!2sie!4v1700742274526!5m2!1spl!2sie"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!--    MODAL WINDOW     -->
+    <!--    MODAL WINDOW     -->
 
-            <div class="modal fade p-modal-0" data-bs-theme="dark" id="myModal"
-                tabindex="-1"
-                aria-labelledby="modal-title"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title ms-auto" id="modal-title">Congratulations!</h1>
-                            <button type="button" class="btn-close"
-                                data-bs-dimiss="modal" aria-label="Close"
-                                name="close"
-                                onclick="dismissModal()"></button>
-                        </div>
-                        <div id="myModalTxt" class="m-3 mb-0 p-modal2-2">
+    <div class="modal fade p-modal-0" data-bs-theme="dark" id="myModal" tabindex="-1" aria-labelledby="modal-title"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title ms-auto" id="modal-title">Congratulations!</h1>
+                    <button type="button" class="btn-close" data-bs-dimiss="modal" aria-label="Close" name="close"
+                        onclick="dismissModal()"></button>
+                </div>
+                <div id="myModalTxt" class="m-3 mb-0 p-modaldd">
 
-                        </div>
-                        <p class="navbar-brand mt-0 p-modal2-1" id="logoFull">AutoTrade</p>
-                        <p class=" navbar-brand p-modal2-1" id="logoShort">AT</p>
-                        <div class="modal-footer">
-                            <p>If you have any questions, please let us know. We
-                                usualy answer to any inquiries, within 24
-                                hours.
-                            </p>
-                            <button type="button"
-                                class="form-btn button-close-modal btn btn-default"
-                                name="dismiss"
-                                data-dismiss="modal" id="dismissModal"
-                                onclick="dismissModal()">Dismiss</button>
-                        </div>
-                    </div>
+                </div>
+                <p class="navbar-brand mt-0 p-modaldj" id="logoFull">AutoTrade</p>
+                <p class=" navbar-brand p-modalddj" id="logoShort">AT</p>
+                <div class="modal-footer">
+                    <p>If you have any questions, please let us know. We
+                        usualy answer to any inquiries, within 24
+                        hours.
+                    </p>
+                    <button type="button" class="form-btn button-close-modal btn btn-default" name="dismiss"
+                        data-dismiss="modal" id="dismissModal" onclick="dismissModal()">Dismiss</button>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- BOOTSTRAP -->
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                crossorigin="anonymous">
-            </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 
-            <!--    JAVA SCRIPT     -->
-            <script src="../JS/contact.js"></script>
-            <footer>
-                <div class="container-fluid footer-container">
-                    <div class="row" id="footerRow">
-                        <nav id="footerHolder"></nav>
-                    </div>
-                </div>
-                <script>
-                        $.get("/Pages/footer.html", function (data) {
-                        $("#footerHolder").html(data);
-                    });
-                </script>
-            </footer>
-        </body>
-    </html>
+    <!--    JAVA SCRIPT     -->
+    <script src="../JS/contact.js"></script>
+    <footer>
+        <div class="container-fluid footer-container">
+            <div class="row" id="footerRow">
+                <nav id="footerHolder"></nav>
+            </div>
+        </div>
+        <script>
+            $.get("/Pages/footer.html", function (data) {
+                $("#footerHolder").html(data);
+            });
+        </script>
+    </footer>
+</body>
+
+</html>

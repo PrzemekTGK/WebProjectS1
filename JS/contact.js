@@ -155,8 +155,8 @@ const validateInputs = () => {
 
 //CREATES TEXT IN MODAL WINDOW
 function myModalTxt() {
-    document.getElementById("myModalTxt").innerHTML = "<p>You have just sent a message to: The " + txt_Department.value
-        + " Department.</p><p>We will contact you soon on: <b>(" + txt_prefix.value + ") " + txt_phone.value + "</b><br>"
+    document.getElementById("myModalTxt").innerHTML = "<p>You have just sent a message to: <br>The " + txt_Department.value
+        + " Department.</p><p>We will contact you soon on:<br> <b>(" + txt_prefix.value + ") " + txt_phone.value + "</b><br>"
         + "A copy of the message, was sent to the provided e-mail: <b>" + txt_email.value + "</b>"
         + "</p><p><br>Best regards,</p>The " + txt_Department.value + " Department team. </p>";
 }
