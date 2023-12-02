@@ -146,6 +146,10 @@ body {
     border-bottom-right-radius: 0px !important;
 }
 
+#myCarousel{
+    padding: 0px;
+}
+
 .carousel-container {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
