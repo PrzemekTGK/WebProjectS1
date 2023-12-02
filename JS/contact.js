@@ -149,7 +149,6 @@ const validateInputs = () => {
         setSuccess(txt_tick);
 
     }
-    console.log("check box " + valid);
 
 };
 

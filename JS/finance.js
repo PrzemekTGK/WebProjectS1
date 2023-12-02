@@ -13,13 +13,9 @@ let creaditYears = document.getElementById("creaditYears").value;
 //CALCULATE LEFT TO PAY FIELD
 function carDeposit() {
 
-    console.log('value changed carPrice Func');
-    console.log("car price value" + carPrice.value);
-
     let leftToPayValue = (carPrice.value - deposit.value);
 
     leftToPay.value = leftToPayValue;
-    console.log(leftToPayValue);
 
     if (deposit.value == "") {
         deposit.value = 0;
@@ -34,9 +30,6 @@ function carDeposit() {
         leftToPay.value = 0;
     }
 
-    console.log("depozyt" + deposit.value);
-
-
     chooseCredit();
 }
 
@@ -45,7 +38,6 @@ function chooseCredit() {
     creaditYears = document.getElementById("creaditYears").value;
     let interest = 0;
 
-    console.log("Credit years " + creaditYears);
     if (deposit.value == "") {
         deposit.value = 0;
         leftToPay.value = carPrice.value;
@@ -89,8 +81,6 @@ function chooseCredit() {
 
         priceOfCredit.value = parseInt(creaditYears * leftToPay.value / 100 * interest);
         let remainingBalanceFloat = (parseFloat(leftToPay.value) + parseFloat(priceOfCredit.value));
-        //console.log("remBla" + remainingBalance.value);
-        //let a = parseInt(remainingBalance.value);
         remainingBalance.value = remainingBalanceFloat.toLocaleString("ie-IE", { style: "currency", currency: "EUR" });
     }
 }
