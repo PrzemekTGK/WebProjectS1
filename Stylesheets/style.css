@@ -286,8 +286,8 @@ h5 {
     position: relative;
     top: 15%;
     left: 5%;
-    max-width: 60%;
-    max-height: 90%;
+    max-width: 75%;
+    max-height: 95%;
     padding: 2%;
     opacity: 85%;
     font-size: large;
@@ -306,7 +306,8 @@ h5 {
     opacity: 85%;
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
-    min-width: 25%;
+    min-width: 25% !important;
+    max-width: 30% !important;
     min-height: 12.5%;
     margin-right: 2%;
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
@@ -321,8 +322,10 @@ h5 {
     opacity: 85%;
     border-radius: 10px;
     border-color: rgb(189, 189, 189);
-    min-width: 10%;
-    min-height: 10%;
+    min-width: 100px;
+    max-width: 150px;
+    min-height: 7.5%;
+    max-height: 10%;
     box-shadow: 2px 2px 5px 5px rgb(10, 10, 10);
 }
 
