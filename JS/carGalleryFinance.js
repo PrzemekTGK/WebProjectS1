@@ -12,7 +12,7 @@ $(document).ready(function () {
           <div class="col car-col-finance">
             <div class="finance-card mt-4">
               <a href="#" class="car-update-finance" style="text-decoration: none;" data-index="${index}">
-                <img class="card-img-top" src="/Images/Cars/${car.image}">
+                <img class="card-img-top" src="/Images/Cars/${car.image} "width="250" height="188">
                 <div class="card-body p-2" style="color: rgb(255, 255, 255);">
                   <p class="card-title" style="color: orange; font-weight: bold; font-size: large; text-wrap: wrap;">${car.make} ${car.model}<p>
                   <p class="card-text">Year: ${car.year}
