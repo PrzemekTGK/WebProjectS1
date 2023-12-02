@@ -1007,14 +1007,6 @@ input:focus {
     #financeCarsContainer {
         max-height: 870px !important;
     }
-    
-    .carousel-image{
-        max-height: 100%;
-    }
-
-    .carousel-container{
-        max-height: 100%;
-    }
 }
 
 @keyframes slideIn {
