@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add click event listener to the search button
     searchBtn.addEventListener("click", function () {
-    event.preventDefault(); // Prevent the default form submission
         console.log("Search Button clicked! ");
         // Get the user's input from the search input field
         var userInput = searchInput.value;
