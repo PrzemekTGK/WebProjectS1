@@ -13,7 +13,7 @@ function highlightCurrentPage() {
         if (linkPage === currentPage) {
             $(this).addClass('current');
         } else if (currentPage === 'car.html') {
-            $('.navbar-container #navLinkCars').addClass('current');
+            $('.navbar-container .nav-link-cars').addClass('current');
         } else if (currentPage === 'finance.html') {
             $('.navbar-container #navLinkFinance').addClass('current');            
             updateCarDetails(carIndex);
@@ -25,11 +25,11 @@ $(function () {
     if (window.location.pathname.endsWith('index.html')) {
         setTimeout(function () {
             highlightCurrentPage();
-        }, 250);
+        }, 300);
     } else {
         setTimeout(function(){
             highlightCurrentPage();
-        }, 250);
+        }, 300);
     }
 });
 
